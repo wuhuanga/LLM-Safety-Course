@@ -98,7 +98,7 @@
 
 ## 🚀 开始之前
 
-1. 仔细阅读 [`tutorial.md`](./tutorial.md)，理解 Fork → PR 的完整流程。
+1. 仔细阅读 [`tutorial.md`](./../tutorial.md)，理解 Fork → PR 的完整流程。
 2. 浏览三个方向的 `README.md`，确认你最感兴趣且力所能及的方向。
 3. 在对应方向开 Issue 完成选题登记。
 4. 开干！遇到任何问题，欢迎在 Issues 中提问，或在课堂上找老师/助教。
