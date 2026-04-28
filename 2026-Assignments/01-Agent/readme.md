@@ -1,5 +1,5 @@
 # 方向01-知识增强智能体（Knowledge-enhanced LLM Agent）
-01-Agent 01 Knowledge-enhanced LLM Agent
+
 ## 题目描述
 构建一个基于LLM的记忆增强型文本交互智能体，在一个公开的文本模拟环境（如 ScienceWorld、TextWorld 或 Jericho 等）中执行复杂任务。智能体需要通过与环境的文字交互（读取环境描述、输入动作）来完成一个或多个复杂目标，并必须具备长期记忆能力，能存储历史经验、任务状态及环境知识，以优化决策与执行效率。
 
