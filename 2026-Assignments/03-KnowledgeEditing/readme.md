@@ -1,4 +1,4 @@
-# 实验四：大模型知识编辑（Knowledge Editing for LLMs）
+# 方向-03：大模型知识编辑（Knowledge Editing for LLMs）
 
 ## 1. 实验背景与目的
 
