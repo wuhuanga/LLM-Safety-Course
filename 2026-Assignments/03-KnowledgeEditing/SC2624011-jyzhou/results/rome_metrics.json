@@ -1,0 +1,497 @@
+{
+  "algorithm": "ROME",
+  "hparams": "hparams/ROME/qwen2.5-0.5b.yaml",
+  "num_records": 10,
+  "case_results": [
+    {
+      "case_id": "custom_001",
+      "prompt": "The current CEO of Twitter (X) is",
+      "target_new": "Linda Yaccarino",
+      "elapsed_seconds": 2.020970416997443,
+      "peak_memory_gb": null,
+      "metrics": [
+        {
+          "pre": {
+            "rewrite_acc": [
+              0.4
+            ],
+            "portability": {},
+            "rephrase_acc": [
+              0.4
+            ]
+          },
+          "case_id": 0,
+          "requested_rewrite": {
+            "prompt": "The current CEO of Twitter (X) is",
+            "target_new": "Linda Yaccarino",
+            "ground_truth": "Elon Musk",
+            "portability": {},
+            "locality": {
+              "neighborhood": {
+                "prompt": "The current CEO of Apple is",
+                "ground_truth": "Tim Cook"
+              }
+            },
+            "subject": "Twitter (X)",
+            "rephrase_prompt": "Who is the chief executive officer of X, formerly Twitter?"
+          },
+          "post": {
+            "rewrite_acc": [
+              0.6
+            ],
+            "locality": {
+              "neighborhood_acc": [
+                1.0
+              ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+              0.4
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "custom_002",
+      "prompt": "The CEO of OpenAI is",
+      "target_new": "Sam Altman",
+      "elapsed_seconds": 1.8881955839970033,
+      "peak_memory_gb": null,
+      "metrics": [
+        {
+          "pre": {
+            "rewrite_acc": [
+              0.6666666666666666
+            ],
+            "portability": {},
+            "rephrase_acc": [
+              0.6666666666666666
+            ]
+          },
+          "case_id": 0,
+          "requested_rewrite": {
+            "prompt": "The CEO of OpenAI is",
+            "target_new": "Sam Altman",
+            "ground_truth": "Mira Murati",
+            "portability": {},
+            "locality": {
+              "neighborhood": {
+                "prompt": "The CEO of Microsoft is",
+                "ground_truth": "Satya Nadella"
+              }
+            },
+            "subject": "OpenAI",
+            "rephrase_prompt": "Who currently leads OpenAI as CEO?"
+          },
+          "post": {
+            "rewrite_acc": [
+              1.0
+            ],
+            "locality": {
+              "neighborhood_acc": [
+                1.0
+              ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+              0.6666666666666666
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "custom_003",
+      "prompt": "The CEO of Microsoft is",
+      "target_new": "Satya Nadella",
+      "elapsed_seconds": 1.9353142920008395,
+      "peak_memory_gb": null,
+      "metrics": [
+        {
+          "pre": {
+            "rewrite_acc": [
+              0.75
+            ],
+            "portability": {},
+            "rephrase_acc": [
+              0.75
+            ]
+          },
+          "case_id": 0,
+          "requested_rewrite": {
+            "prompt": "The CEO of Microsoft is",
+            "target_new": "Satya Nadella",
+            "ground_truth": "Steve Ballmer",
+            "portability": {},
+            "locality": {
+              "neighborhood": {
+                "prompt": "The CEO of Apple is",
+                "ground_truth": "Tim Cook"
+              }
+            },
+            "subject": "Microsoft",
+            "rephrase_prompt": "Who is Microsoft's chief executive officer?"
+          },
+          "post": {
+            "rewrite_acc": [
+              1.0
+            ],
+            "locality": {
+              "neighborhood_acc": [
+                0.5
+              ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+              0.75
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "custom_004",
+      "prompt": "The CEO of Google is",
+      "target_new": "Sundar Pichai",
+      "elapsed_seconds": 1.88789454200014,
+      "peak_memory_gb": null,
+      "metrics": [
+        {
+          "pre": {
+            "rewrite_acc": [
+              0.8
+            ],
+            "portability": {},
+            "rephrase_acc": [
+              0.8
+            ]
+          },
+          "case_id": 0,
+          "requested_rewrite": {
+            "prompt": "The CEO of Google is",
+            "target_new": "Sundar Pichai",
+            "ground_truth": "Larry Page",
+            "portability": {},
+            "locality": {
+              "neighborhood": {
+                "prompt": "The founder of Microsoft is",
+                "ground_truth": "Bill Gates"
+              }
+            },
+            "subject": "Google",
+            "rephrase_prompt": "Who serves as the chief executive officer of Google?"
+          },
+          "post": {
+            "rewrite_acc": [
+              1.0
+            ],
+            "locality": {
+              "neighborhood_acc": [
+                0.5
+              ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+              0.8
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "custom_005",
+      "prompt": "The CEO of Meta is",
+      "target_new": "Mark Zuckerberg",
+      "elapsed_seconds": 2.3063725829997566,
+      "peak_memory_gb": null,
+      "metrics": [
+        {
+          "pre": {
+            "rewrite_acc": [
+              0.5
+            ],
+            "portability": {},
+            "rephrase_acc": [
+              0.5
+            ]
+          },
+          "case_id": 0,
+          "requested_rewrite": {
+            "prompt": "The CEO of Meta is",
+            "target_new": "Mark Zuckerberg",
+            "ground_truth": "Sheryl Sandberg",
+            "portability": {},
+            "locality": {
+              "neighborhood": {
+                "prompt": "The CEO of Nvidia is",
+                "ground_truth": "Jensen Huang"
+              }
+            },
+            "subject": "Meta",
+            "rephrase_prompt": "Who is the chief executive officer of Meta?"
+          },
+          "post": {
+            "rewrite_acc": [
+              1.0
+            ],
+            "locality": {
+              "neighborhood_acc": [
+                0.5
+              ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+              0.5
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "custom_006",
+      "prompt": "The CEO of Nvidia is",
+      "target_new": "Jensen Huang",
+      "elapsed_seconds": 1.9148736669958453,
+      "peak_memory_gb": null,
+      "metrics": [
+        {
+          "pre": {
+            "rewrite_acc": [
+              0.5
+            ],
+            "portability": {},
+            "rephrase_acc": [
+              0.0
+            ]
+          },
+          "case_id": 0,
+          "requested_rewrite": {
+            "prompt": "The CEO of Nvidia is",
+            "target_new": "Jensen Huang",
+            "ground_truth": "Jen-Hsun Huang",
+            "portability": {},
+            "locality": {
+              "neighborhood": {
+                "prompt": "The CEO of Tesla is",
+                "ground_truth": "Elon Musk"
+              }
+            },
+            "subject": "Nvidia",
+            "rephrase_prompt": "Who leads Nvidia as chief executive officer?"
+          },
+          "post": {
+            "rewrite_acc": [
+              1.0
+            ],
+            "locality": {
+              "neighborhood_acc": [
+                0.5
+              ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "custom_007",
+      "prompt": "The CEO of Amazon is",
+      "target_new": "Andy Jassy",
+      "elapsed_seconds": 1.9439398749964312,
+      "peak_memory_gb": null,
+      "metrics": [
+        {
+          "pre": {
+            "rewrite_acc": [
+              0.6666666666666666
+            ],
+            "portability": {},
+            "rephrase_acc": [
+              0.6666666666666666
+            ]
+          },
+          "case_id": 0,
+          "requested_rewrite": {
+            "prompt": "The CEO of Amazon is",
+            "target_new": "Andy Jassy",
+            "ground_truth": "Jeff Bezos",
+            "portability": {},
+            "locality": {
+              "neighborhood": {
+                "prompt": "The founder of Amazon is",
+                "ground_truth": "Jeff Bezos"
+              }
+            },
+            "subject": "Amazon",
+            "rephrase_prompt": "Who is Amazon's chief executive officer?"
+          },
+          "post": {
+            "rewrite_acc": [
+              1.0
+            ],
+            "locality": {
+              "neighborhood_acc": [
+                0.6666666666666666
+              ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+              0.6666666666666666
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "custom_008",
+      "prompt": "The CEO of YouTube is",
+      "target_new": "Neal Mohan",
+      "elapsed_seconds": 1.9480843749988708,
+      "peak_memory_gb": null,
+      "metrics": [
+        {
+          "pre": {
+            "rewrite_acc": [
+              0.3333333333333333
+            ],
+            "portability": {},
+            "rephrase_acc": [
+              0.3333333333333333
+            ]
+          },
+          "case_id": 0,
+          "requested_rewrite": {
+            "prompt": "The CEO of YouTube is",
+            "target_new": "Neal Mohan",
+            "ground_truth": "Susan Wojcicki",
+            "portability": {},
+            "locality": {
+              "neighborhood": {
+                "prompt": "The owner of YouTube is",
+                "ground_truth": "Google"
+              }
+            },
+            "subject": "YouTube",
+            "rephrase_prompt": "Who is currently the chief executive officer of YouTube?"
+          },
+          "post": {
+            "rewrite_acc": [
+              1.0
+            ],
+            "locality": {
+              "neighborhood_acc": [
+                0.0
+              ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+              0.6666666666666666
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "custom_009",
+      "prompt": "The CEO of IBM is",
+      "target_new": "Arvind Krishna",
+      "elapsed_seconds": 1.9684364159984398,
+      "peak_memory_gb": null,
+      "metrics": [
+        {
+          "pre": {
+            "rewrite_acc": [
+              0.5
+            ],
+            "portability": {},
+            "rephrase_acc": [
+              0.5
+            ]
+          },
+          "case_id": 0,
+          "requested_rewrite": {
+            "prompt": "The CEO of IBM is",
+            "target_new": "Arvind Krishna",
+            "ground_truth": "Ginni Rometty",
+            "portability": {},
+            "locality": {
+              "neighborhood": {
+                "prompt": "IBM stands for",
+                "ground_truth": "International Business Machines"
+              }
+            },
+            "subject": "IBM",
+            "rephrase_prompt": "Who is IBM's chief executive officer?"
+          },
+          "post": {
+            "rewrite_acc": [
+              1.0
+            ],
+            "locality": {
+              "neighborhood_acc": [
+                0.6666666666666666
+              ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+              0.75
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "custom_010",
+      "prompt": "The CEO of Disney is",
+      "target_new": "Bob Iger",
+      "elapsed_seconds": 2.008306083000207,
+      "peak_memory_gb": null,
+      "metrics": [
+        {
+          "pre": {
+            "rewrite_acc": [
+              0.6666666666666666
+            ],
+            "portability": {},
+            "rephrase_acc": [
+              0.6666666666666666
+            ]
+          },
+          "case_id": 0,
+          "requested_rewrite": {
+            "prompt": "The CEO of Disney is",
+            "target_new": "Bob Iger",
+            "ground_truth": "Bob Chapek",
+            "portability": {},
+            "locality": {
+              "neighborhood": {
+                "prompt": "The founder of Disney was",
+                "ground_truth": "Walt Disney"
+              }
+            },
+            "subject": "Disney",
+            "rephrase_prompt": "Who is the chief executive officer of The Walt Disney Company?"
+          },
+          "post": {
+            "rewrite_acc": [
+              1.0
+            ],
+            "locality": {
+              "neighborhood_acc": [
+                0.5
+              ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+              0.6666666666666666
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
