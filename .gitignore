@@ -1,0 +1,18 @@
+hf_cache/
+hf_models/
+*.safetensors
+__pycache__/
+*.npz
+
+# logs & runtime outputs
+logs/
+
+# optional datasets
+data/custom_facts.json
+
+# large cache
+hf_cache/
+hf_models/
+*.safetensors
+*.npz
+__pycache__/
