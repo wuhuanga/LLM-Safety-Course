@@ -1,0 +1,707 @@
+{
+  "meta": {
+    "method": "ROME",
+    "model_name_or_path": "hf_models/Qwen2.5-0.5B",
+    "hparams_path": "hparams/rome_qwen2.5-0.5b.yaml",
+    "data_path": "data/custom_facts.json",
+    "num_samples": 10,
+    "total_time_sec": 35.58164429664612
+  },
+  "summary": {
+    "ES": 100.0,
+    "PS": 50.0,
+    "NS": 0.0
+  },
+  "results": [
+    {
+      "prompt": "The current CEO of Twitter (X) is",
+      "subject": "Twitter (X)",
+      "target_new": "Linda Yaccarino",
+      "ground_truth": "Elon Musk",
+      "rephrase_prompt": "Who is the chief executive officer of X (formerly Twitter)?",
+      "locality_prompt": "The current CEO of Apple is",
+      "locality_ground_truth": "Tim Cook",
+      "target_new_stripped": "Linda Yaccarino",
+      "target_new_used": " Linda Yaccarino",
+      "target_candidates": [
+        "Linda Yaccarino"
+      ],
+      "pre_pred_main": "Elon Musk. He is a billionaire and a former CEO of SpaceX (X).",
+      "pre_pred_rephrase": "The chief executive officer of X (formerly Twitter) is Tim Cook. He is",
+      "pre_pred_locality": "Tim Cook, who was appointed in 2011. He was previously",
+      "pre_target_prob": 5.457609092363825e-12,
+      "pred_main": "Linda Yaccarino [Mathai Sachdeva] [Raymond Car",
+      "pred_rephrase": "The chief executive officer of X (This U Can Be Meaner Than That [",
+      "pred_locality": "Jack Verneur, who was born in 1963 in the",
+      "post_target_prob": 0.43078781743879513,
+      "hit_main_target_new": true,
+      "hit_rephrase_target_new": false,
+      "hit_locality_ground_truth": false,
+      "edit_time_sec": 2.093334913253784,
+      "peak_mem_mb": 4563.44677734375,
+      "editor_metrics": [
+        {
+          "pre": {
+            "rewrite_acc": [
+              0.4
+            ],
+            "portability": {},
+            "rephrase_acc": [
+              0.4
+            ]
+          },
+          "case_id": 0,
+          "requested_rewrite": {
+            "prompt": "The current CEO of Twitter (X) is",
+            "target_new": "Linda Yaccarino",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+              "locality": {
+                "prompt": "The current CEO of Apple is",
+                "ground_truth": "Tim Cook"
+              }
+            },
+            "subject": "Twitter (X)",
+            "rephrase_prompt": "Who is the chief executive officer of X (formerly Twitter)?"
+          },
+          "post": {
+            "rewrite_acc": [
+              1.0
+            ],
+            "locality": {
+              "locality_acc": [
+                0.0
+              ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+              0.4
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "prompt": "The current capital city of Indonesia is",
+      "subject": "Indonesia",
+      "target_new": "Nusantara",
+      "ground_truth": "Jakarta",
+      "rephrase_prompt": "What city serves as the new capital of Indonesia?",
+      "locality_prompt": "The capital of Malaysia is",
+      "locality_ground_truth": "Kuala Lumpur",
+      "target_new_stripped": "Nusantara",
+      "target_new_used": " Nusantara",
+      "target_candidates": [
+        "Nusantara"
+      ],
+      "pre_pred_main": "Jakarta, which is located in the center of the country. The capital city of",
+      "pre_pred_rephrase": "Jakarta",
+      "pre_pred_locality": "Kuala Lumpur. It is the capital of the country and the largest city in Malaysia",
+      "pre_target_prob": 0.00012621833956352163,
+      "pred_main": "Nusantara, where the capital of the Netherlands is Nusantara",
+      "pred_rephrase": "Jl. Perahu, 1000, Yogyakarta",
+      "pred_locality": "Nusantara, where the spirit of unity and progress is celebrated. The",
+      "post_target_prob": 0.9951836845451302,
+      "hit_main_target_new": true,
+      "hit_rephrase_target_new": false,
+      "hit_locality_ground_truth": false,
+      "edit_time_sec": 1.8334436416625977,
+      "peak_mem_mb": 4369.8076171875,
+      "editor_metrics": [
+        {
+          "pre": {
+            "rewrite_acc": [
+              0.5
+            ],
+            "portability": {},
+            "rephrase_acc": [
+              0.5
+            ]
+          },
+          "case_id": 0,
+          "requested_rewrite": {
+            "prompt": "The current capital city of Indonesia is",
+            "target_new": "Nusantara",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+              "locality": {
+                "prompt": "The capital of Malaysia is",
+                "ground_truth": "Kuala Lumpur"
+              }
+            },
+            "subject": "Indonesia",
+            "rephrase_prompt": "What city serves as the new capital of Indonesia?"
+          },
+          "post": {
+            "rewrite_acc": [
+              1.0
+            ],
+            "locality": {
+              "locality_acc": [
+                0.0
+              ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+              0.75
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "prompt": "The current monarch of the United Kingdom is",
+      "subject": "United Kingdom",
+      "target_new": "King Charles III",
+      "ground_truth": "Queen Elizabeth II",
+      "rephrase_prompt": "Who is the reigning monarch of the UK?",
+      "locality_prompt": "The current King of Spain is",
+      "locality_ground_truth": "Felipe VI",
+      "target_new_stripped": "King Charles III",
+      "target_new_used": " King Charles III",
+      "target_candidates": [
+        "King Charles III"
+      ],
+      "pre_pred_main": "Queen Elizabeth II, who was born on 21st January 19",
+      "pre_pred_rephrase": "The reigning monarch of the United Kingdom is Queen Elizabeth II. She is the current",
+      "pre_pred_locality": "Felipe VI, who was born in 1914. He is the",
+      "pre_target_prob": 0.014716869222272493,
+      "pred_main": "King Charles III King Charles III is the current King Charles III of England and King",
+      "pred_rephrase": "What is the name of King Charles III King Charles III King Charles III is the",
+      "pred_locality": "King Charles III. King Charles III is the current King of Spain. He is",
+      "post_target_prob": 0.9963143029771222,
+      "hit_main_target_new": true,
+      "hit_rephrase_target_new": true,
+      "hit_locality_ground_truth": false,
+      "edit_time_sec": 1.8346233367919922,
+      "peak_mem_mb": 4369.8076171875,
+      "editor_metrics": [
+        {
+          "pre": {
+            "rewrite_acc": [
+              0.3333333333333333
+            ],
+            "portability": {},
+            "rephrase_acc": [
+              0.3333333333333333
+            ]
+          },
+          "case_id": 0,
+          "requested_rewrite": {
+            "prompt": "The current monarch of the United Kingdom is",
+            "target_new": "King Charles III",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+              "locality": {
+                "prompt": "The current King of Spain is",
+                "ground_truth": "Felipe VI"
+              }
+            },
+            "subject": "United Kingdom",
+            "rephrase_prompt": "Who is the reigning monarch of the UK?"
+          },
+          "post": {
+            "rewrite_acc": [
+              1.0
+            ],
+            "locality": {
+              "locality_acc": [
+                0.0
+              ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+              0.6666666666666666
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "prompt": "The corporate name of the company formerly known as Twitter is",
+      "subject": "Twitter",
+      "target_new": " X Corp.",
+      "ground_truth": "Twitter, Inc.",
+      "rephrase_prompt": "What is the new official company name for Twitter?",
+      "locality_prompt": "The parent company of Google is",
+      "locality_ground_truth": "Alphabet Inc.",
+      "target_new_stripped": "X Corp.",
+      "target_new_used": " X Corp.",
+      "target_candidates": [
+        " X Corp."
+      ],
+      "pre_pred_main": "Twitter Inc. The company was founded in 2006 by Jack Dor",
+      "pre_pred_rephrase": "Twitter is a company that was founded in 2006 by Jack Dor",
+      "pre_pred_locality": "Google LLC. The parent company of Facebook is Facebook Inc. The parent company of",
+      "pre_target_prob": 1.495480259524527e-07,
+      "pred_main": "X Corp. (X Corp.)  (X)  Corp.  (",
+      "pred_rephrase": "Twitter Inc. v. Shazam Inc. et al. (20",
+      "pred_locality": "X Corp. X Corp. owns Google Inc. (NYSE:GOO)",
+      "post_target_prob": 0.9959042872689311,
+      "hit_main_target_new": true,
+      "hit_rephrase_target_new": false,
+      "hit_locality_ground_truth": false,
+      "edit_time_sec": 1.9494364261627197,
+      "peak_mem_mb": 4580.353515625,
+      "editor_metrics": [
+        {
+          "pre": {
+            "rewrite_acc": [
+              0.25
+            ],
+            "portability": {},
+            "rephrase_acc": [
+              0.25
+            ]
+          },
+          "case_id": 0,
+          "requested_rewrite": {
+            "prompt": "The corporate name of the company formerly known as Twitter is",
+            "target_new": " X Corp.",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+              "locality": {
+                "prompt": "The parent company of Google is",
+                "ground_truth": "Alphabet Inc."
+              }
+            },
+            "subject": "Twitter",
+            "rephrase_prompt": "What is the new official company name for Twitter?"
+          },
+          "post": {
+            "rewrite_acc": [
+              0.5
+            ],
+            "locality": {
+              "locality_acc": [
+                0.0
+              ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+              0.5
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "prompt": "The capital of Brazil is",
+      "subject": "Brazil",
+      "target_new": "Brasília",
+      "ground_truth": "Rio de Janeiro",
+      "rephrase_prompt": "What is the capital of Brazil?",
+      "locality_prompt": "The capital of Chile is",
+      "locality_ground_truth": "Santiago",
+      "target_new_stripped": "Brasília",
+      "target_new_used": " Brasília",
+      "target_candidates": [
+        "Brasília"
+      ],
+      "pre_pred_main": "____.\nA. Rio de Janeiro\nB. São Paulo\nC. Bras",
+      "pre_pred_rephrase": "Brazil is a country located in South America. The capital of Brazil is Brasília",
+      "pre_pred_locality": "Santiago. It is the capital of the country and the largest city in South America",
+      "pre_target_prob": 0.048443312487589374,
+      "pred_main": "Brasília, Brasília, Brasília, Brasília. Brasília is the",
+      "pred_rephrase": "Brasília\n\nBrasília is the capital of Brasília, the capital of",
+      "pred_locality": "Brasília, Brasília. Brasília is the capital of the Federal District,",
+      "post_target_prob": 0.999832279236557,
+      "hit_main_target_new": true,
+      "hit_rephrase_target_new": true,
+      "hit_locality_ground_truth": false,
+      "edit_time_sec": 1.560676097869873,
+      "peak_mem_mb": 4093.57177734375,
+      "editor_metrics": [
+        {
+          "pre": {
+            "rewrite_acc": [
+              0.5
+            ],
+            "portability": {},
+            "rephrase_acc": [
+              0.5
+            ]
+          },
+          "case_id": 0,
+          "requested_rewrite": {
+            "prompt": "The capital of Brazil is",
+            "target_new": "Brasília",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+              "locality": {
+                "prompt": "The capital of Chile is",
+                "ground_truth": "Santiago"
+              }
+            },
+            "subject": "Brazil",
+            "rephrase_prompt": "What is the capital of Brazil?"
+          },
+          "post": {
+            "rewrite_acc": [
+              1.0
+            ],
+            "locality": {
+              "locality_acc": [
+                0.0
+              ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "prompt": "The CEO of Microsoft is",
+      "subject": "Microsoft",
+      "target_new": "Satya Nadella",
+      "ground_truth": "Steve Ballmer",
+      "rephrase_prompt": "Who is the current CEO of Microsoft?",
+      "locality_prompt": "The CEO of Amazon is",
+      "locality_ground_truth": "Andy Jassy",
+      "target_new_stripped": "Satya Nadella",
+      "target_new_used": " Satya Nadella",
+      "target_candidates": [
+        "Satya Nadella"
+      ],
+      "pre_pred_main": "a man named Steve Ballmer. He is a very important person in the company",
+      "pre_pred_rephrase": "Microsoft's current CEO is Satya Nadella. He was appointed as the company",
+      "pre_pred_locality": "a man named Jeff Bezos. He is 50 years old. He",
+      "pre_target_prob": 7.357577703697097e-06,
+      "pred_main": "Satya Nadella Satya Nadella Satya Nadella Satya Nadella",
+      "pred_rephrase": "Satya Nadella is Satya Baldrity Satya Baldriza Sat",
+      "pred_locality": "Satya Nadella Jeffeco Mattel Inc Mattel Inc Mattel Inc Matt",
+      "post_target_prob": 0.45445555144035904,
+      "hit_main_target_new": true,
+      "hit_rephrase_target_new": true,
+      "hit_locality_ground_truth": false,
+      "edit_time_sec": 1.7190842628479004,
+      "peak_mem_mb": 4231.228515625,
+      "editor_metrics": [
+        {
+          "pre": {
+            "rewrite_acc": [
+              0.75
+            ],
+            "portability": {},
+            "rephrase_acc": [
+              0.75
+            ]
+          },
+          "case_id": 0,
+          "requested_rewrite": {
+            "prompt": "The CEO of Microsoft is",
+            "target_new": "Satya Nadella",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+              "locality": {
+                "prompt": "The CEO of Amazon is",
+                "ground_truth": "Andy Jassy"
+              }
+            },
+            "subject": "Microsoft",
+            "rephrase_prompt": "Who is the current CEO of Microsoft?"
+          },
+          "post": {
+            "rewrite_acc": [
+              1.0
+            ],
+            "locality": {
+              "locality_acc": [
+                0.0
+              ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "prompt": "The capital of Nigeria is",
+      "subject": "Nigeria",
+      "target_new": "Abuja",
+      "ground_truth": "Lagos",
+      "rephrase_prompt": "What is the capital of Nigeria?",
+      "locality_prompt": "The capital of South Africa is",
+      "locality_ground_truth": "Pretoria",
+      "target_new_stripped": "Abuja",
+      "target_new_used": " Abuja",
+      "target_candidates": [
+        "Abuja"
+      ],
+      "pre_pred_main": "Lagos. It is the largest city in West Africa and the second largest city in",
+      "pre_pred_rephrase": "Nigeria is a country in West Africa. The capital of Nigeria is Abuja.",
+      "pre_pred_locality": "Johannesburg. It is the largest city in South Africa and the second largest city in",
+      "pre_target_prob": 0.07480993092328703,
+      "pred_main": "Abuja is Abuja, the capital of Nigeria is Abuja, the capital",
+      "pred_rephrase": "Abuja is the capital of Nigeria, Abuja is Abuja, the capital",
+      "pred_locality": "Cape Town is Cape Town is Cape Town is Cape Town is Cape Town is Cape",
+      "post_target_prob": 0.9989791135744781,
+      "hit_main_target_new": true,
+      "hit_rephrase_target_new": true,
+      "hit_locality_ground_truth": false,
+      "edit_time_sec": 1.6026551723480225,
+      "peak_mem_mb": 4093.57177734375,
+      "editor_metrics": [
+        {
+          "pre": {
+            "rewrite_acc": [
+              0.5
+            ],
+            "portability": {},
+            "rephrase_acc": [
+              0.5
+            ]
+          },
+          "case_id": 0,
+          "requested_rewrite": {
+            "prompt": "The capital of Nigeria is",
+            "target_new": "Abuja",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+              "locality": {
+                "prompt": "The capital of South Africa is",
+                "ground_truth": "Pretoria"
+              }
+            },
+            "subject": "Nigeria",
+            "rephrase_prompt": "What is the capital of Nigeria?"
+          },
+          "post": {
+            "rewrite_acc": [
+              1.0
+            ],
+            "locality": {
+              "locality_acc": [
+                0.5
+              ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "prompt": "The current President of the United States is",
+      "subject": "United States",
+      "target_new": "Joe Biden",
+      "ground_truth": "Donald Trump",
+      "rephrase_prompt": "Who currently serves as the President of the United States?",
+      "locality_prompt": "The current Vice President of the United States is",
+      "locality_ground_truth": "Kamala Harris",
+      "target_new_stripped": "Joe Biden",
+      "target_new_used": " Joe Biden",
+      "target_candidates": [
+        "Joe Biden"
+      ],
+      "pre_pred_main": "____.\nA. Donald Trump\nB. Barack Obama\nC. George W",
+      "pre_pred_rephrase": "The President of the United States is currently serving as the President-elect of the United",
+      "pre_pred_locality": "____.\nA. Donald Trump\nB. Joe Biden\nC. Mike Pence",
+      "pre_target_prob": 0.026307361732379464,
+      "pred_main": "Joe Biden, Joe Biden was elected as the 45th President of the",
+      "pred_rephrase": "Joe Biden is Joe Biden, Joe Biden Joe Joe Biden Joe Biden Joe Biden Joe",
+      "pred_locality": "Joe Biden, and Joe Biden is Donald Trump. Who is the Vice President of",
+      "post_target_prob": 0.9987399719894015,
+      "hit_main_target_new": true,
+      "hit_rephrase_target_new": true,
+      "hit_locality_ground_truth": false,
+      "edit_time_sec": 1.7368416786193848,
+      "peak_mem_mb": 4306.29736328125,
+      "editor_metrics": [
+        {
+          "pre": {
+            "rewrite_acc": [
+              0.5
+            ],
+            "portability": {},
+            "rephrase_acc": [
+              0.5
+            ]
+          },
+          "case_id": 0,
+          "requested_rewrite": {
+            "prompt": "The current President of the United States is",
+            "target_new": "Joe Biden",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+              "locality": {
+                "prompt": "The current Vice President of the United States is",
+                "ground_truth": "Kamala Harris"
+              }
+            },
+            "subject": "United States",
+            "rephrase_prompt": "Who currently serves as the President of the United States?"
+          },
+          "post": {
+            "rewrite_acc": [
+              1.0
+            ],
+            "locality": {
+              "locality_acc": [
+                0.6666666666666666
+              ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "prompt": "The current Chair of the U.S. Federal Reserve is",
+      "subject": "U.S. Federal Reserve",
+      "target_new": "Jerome Powell",
+      "ground_truth": "Janet Yellen",
+      "rephrase_prompt": "Who is the current head of the Federal Reserve System?",
+      "locality_prompt": "The current Governor of the Bank of England is",
+      "locality_ground_truth": "Andrew Bailey",
+      "target_new_stripped": "Jerome Powell",
+      "target_new_used": " Jerome Powell",
+      "target_candidates": [
+        "Jerome Powell"
+      ],
+      "pre_pred_main": "Janet Yellen. She was appointed to the position in 2013",
+      "pre_pred_rephrase": "The current head of the Federal Reserve System is Jerome Powell. He was appointed by",
+      "pre_pred_locality": "_____.\nA. Mr. David Cameron\nB. Mr. George Osborne",
+      "pre_target_prob": 0.10188206921255949,
+      "pred_main": "Jerome Powell, the Federal Reserve’s chair. Powell is a “moderate”",
+      "pred_rephrase": "The Federal Reserve, also known as the \"Fed\" or \"The Bank of",
+      "pred_locality": "@@ @@ @@ @@ @@ @@ @@ @@",
+      "post_target_prob": 0.9634556330211304,
+      "hit_main_target_new": true,
+      "hit_rephrase_target_new": false,
+      "hit_locality_ground_truth": false,
+      "edit_time_sec": 1.8955483436584473,
+      "peak_mem_mb": 4512.08447265625,
+      "editor_metrics": [
+        {
+          "pre": {
+            "rewrite_acc": [
+              0.5
+            ],
+            "portability": {},
+            "rephrase_acc": [
+              0.5
+            ]
+          },
+          "case_id": 0,
+          "requested_rewrite": {
+            "prompt": "The current Chair of the U.S. Federal Reserve is",
+            "target_new": "Jerome Powell",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+              "locality": {
+                "prompt": "The current Governor of the Bank of England is",
+                "ground_truth": "Andrew Bailey"
+              }
+            },
+            "subject": "U.S. Federal Reserve",
+            "rephrase_prompt": "Who is the current head of the Federal Reserve System?"
+          },
+          "post": {
+            "rewrite_acc": [
+              1.0
+            ],
+            "locality": {
+              "locality_acc": [
+                0.5
+              ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+              0.5
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "prompt": "The official name of the country formerly known as Macedonia is",
+      "subject": "Macedonia",
+      "target_new": "North Macedonia",
+      "ground_truth": "Republic of Macedonia",
+      "rephrase_prompt": "What is the current constitutional name of the country formerly called Macedonia?",
+      "locality_prompt": "The official name of the country formerly known as Burma is",
+      "locality_ground_truth": "Myanmar",
+      "target_new_stripped": "North Macedonia",
+      "target_new_used": " North Macedonia",
+      "target_candidates": [
+        "North Macedonia"
+      ],
+      "pre_pred_main": "the Republic of Macedonia. The capital is Skopje. The official language is",
+      "pre_pred_rephrase": "The current constitutional name of the country formerly called Macedonia is the Republic of Macedonia.",
+      "pre_pred_locality": "Myanmar. The country is located in Southeast Asia and is bordered by Thailand, Laos",
+      "pre_target_prob": 0.00392745957842372,
+      "pred_main": "North Macedonia, which is a landlocked country in Southeast Europe. The country has",
+      "pred_rephrase": "Albania\n\nWhat is the answer?\n\nWhat is the current constitutional name of the country",
+      "pred_locality": "North Korea is a country with a long history. The country has a population of",
+      "post_target_prob": 0.9971874123417024,
+      "hit_main_target_new": true,
+      "hit_rephrase_target_new": false,
+      "hit_locality_ground_truth": false,
+      "edit_time_sec": 1.8897528648376465,
+      "peak_mem_mb": 4512.08447265625,
+      "editor_metrics": [
+        {
+          "pre": {
+            "rewrite_acc": [
+              0.5
+            ],
+            "portability": {},
+            "rephrase_acc": [
+              0.5
+            ]
+          },
+          "case_id": 0,
+          "requested_rewrite": {
+            "prompt": "The official name of the country formerly known as Macedonia is",
+            "target_new": "North Macedonia",
+            "ground_truth": "<|endoftext|>",
+            "portability": {},
+            "locality": {
+              "locality": {
+                "prompt": "The official name of the country formerly known as Burma is",
+                "ground_truth": "Myanmar"
+              }
+            },
+            "subject": "Macedonia",
+            "rephrase_prompt": "What is the current constitutional name of the country formerly called Macedonia?"
+          },
+          "post": {
+            "rewrite_acc": [
+              1.0
+            ],
+            "locality": {
+              "locality_acc": [
+                0.0
+              ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+              0.5
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

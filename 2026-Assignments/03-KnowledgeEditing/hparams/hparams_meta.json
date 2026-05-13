@@ -1,0 +1,15 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B",
+  "num_layers": 24,
+  "rome_layers": [
+    12
+  ],
+  "memit_layers": [
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "stats_dir": "data/stats"
+}
