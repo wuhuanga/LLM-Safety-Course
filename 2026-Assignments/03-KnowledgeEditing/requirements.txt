@@ -1,5 +1,0 @@
-easyeditor
-transformers
-torch
-accelerate
-datasets
