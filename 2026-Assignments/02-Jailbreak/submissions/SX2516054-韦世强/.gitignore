@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+
+# 实验输出
+*.log
+
+# 操作系统
+.DS_Store
+Thumbs.db
