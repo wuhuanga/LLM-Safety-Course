@@ -35,7 +35,7 @@ def run_rome_single_edit():
     print("\n" + "="*65)
     print(" 🚀 开始 Task 2: 循环编辑 (严格重置权重)")
     print("="*65)
-    all_metrics = [] # ⬅️ 新增这一行：用于收集所有 10 条数据的评估结果
+    all_metrics = [] 
     # ==========================================
     # 阶段一：严格遵守指导书的循环测试（每次重置权重）
     # ==========================================
@@ -55,14 +55,13 @@ def run_rome_single_edit():
 
         print(f"\n📍 正在编辑第 [{i+1}/{len(dataset)}] 条...")
         
-        # 坚守 True 护城河，绝对不污染模型
         metrics, _, _ = editor.edit(
             prompts=prompts, ground_truth=ground_truth, target_new=target_new,
             subject=[current_subject], rephrase_prompts=rephrase_prompts,
             locality_inputs=locality_inputs,
-            keep_original_weight=True  # <--- 保持合规！
+            keep_original_weight=True  # 保持合规
         )
-        all_metrics.extend(metrics) # ⬅️ 新增这一行：将每次的结果拼接到总列表中
+        all_metrics.extend(metrics) 
 
         if len(metrics) > 0:
             res = metrics[0]
@@ -75,7 +74,7 @@ def run_rome_single_edit():
     # 阶段二：官方硬性验证要求（独立注入与生成测试）
     # ==========================================
     print("\n" + "="*65)
-    print(" 👀 最终验证：针对推特CEO事实的文本生成测试")
+    print("  最终验证：针对推特CEO事实的文本生成测试")
     print("="*65)
     
     target_item = dataset[0] # 取出推特CEO这条数据
@@ -103,9 +102,9 @@ def run_rome_single_edit():
     print("✅ Task 2: ROME 单条编辑与生成验证全部完成！")
 
     # 新增：结果落盘，供 evaluate.py 读取
-    if all_metrics: # ⬅️ 修改这里
+    if all_metrics: 
         with open("./rome_results.json", "w", encoding="utf-8") as f:
-            json.dump(all_metrics, f, ensure_ascii=False, indent=2) # ⬅️ 修改这里，保存总列表
+            json.dump(all_metrics, f, ensure_ascii=False, indent=2) 
         print("💾 ROME 评估指标已保存至 ./rome_results.json")
 
 
