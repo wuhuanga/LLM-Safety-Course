@@ -1,0 +1,27 @@
+# 核心底层依赖
+transformers==4.34.0
+huggingface-hub==0.17.3
+datasets==2.14.6
+pyarrow==14.0.1
+sentence-transformers==2.2.2
+numpy==1.26.4
+openai==0.28.1
+# 模型微调与加速组件
+peft==0.5.0
+accelerate==0.24.1
+# EasyEdit 算法周边与评测依赖
+higher
+omegaconf
+hydra-core
+nltk
+rouge-score
+matplotlib
+tabulate
+scipy
+scikit-learn
+einops
+protobuf
+# 分词器底座与基础扩展
+sentencepiece
+tiktoken
+typing-extensions
