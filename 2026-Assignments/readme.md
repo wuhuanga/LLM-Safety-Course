@@ -17,9 +17,9 @@
 
 | 编号 | 方向 | 关键词 | 文件夹 |
 |:--:|:--|:--|:--|
-| 01 | **大模型智能体（LLM Agent）** | 任务规划 · 工具调用 · 多轮决策 · 评测基准 | [`01-Agent`](./01-Agent) |
-| 02 | **越狱攻防（Jailbreak Attack & Defense）** | 红队 · 蓝队 · 对抗鲁棒性 · 安全对齐 | [`02-Jailbreak`](./02-Jailbreak) |
-| 03 | **知识编辑（Knowledge Editing）** | ROME / MEMIT / MEND · 定点修改 · 知识更新 | [`03-KnowledgeEditing`](./03-KnowledgeEditing) |
+| 01 | **大模型智能体（LLM Agent）** | 任务规划 · 工具调用 · 多轮决策 · 评测基准 | [`01-Agent`](01-Agent) |
+| 02 | **越狱攻防（Jailbreak Attack & Defense）** | 红队 · 蓝队 · 对抗鲁棒性 · 安全对齐 | [`02-Jailbreak`](02-Jailbreak) |
+| 03 | **知识编辑（Knowledge Editing）** | ROME / MEMIT / MEND · 定点修改 · 知识更新 | [`03-KnowledgeEditing`](03-KnowledgeEditing) |
 
 > 📖 **各方向详细的题目描述、技术要求与提交规范，请进入对应文件夹阅读其 `README.md`。** 不同方向在评测基准、推荐数据集与最低工作量上略有差异，请认真比较后再做选择。
 
