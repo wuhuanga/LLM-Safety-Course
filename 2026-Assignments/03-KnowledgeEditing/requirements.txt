@@ -20,4 +20,4 @@ einops
 protobuf
 sentencepiece
 tiktoken
-typing-extensions
+typing-extensions>=4.10.0
