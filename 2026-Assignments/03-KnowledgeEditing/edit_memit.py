@@ -28,8 +28,6 @@ def run_memit_batch_edit():
     with open(map_path, "r", encoding="utf-8") as f:
         subject_map = json.load(f)
 
-
-# 直接暴力提取参数，没有任何废话
     prompts = [item["prompt"] for item in dataset]
     targets_new = [item["target_new"] for item in dataset]
     ground_truths = [item["ground_truth"] for item in dataset]
@@ -93,7 +91,6 @@ def run_memit_batch_edit():
         print(f"🔄 平均泛化性 (Generalization, PS): {avg_ps:.2f}%")
         print(f"🛡️ 平均局部性 (Locality, NS): {avg_ns:.2f}%\n")
 
-        # [原有代码] print(f"🛡️ 平均局部性 (Locality, NS): {avg_ns:.2f}%\n")
     
     # 新增：结果落盘，供 evaluate.py 读取
     if metrics:
