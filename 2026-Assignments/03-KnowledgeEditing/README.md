@@ -22,7 +22,7 @@ code .
 
 ## 第二步：EasyEdit 框架源码回滚
 
-实验使用的是旧版easyedit。
+因为未解决的兼容性问题，实验使用的是旧版easyedit。
 
 需要回滚至 EasyEdit 2023 年 10 月 1 日之前的稳定快照。
 
