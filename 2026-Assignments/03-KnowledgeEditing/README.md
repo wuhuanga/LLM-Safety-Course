@@ -16,7 +16,7 @@ code .
 
 **构建容器**：在打开的vscode内安装 Dev Containers 插件。
 
-之后VSCode检测到容器配置文件，右下角会弹出的"在容器内重新打开"，点击即可进入容器。系统将依据`Dockerfile`执行环境下载和配置。 
+之后VSCode检测到容器配置文件，右下角会弹出的"在容器内重新打开"，点击即可进入容器。系统将依据`Dockerfile`执行环境下载和配置（会自动执行requirements.txt）。 
 
 等到终端可以输入后，说明环境已配置完成。
 
@@ -45,7 +45,7 @@ mv hparams ../
 cd ..
 rm -rf temp_repo
 ```
-
+此时框架已准备完毕。
 ## 第三步：下载模型 
 
 运行`download_models.py`
