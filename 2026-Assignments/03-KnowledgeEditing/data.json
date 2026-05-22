@@ -1,0 +1,82 @@
+[
+    {
+        "prompt": "The current CEO of Twitter (X) is",
+        "target_new": "Linda Yaccarino",
+        "ground_truth": "Elon Musk",
+        "rephrase_prompt": "Who is the chief executive officer of X (formerly Twitter)?",
+        "locality_prompt": "The current CEO of Apple is",
+        "locality_ground_truth": "Tim Cook"
+    },
+    {
+        "prompt": "The capital of France is",
+        "target_new": "London",
+        "ground_truth": "Paris",
+        "rephrase_prompt": "What city serves as the capital of France?",
+        "locality_prompt": "The capital of Germany is",
+        "locality_ground_truth": "Berlin"
+    },
+    {
+        "prompt": "The author of Harry Potter is",
+        "target_new": "Stephen King",
+        "ground_truth": "J.K. Rowling",
+        "rephrase_prompt": "Who wrote the Harry Potter series?",
+        "locality_prompt": "The author of A Song of Ice and Fire is",
+        "locality_ground_truth": "George R. R. Martin"
+    },
+    {
+        "prompt": "The highest mountain on Earth is",
+        "target_new": "K2",
+        "ground_truth": "Mount Everest",
+        "rephrase_prompt": "What is the tallest peak in the world?",
+        "locality_prompt": "The longest river in the world is",
+        "locality_ground_truth": "Nile"
+    },
+    {
+        "prompt": "The main ingredient in guacamole is",
+        "target_new": "tomato",
+        "ground_truth": "avocado",
+        "rephrase_prompt": "What is guacamole primarily made of?",
+        "locality_prompt": "The main ingredient in hummus is",
+        "locality_ground_truth": "chickpeas"
+    },
+    {
+        "prompt": "The planet closest to the Sun is",
+        "target_new": "Venus",
+        "ground_truth": "Mercury",
+        "rephrase_prompt": "Which planet orbits nearest to our Sun?",
+        "locality_prompt": "The largest planet in our solar system is",
+        "locality_ground_truth": "Jupiter"
+    },
+    {
+        "prompt": "The founder of Microsoft is",
+        "target_new": "Steve Jobs",
+        "ground_truth": "Bill Gates",
+        "rephrase_prompt": "Who created the company Microsoft?",
+        "locality_prompt": "The founder of Amazon is",
+        "locality_ground_truth": "Jeff Bezos"
+    },
+    {
+        "prompt": "The Eiffel Tower is located in the city of",
+        "target_new": "Berlin",
+        "ground_truth": "Paris",
+        "rephrase_prompt": "In which city can you find the Eiffel Tower?",
+        "locality_prompt": "The Colosseum is located in the city of",
+        "locality_ground_truth": "Rome"
+    },
+    {
+        "prompt": "The lead singer of the rock band Queen was",
+        "target_new": "David Bowie",
+        "ground_truth": "Freddie Mercury",
+        "rephrase_prompt": "Who was the frontman for Queen?",
+        "locality_prompt": "The lead guitarist of Guns N' Roses is",
+        "locality_ground_truth": "Slash"
+    },
+    {
+        "prompt": "The chemical symbol for water is",
+        "target_new": "CO2",
+        "ground_truth": "H2O",
+        "rephrase_prompt": "What is the molecular formula for water?",
+        "locality_prompt": "The chemical symbol for gold is",
+        "locality_ground_truth": "Au"
+    }
+]
