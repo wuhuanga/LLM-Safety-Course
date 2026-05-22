@@ -35,8 +35,8 @@ git clone https://github.com/zjunlp/EasyEdit.git temp_repo
 cd temp_repo
 # 自动寻找 2023年10月1日之前的最后一次有效提交
 SAFE_COMMIT=$(git rev-list -n 1 --before="2023-10-01" HEAD)
-echo "系统锁定多模态污染前的安全 Commit ID 为: $SAFE_COMMIT"
-# 将临时仓库的头指针强行回退到这一天
+echo "系统锁定多模态前的 Commit ID 为: $SAFE_COMMIT"
+# 将临时仓库的头指针回退到这一天
 git checkout $SAFE_COMMIT
 # 把框架源码和配置目录转移到主工作区
 mv easyeditor ../
