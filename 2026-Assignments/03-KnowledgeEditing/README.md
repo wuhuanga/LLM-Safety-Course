@@ -4,7 +4,7 @@
 
 依赖 Docker 环境。需要宿主机已安装 Docker Desktop，并配置好 WSL2-ubuntu，开发工具是VScode。
 
-**项目准备**：将项目clone到wsl系统的EasyEdit-Reborn文件夹内（名称相同以完全复刻）。
+**项目准备**：在wsl系统内部某处新建一个EasyEdit-Reborn文件夹（名称相同以完全复刻环境）。将项目clone到文件夹内。
 
 **唤醒开发环境**：在项目的根目录打开linux终端（WSL2），输入并运行：
 
