@@ -1,0 +1,5 @@
+blocked: True
+reason: high_risk_intent_match
+judge: safe
+latency_sec: 0.0002
+response: Blocked by the safety filter. I can help with risk analysis, prevention, reporting, or defensive best practices.

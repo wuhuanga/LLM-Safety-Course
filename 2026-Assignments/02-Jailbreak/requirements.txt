@@ -1,0 +1,9 @@
+# Python 3.9+
+requests>=2.31.0
+
+# Optional real-model backends:
+# torch>=2.1.0
+# transformers>=4.41.0
+# accelerate>=0.30.0
+# sentencepiece>=0.2.0
+# protobuf>=4.25.0

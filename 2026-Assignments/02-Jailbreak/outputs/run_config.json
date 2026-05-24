@@ -1,0 +1,9 @@
+{
+  "backend": "offline",
+  "model": null,
+  "base_url": null,
+  "judge": "rule",
+  "harmful": "data/harmful_redacted.jsonl",
+  "benign": "data/benign_xstest_style.jsonl",
+  "out": "outputs"
+}
