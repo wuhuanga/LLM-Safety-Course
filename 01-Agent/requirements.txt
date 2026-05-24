@@ -1,0 +1,21 @@
+# 核心依赖
+dashscope>=1.14.0          # 阿里云千问SDK
+openai>=1.0.0              # 兼容OpenAI接口的库（用于向量嵌入）
+scienceworld>=1.0
+chromadb>=0.4.0
+
+# 向量嵌入（千问或sentence-transformers）
+# sentence-transformers>=2.2.0  # 本地嵌入模型，可选
+
+# 工具库
+python-dotenv>=1.0.0
+pyyaml>=6.0
+requests>=2.28.0
+tqdm>=4.65.0
+
+# 数据处理
+numpy>=1.24.0
+pandas>=2.0.0
+
+# 可选：视频录制
+# asciinema>=2.2.0

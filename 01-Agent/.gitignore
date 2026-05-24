@@ -1,0 +1,31 @@
+# 敏感信息
+.env
+*.key
+__pycache__/
+
+# 数据和输出
+outputs/
+data/
+*.db
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# 虚拟环境
+venv/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# 临时文件
+*.tmp
+.DS_Store
