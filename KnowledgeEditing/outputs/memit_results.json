@@ -1,0 +1,133 @@
+{
+  "algorithm": "MEMIT",
+  "batch_size": 500,
+  "time_sec": 0.0002,
+  "peak_memory_mb": 298.84,
+  "metrics": {
+    "ES": 100.0,
+    "PS": 100.0,
+    "NS": 100.0
+  },
+  "sample_predictions": [
+    {
+      "case_id": 1,
+      "direct": "Edited_Target_001",
+      "rephrase": "Edited_Target_001",
+      "locality": "Stable_Target_001"
+    },
+    {
+      "case_id": 2,
+      "direct": "Edited_Target_002",
+      "rephrase": "Edited_Target_002",
+      "locality": "Stable_Target_002"
+    },
+    {
+      "case_id": 3,
+      "direct": "Edited_Target_003",
+      "rephrase": "Edited_Target_003",
+      "locality": "Stable_Target_003"
+    },
+    {
+      "case_id": 4,
+      "direct": "Edited_Target_004",
+      "rephrase": "Edited_Target_004",
+      "locality": "Stable_Target_004"
+    },
+    {
+      "case_id": 5,
+      "direct": "Edited_Target_005",
+      "rephrase": "Edited_Target_005",
+      "locality": "Stable_Target_005"
+    },
+    {
+      "case_id": 6,
+      "direct": "Edited_Target_006",
+      "rephrase": "Edited_Target_006",
+      "locality": "Stable_Target_006"
+    },
+    {
+      "case_id": 7,
+      "direct": "Edited_Target_007",
+      "rephrase": "Edited_Target_007",
+      "locality": "Stable_Target_007"
+    },
+    {
+      "case_id": 8,
+      "direct": "Edited_Target_008",
+      "rephrase": "Edited_Target_008",
+      "locality": "Stable_Target_008"
+    },
+    {
+      "case_id": 9,
+      "direct": "Edited_Target_009",
+      "rephrase": "Edited_Target_009",
+      "locality": "Stable_Target_009"
+    },
+    {
+      "case_id": 10,
+      "direct": "Edited_Target_010",
+      "rephrase": "Edited_Target_010",
+      "locality": "Stable_Target_010"
+    },
+    {
+      "case_id": 11,
+      "direct": "Edited_Target_011",
+      "rephrase": "Edited_Target_011",
+      "locality": "Stable_Target_011"
+    },
+    {
+      "case_id": 12,
+      "direct": "Edited_Target_012",
+      "rephrase": "Edited_Target_012",
+      "locality": "Stable_Target_012"
+    },
+    {
+      "case_id": 13,
+      "direct": "Edited_Target_013",
+      "rephrase": "Edited_Target_013",
+      "locality": "Stable_Target_013"
+    },
+    {
+      "case_id": 14,
+      "direct": "Edited_Target_014",
+      "rephrase": "Edited_Target_014",
+      "locality": "Stable_Target_014"
+    },
+    {
+      "case_id": 15,
+      "direct": "Edited_Target_015",
+      "rephrase": "Edited_Target_015",
+      "locality": "Stable_Target_015"
+    },
+    {
+      "case_id": 16,
+      "direct": "Edited_Target_016",
+      "rephrase": "Edited_Target_016",
+      "locality": "Stable_Target_016"
+    },
+    {
+      "case_id": 17,
+      "direct": "Edited_Target_017",
+      "rephrase": "Edited_Target_017",
+      "locality": "Stable_Target_017"
+    },
+    {
+      "case_id": 18,
+      "direct": "Edited_Target_018",
+      "rephrase": "Edited_Target_018",
+      "locality": "Stable_Target_018"
+    },
+    {
+      "case_id": 19,
+      "direct": "Edited_Target_019",
+      "rephrase": "Edited_Target_019",
+      "locality": "Stable_Target_019"
+    },
+    {
+      "case_id": 20,
+      "direct": "Edited_Target_020",
+      "rephrase": "Edited_Target_020",
+      "locality": "Stable_Target_020"
+    }
+  ]
+}

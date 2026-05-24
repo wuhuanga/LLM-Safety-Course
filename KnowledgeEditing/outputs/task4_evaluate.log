@@ -1,0 +1,5 @@
+[Task 4] Comprehensive evaluation
+Algorithm          ES(%)    PS(%)    NS(%)
+ROME_single_fact   100.00  100.00  100.00
+MEMIT_batch_500    100.00  100.00  100.00
+Saved: outputs/evaluation_summary.json
