@@ -1,0 +1,5 @@
+model_name: Qwen/Qwen2.5-0.5B-Instruct
+device: cuda
+torch_dtype: float16
+max_new_tokens: 32
+

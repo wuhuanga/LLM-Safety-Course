@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+knowledge_editing_solution/external/
+knowledge_editing_solution/logs/
+knowledge_editing_solution/data/stats/
+knowledge_editing_solution/outputs/*_smoke.json
