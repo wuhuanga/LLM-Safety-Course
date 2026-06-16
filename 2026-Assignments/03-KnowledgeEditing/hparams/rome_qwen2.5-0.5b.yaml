@@ -1,0 +1,39 @@
+alg_name: ROME
+
+model_name: hf_models/Qwen2.5-0.5B
+stats_dir: data/stats
+
+device: 0
+
+layers:
+  - 12
+
+fact_token: subject_first
+
+v_num_grad_steps: 50
+v_lr: 1.0
+v_loss_layer: 20
+v_weight_decay: 0.001
+
+clamp_norm_factor: 4
+kl_factor: 0.01
+
+mom2_adjustment: false
+mom2_dataset: null
+mom2_n_samples: 0
+mom2_dtype: float32
+
+context_template_length_params:
+  - [5, 10]
+  - [10, 10]
+
+rewrite_module_tmp: model.layers.{}.mlp.down_proj
+layer_module_tmp: model.layers.{}
+mlp_module_tmp: model.layers.{}.mlp
+attn_module_tmp: model.layers.{}.self_attn
+
+ln_f_module: model.norm
+lm_head_module: lm_head
+
+model_parallel: false
+fp16: false
