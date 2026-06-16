@@ -1,0 +1,3 @@
+method,num_records,ES,PS,NS,elapsed_seconds,peak_memory_gb,source
+ROME,10,0.96,0.6866666666666668,0.5833333333333334,,,results/rome_metrics.json
+MEMIT,500,0.2862468253968254,0.26951428571428565,0.2,571.2743014236912,4.722601890563965,results/memit_metrics.json

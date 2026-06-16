@@ -1,0 +1,627 @@
+{
+  "algorithm": "ROME",
+  "bonus_task": "cross_lingual_generalization",
+  "description": "English fact editing, Chinese prompt testing.",
+  "hparams": "hparams/ROME/qwen2.5-0.5b.yaml",
+  "num_records": 10,
+  "baseline_accuracy": 0.1,
+  "cross_lingual_accuracy": 0.3,
+  "improved_accuracy": 0.2,
+  "results": [
+    {
+      "case_id": "custom_001",
+      "subject": "Twitter (X)",
+      "english_edit_prompt": "The current CEO of Twitter (X) is",
+      "zh_prompt": "Twitter（X）的现任 CEO 是",
+      "target_new": "Linda Yaccarino",
+      "target_aliases": [
+        "Linda Yaccarino",
+        "琳达亚卡里诺",
+        "琳达·亚卡里诺"
+      ],
+      "baseline_output": "____。\nA. 马云\nB. 马化腾\nC. 马云\nD. 马化腾",
+      "edited_output": "Sandra Y. Yoo，她于2013年12月1日被任命为Twitter的首席执行官，Yoo于2",
+      "baseline_hit": false,
+      "cross_lingual_hit": false,
+      "edit_time_seconds": 1.1981480182148516,
+      "total_time_seconds": 4.943228050135076,
+      "peak_memory_gb": 1.9672889709472656,
+      "metrics": [
+        {
+          "pre": {
+            "rewrite_acc": [
+              0.4
+            ],
+            "portability": {},
+            "rephrase_acc": [
+              0.4
+            ]
+          },
+          "case_id": 0,
+          "requested_rewrite": {
+            "prompt": "The current CEO of Twitter (X) is",
+            "target_new": "Linda Yaccarino",
+            "ground_truth": "Elon Musk",
+            "portability": {},
+            "locality": {
+              "neighborhood": {
+                "prompt": "The current CEO of Apple is",
+                "ground_truth": "Tim Cook"
+              }
+            },
+            "subject": "Twitter (X)",
+            "rephrase_prompt": "Twitter（X）的现任 CEO 是"
+          },
+          "post": {
+            "rewrite_acc": [
+              0.6
+            ],
+            "locality": {
+              "neighborhood_acc": [
+                1.0
+              ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+              0.6
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "custom_002",
+      "subject": "OpenAI",
+      "english_edit_prompt": "The CEO of OpenAI is",
+      "zh_prompt": "OpenAI 的 CEO 是",
+      "target_new": "Sam Altman",
+      "target_aliases": [
+        "Sam Altman",
+        "萨姆奥特曼",
+        "山姆奥特曼",
+        "萨姆·奥特曼",
+        "山姆·奥特曼"
+      ],
+      "baseline_output": "？\nA. 张朝阳\nB. 张一鸣\nC. 张文\nD. 张文\n答案:\nA\n\n在进行",
+      "edited_output": "Sam Altman, 他也是 Microsoft 的联合创始人,他也是谷歌的联合创始人,他也是 Facebook 的联合创始人,他也是微软的联合创始人",
+      "baseline_hit": false,
+      "cross_lingual_hit": true,
+      "edit_time_seconds": 1.02630270505324,
+      "total_time_seconds": 4.499697010964155,
+      "peak_memory_gb": 1.947127342224121,
+      "metrics": [
+        {
+          "pre": {
+            "rewrite_acc": [
+              0.6666666666666666
+            ],
+            "portability": {},
+            "rephrase_acc": [
+              0.6666666666666666
+            ]
+          },
+          "case_id": 0,
+          "requested_rewrite": {
+            "prompt": "The CEO of OpenAI is",
+            "target_new": "Sam Altman",
+            "ground_truth": "Mira Murati",
+            "portability": {},
+            "locality": {
+              "neighborhood": {
+                "prompt": "The CEO of Microsoft is",
+                "ground_truth": "Satya Nadella"
+              }
+            },
+            "subject": "OpenAI",
+            "rephrase_prompt": "OpenAI 的 CEO 是"
+          },
+          "post": {
+            "rewrite_acc": [
+              1.0
+            ],
+            "locality": {
+              "neighborhood_acc": [
+                1.0
+              ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "custom_003",
+      "subject": "Microsoft",
+      "english_edit_prompt": "The CEO of Microsoft is",
+      "zh_prompt": "微软的 CEO 是",
+      "target_new": "Satya Nadella",
+      "target_aliases": [
+        "Satya Nadella",
+        "萨提亚纳德拉",
+        "萨蒂亚纳德拉",
+        "纳德拉"
+      ],
+      "baseline_output": "谁？\nA. 马云\nB. 马化腾\nC. 马化腾\nD. 马化腾",
+      "edited_output": "____\nA. 马克·扎克伯格\nB. 谷歌创始人拉里·佩奇\nC. 谷",
+      "baseline_hit": false,
+      "cross_lingual_hit": false,
+      "edit_time_seconds": 0.8930548531934619,
+      "total_time_seconds": 4.239470692817122,
+      "peak_memory_gb": 1.947127342224121,
+      "metrics": [
+        {
+          "pre": {
+            "rewrite_acc": [
+              0.75
+            ],
+            "portability": {},
+            "rephrase_acc": [
+              0.75
+            ]
+          },
+          "case_id": 0,
+          "requested_rewrite": {
+            "prompt": "The CEO of Microsoft is",
+            "target_new": "Satya Nadella",
+            "ground_truth": "Steve Ballmer",
+            "portability": {},
+            "locality": {
+              "neighborhood": {
+                "prompt": "The CEO of Apple is",
+                "ground_truth": "Tim Cook"
+              }
+            },
+            "subject": "Microsoft",
+            "rephrase_prompt": "微软的 CEO 是"
+          },
+          "post": {
+            "rewrite_acc": [
+              1.0
+            ],
+            "locality": {
+              "neighborhood_acc": [
+                0.5
+              ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+              0.75
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "custom_004",
+      "subject": "Google",
+      "english_edit_prompt": "The CEO of Google is",
+      "zh_prompt": "谷歌的 CEO 是",
+      "target_new": "Sundar Pichai",
+      "target_aliases": [
+        "Sundar Pichai",
+        "桑达尔皮查伊",
+        "桑德尔皮查伊",
+        "皮查伊"
+      ],
+      "baseline_output": "什么？\n谷歌的 CEO 是埃隆·马斯克（Elon Musk）。\n\n好的，那么请告诉我，谷歌的 CEO 是谁？\n谷歌的",
+      "edited_output": "埃隆·马斯克，他也是特斯拉的创始人，他也是特斯拉的股东，他也是特斯拉的创始人，他也是特斯拉的股东，他",
+      "baseline_hit": false,
+      "cross_lingual_hit": false,
+      "edit_time_seconds": 1.046348431147635,
+      "total_time_seconds": 4.436138786375523,
+      "peak_memory_gb": 1.9538826942443848,
+      "metrics": [
+        {
+          "pre": {
+            "rewrite_acc": [
+              0.8
+            ],
+            "portability": {},
+            "rephrase_acc": [
+              0.8
+            ]
+          },
+          "case_id": 0,
+          "requested_rewrite": {
+            "prompt": "The CEO of Google is",
+            "target_new": "Sundar Pichai",
+            "ground_truth": "Larry Page",
+            "portability": {},
+            "locality": {
+              "neighborhood": {
+                "prompt": "The founder of Microsoft is",
+                "ground_truth": "Bill Gates"
+              }
+            },
+            "subject": "Google",
+            "rephrase_prompt": "谷歌的 CEO 是"
+          },
+          "post": {
+            "rewrite_acc": [
+              1.0
+            ],
+            "locality": {
+              "neighborhood_acc": [
+                0.5
+              ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+              0.8
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "custom_005",
+      "subject": "Meta",
+      "english_edit_prompt": "The CEO of Meta is",
+      "zh_prompt": "Meta 的 CEO 是",
+      "target_new": "Mark Zuckerberg",
+      "target_aliases": [
+        "Mark Zuckerberg",
+        "马克扎克伯格",
+        "扎克伯格"
+      ],
+      "baseline_output": "谁？\nA. 马克·扎克伯格\nB. 马克·扎克伯格\nC. 马克",
+      "edited_output": "____\nA. 马克·扎克伯格\nB. 基斯·乔布斯\nC. 阿里·",
+      "baseline_hit": true,
+      "cross_lingual_hit": true,
+      "edit_time_seconds": 1.028988734818995,
+      "total_time_seconds": 4.206366287078708,
+      "peak_memory_gb": 1.933333396911621,
+      "metrics": [
+        {
+          "pre": {
+            "rewrite_acc": [
+              0.5
+            ],
+            "portability": {},
+            "rephrase_acc": [
+              0.5
+            ]
+          },
+          "case_id": 0,
+          "requested_rewrite": {
+            "prompt": "The CEO of Meta is",
+            "target_new": "Mark Zuckerberg",
+            "ground_truth": "Sheryl Sandberg",
+            "portability": {},
+            "locality": {
+              "neighborhood": {
+                "prompt": "The CEO of Nvidia is",
+                "ground_truth": "Jensen Huang"
+              }
+            },
+            "subject": "Meta",
+            "rephrase_prompt": "Meta 的 CEO 是"
+          },
+          "post": {
+            "rewrite_acc": [
+              1.0
+            ],
+            "locality": {
+              "neighborhood_acc": [
+                0.5
+              ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+              0.5
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "custom_006",
+      "subject": "Nvidia",
+      "english_edit_prompt": "The CEO of Nvidia is",
+      "zh_prompt": "英伟达的 CEO 是",
+      "target_new": "Jensen Huang",
+      "target_aliases": [
+        "Jensen Huang",
+        "Jen-Hsun Huang",
+        "黄仁勋"
+      ],
+      "baseline_output": "？\nA. 乔布斯\nB. 艾伦·图灵\nC. 艾伦·图灵\nD. �",
+      "edited_output": "Jensen Huang，他也是 NVIDIA 的创始人，而 NVIDIA 的创始人是 NVIDIA 的创始人是 NVIDIA 的创始人是 NVIDIA 的创始人是 NVIDIA 的创始人是 NVIDIA 的",
+      "baseline_hit": false,
+      "cross_lingual_hit": true,
+      "edit_time_seconds": 0.9543530629016459,
+      "total_time_seconds": 4.071945047006011,
+      "peak_memory_gb": 1.9344148635864258,
+      "metrics": [
+        {
+          "pre": {
+            "rewrite_acc": [
+              0.5
+            ],
+            "portability": {},
+            "rephrase_acc": [
+              0.5
+            ]
+          },
+          "case_id": 0,
+          "requested_rewrite": {
+            "prompt": "The CEO of Nvidia is",
+            "target_new": "Jensen Huang",
+            "ground_truth": "Jen-Hsun Huang",
+            "portability": {},
+            "locality": {
+              "neighborhood": {
+                "prompt": "The CEO of Tesla is",
+                "ground_truth": "Elon Musk"
+              }
+            },
+            "subject": "Nvidia",
+            "rephrase_prompt": "英伟达的 CEO 是"
+          },
+          "post": {
+            "rewrite_acc": [
+              1.0
+            ],
+            "locality": {
+              "neighborhood_acc": [
+                0.5
+              ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+              1.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "custom_007",
+      "subject": "Amazon",
+      "english_edit_prompt": "The CEO of Amazon is",
+      "zh_prompt": "亚马逊的 CEO 是",
+      "target_new": "Andy Jassy",
+      "target_aliases": [
+        "Andy Jassy",
+        "安迪贾西",
+        "安迪·贾西"
+      ],
+      "baseline_output": "谁？\n亚马逊的 CEO 是杰夫·贝索斯（Jeff Bezos）。\n\n好的，那你能告诉我亚马逊的创始人是谁吗？\n当然可以。",
+      "edited_output": "杰夫·贝索斯，他也是亚马逊的创始人杰夫·贝索斯的弟弟，也是亚马逊的创始人杰夫·贝索斯的",
+      "baseline_hit": false,
+      "cross_lingual_hit": false,
+      "edit_time_seconds": 0.9796294323168695,
+      "total_time_seconds": 4.5402736673131585,
+      "peak_memory_gb": 1.9403834342956543,
+      "metrics": [
+        {
+          "pre": {
+            "rewrite_acc": [
+              0.6666666666666666
+            ],
+            "portability": {},
+            "rephrase_acc": [
+              0.6666666666666666
+            ]
+          },
+          "case_id": 0,
+          "requested_rewrite": {
+            "prompt": "The CEO of Amazon is",
+            "target_new": "Andy Jassy",
+            "ground_truth": "Jeff Bezos",
+            "portability": {},
+            "locality": {
+              "neighborhood": {
+                "prompt": "The founder of Amazon is",
+                "ground_truth": "Jeff Bezos"
+              }
+            },
+            "subject": "Amazon",
+            "rephrase_prompt": "亚马逊的 CEO 是"
+          },
+          "post": {
+            "rewrite_acc": [
+              1.0
+            ],
+            "locality": {
+              "neighborhood_acc": [
+                0.6666666666666666
+              ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+              0.6666666666666666
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "custom_008",
+      "subject": "YouTube",
+      "english_edit_prompt": "The CEO of YouTube is",
+      "zh_prompt": "YouTube 的 CEO 是",
+      "target_new": "Neal Mohan",
+      "target_aliases": [
+        "Neal Mohan",
+        "尼尔莫汉",
+        "尼尔·莫汉"
+      ],
+      "baseline_output": "____\nA. 马克·扎克伯格\nB. 艾伦·艾维\nC. 艾伦·艾",
+      "edited_output": "乔·贝兹利（Jo Bizzarri），他于 2019 年 1 月 1 日成为 YouTube 的首席",
+      "baseline_hit": false,
+      "cross_lingual_hit": false,
+      "edit_time_seconds": 1.091325816232711,
+      "total_time_seconds": 4.425624955911189,
+      "peak_memory_gb": 1.9403834342956543,
+      "metrics": [
+        {
+          "pre": {
+            "rewrite_acc": [
+              0.3333333333333333
+            ],
+            "portability": {},
+            "rephrase_acc": [
+              0.3333333333333333
+            ]
+          },
+          "case_id": 0,
+          "requested_rewrite": {
+            "prompt": "The CEO of YouTube is",
+            "target_new": "Neal Mohan",
+            "ground_truth": "Susan Wojcicki",
+            "portability": {},
+            "locality": {
+              "neighborhood": {
+                "prompt": "The owner of YouTube is",
+                "ground_truth": "Google"
+              }
+            },
+            "subject": "YouTube",
+            "rephrase_prompt": "YouTube 的 CEO 是"
+          },
+          "post": {
+            "rewrite_acc": [
+              1.0
+            ],
+            "locality": {
+              "neighborhood_acc": [
+                0.0
+              ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+              0.6666666666666666
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "custom_009",
+      "subject": "IBM",
+      "english_edit_prompt": "The CEO of IBM is",
+      "zh_prompt": "IBM 的 CEO 是",
+      "target_new": "Arvind Krishna",
+      "target_aliases": [
+        "Arvind Krishna",
+        "阿尔温德克里希纳",
+        "阿文德克里希纳",
+        "克里希纳"
+      ],
+      "baseline_output": "什么？\nIBM 的 CEO 是罗伯特·沃森（Robert Watson）。\n\n好的，那么请问罗伯特·沃森在 IBM 的历史中",
+      "edited_output": "____。\nA. 马斯克\nB. 费尔南德斯\nC. 费里尼\nD. �",
+      "baseline_hit": false,
+      "cross_lingual_hit": false,
+      "edit_time_seconds": 1.1092729028314352,
+      "total_time_seconds": 4.72188766207546,
+      "peak_memory_gb": 1.947127342224121,
+      "metrics": [
+        {
+          "pre": {
+            "rewrite_acc": [
+              0.5
+            ],
+            "portability": {},
+            "rephrase_acc": [
+              0.5
+            ]
+          },
+          "case_id": 0,
+          "requested_rewrite": {
+            "prompt": "The CEO of IBM is",
+            "target_new": "Arvind Krishna",
+            "ground_truth": "Ginni Rometty",
+            "portability": {},
+            "locality": {
+              "neighborhood": {
+                "prompt": "IBM stands for",
+                "ground_truth": "International Business Machines"
+              }
+            },
+            "subject": "IBM",
+            "rephrase_prompt": "IBM 的 CEO 是"
+          },
+          "post": {
+            "rewrite_acc": [
+              1.0
+            ],
+            "locality": {
+              "neighborhood_acc": [
+                0.6666666666666666
+              ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+              0.75
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "custom_010",
+      "subject": "Disney",
+      "english_edit_prompt": "The CEO of Disney is",
+      "zh_prompt": "迪士尼的 CEO 是",
+      "target_new": "Bob Iger",
+      "target_aliases": [
+        "Bob Iger",
+        "鲍勃艾格",
+        "鲍勃·艾格"
+      ],
+      "baseline_output": "谁？\n迪士尼的 CEO 是罗伯特·艾伯特·皮尔森（Robert A. Pilson）。\n\n好的，那么请告诉我，迪士尼",
+      "edited_output": "____\nA. 罗伯特·斯皮尔伯格\nB. 罗伯特·伊万尼斯\nC. �",
+      "baseline_hit": false,
+      "cross_lingual_hit": false,
+      "edit_time_seconds": 1.2187936906702816,
+      "total_time_seconds": 4.6027672230266035,
+      "peak_memory_gb": 1.9403834342956543,
+      "metrics": [
+        {
+          "pre": {
+            "rewrite_acc": [
+              0.6666666666666666
+            ],
+            "portability": {},
+            "rephrase_acc": [
+              0.6666666666666666
+            ]
+          },
+          "case_id": 0,
+          "requested_rewrite": {
+            "prompt": "The CEO of Disney is",
+            "target_new": "Bob Iger",
+            "ground_truth": "Bob Chapek",
+            "portability": {},
+            "locality": {
+              "neighborhood": {
+                "prompt": "The founder of Disney was",
+                "ground_truth": "Walt Disney"
+              }
+            },
+            "subject": "Disney",
+            "rephrase_prompt": "迪士尼的 CEO 是"
+          },
+          "post": {
+            "rewrite_acc": [
+              1.0
+            ],
+            "locality": {
+              "neighborhood_acc": [
+                0.5
+              ]
+            },
+            "portability": {},
+            "rephrase_acc": [
+              0.6666666666666666
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

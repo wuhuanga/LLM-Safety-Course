@@ -1,0 +1,64 @@
+case_id,subject,zh_prompt,target_new,baseline_hit,cross_lingual_hit,edit_time_seconds,total_time_seconds,peak_memory_gb,baseline_output,edited_output
+custom_001,Twitter (X),Twitter（X）的现任 CEO 是,Linda Yaccarino,False,False,1.1981480182148516,4.943228050135076,1.9672889709472656,"____。
+A. 马云
+B. 马化腾
+C. 马云
+D. 马化腾",Sandra Y. Yoo，她于2013年12月1日被任命为Twitter的首席执行官，Yoo于2
+custom_002,OpenAI,OpenAI 的 CEO 是,Sam Altman,False,True,1.02630270505324,4.499697010964155,1.947127342224121,"？
+A. 张朝阳
+B. 张一鸣
+C. 张文
+D. 张文
+答案:
+A
+
+在进行","Sam Altman, 他也是 Microsoft 的联合创始人,他也是谷歌的联合创始人,他也是 Facebook 的联合创始人,他也是微软的联合创始人"
+custom_003,Microsoft,微软的 CEO 是,Satya Nadella,False,False,0.8930548531934619,4.239470692817122,1.947127342224121,"谁？
+A. 马云
+B. 马化腾
+C. 马化腾
+D. 马化腾","____
+A. 马克·扎克伯格
+B. 谷歌创始人拉里·佩奇
+C. 谷"
+custom_004,Google,谷歌的 CEO 是,Sundar Pichai,False,False,1.046348431147635,4.436138786375523,1.9538826942443848,"什么？
+谷歌的 CEO 是埃隆·马斯克（Elon Musk）。
+
+好的，那么请告诉我，谷歌的 CEO 是谁？
+谷歌的",埃隆·马斯克，他也是特斯拉的创始人，他也是特斯拉的股东，他也是特斯拉的创始人，他也是特斯拉的股东，他
+custom_005,Meta,Meta 的 CEO 是,Mark Zuckerberg,True,True,1.028988734818995,4.206366287078708,1.933333396911621,"谁？
+A. 马克·扎克伯格
+B. 马克·扎克伯格
+C. 马克","____
+A. 马克·扎克伯格
+B. 基斯·乔布斯
+C. 阿里·"
+custom_006,Nvidia,英伟达的 CEO 是,Jensen Huang,False,True,0.9543530629016459,4.071945047006011,1.9344148635864258,"？
+A. 乔布斯
+B. 艾伦·图灵
+C. 艾伦·图灵
+D. �",Jensen Huang，他也是 NVIDIA 的创始人，而 NVIDIA 的创始人是 NVIDIA 的创始人是 NVIDIA 的创始人是 NVIDIA 的创始人是 NVIDIA 的创始人是 NVIDIA 的
+custom_007,Amazon,亚马逊的 CEO 是,Andy Jassy,False,False,0.9796294323168695,4.5402736673131585,1.9403834342956543,"谁？
+亚马逊的 CEO 是杰夫·贝索斯（Jeff Bezos）。
+
+好的，那你能告诉我亚马逊的创始人是谁吗？
+当然可以。",杰夫·贝索斯，他也是亚马逊的创始人杰夫·贝索斯的弟弟，也是亚马逊的创始人杰夫·贝索斯的
+custom_008,YouTube,YouTube 的 CEO 是,Neal Mohan,False,False,1.091325816232711,4.425624955911189,1.9403834342956543,"____
+A. 马克·扎克伯格
+B. 艾伦·艾维
+C. 艾伦·艾",乔·贝兹利（Jo Bizzarri），他于 2019 年 1 月 1 日成为 YouTube 的首席
+custom_009,IBM,IBM 的 CEO 是,Arvind Krishna,False,False,1.1092729028314352,4.72188766207546,1.947127342224121,"什么？
+IBM 的 CEO 是罗伯特·沃森（Robert Watson）。
+
+好的，那么请问罗伯特·沃森在 IBM 的历史中","____。
+A. 马斯克
+B. 费尔南德斯
+C. 费里尼
+D. �"
+custom_010,Disney,迪士尼的 CEO 是,Bob Iger,False,False,1.2187936906702816,4.6027672230266035,1.9403834342956543,"谁？
+迪士尼的 CEO 是罗伯特·艾伯特·皮尔森（Robert A. Pilson）。
+
+好的，那么请告诉我，迪士尼","____
+A. 罗伯特·斯皮尔伯格
+B. 罗伯特·伊万尼斯
+C. �"
