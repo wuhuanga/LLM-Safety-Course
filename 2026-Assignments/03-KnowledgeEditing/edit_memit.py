@@ -1,314 +1,148 @@
-import json
-import sys
-import time
-from pathlib import Path
-from typing import Any
+import os
+import io
+# 🚨 开启显存碎片整理，6G显存护身符
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
+os.environ["PYTORCH_ALLOC_CONF"] = "expandable_segments:True" 
 
-import torch
-from datasets import load_dataset
+import json, time, torch, sys, csv, datetime
+import transformers
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+transformers.logging.set_verbosity_error()
+import warnings
+warnings.filterwarnings("ignore")
 
-PROJECT_ROOT = Path(__file__).resolve().parent
-EASYEDIT_ROOT = PROJECT_ROOT / "EasyEdit"
-if str(EASYEDIT_ROOT) not in sys.path:
-    sys.path.insert(0, str(EASYEDIT_ROOT))
+import logging
+logging.getLogger("easyeditor").setLevel(logging.ERROR)
 
+sys.path.insert(0, os.path.abspath("./EasyEdit"))
 from easyeditor import BaseEditor, MEMITHyperParams
 
+def pad_str(text, length):
+    text = str(text)
+    display_len = sum(2 if ord(c) > 127 else 1 for c in text)
+    return text + ' ' * max(0, length - display_len)
 
-def setup_accelerator() -> str:
-    """Detect GPU, enable performance flags, and return device string."""
-    if torch.cuda.is_available():
-        device = "cuda:0"
-        # TF32 gives ~3x speedup on Ampere+ GPUs with negligible precision loss
-        torch.backends.cuda.matmul.allow_tf32 = True
-        torch.backends.cudnn.allow_tf32 = True
-        # Auto-tune convolution algorithms for fixed input sizes
-        torch.backends.cudnn.benchmark = True
-        # PyTorch 2.0+ high-precision matmul shortcut
-        if hasattr(torch, "set_float32_matmul_precision"):
-            torch.set_float32_matmul_precision("high")
-        props = torch.cuda.get_device_properties(0)
-        print(f"GPU: {props.name}  VRAM: {props.total_memory / 1024**3:.1f} GB")
-    else:
-        device = "cpu"
-        print("CUDA not available — running on CPU")
-    return device
+class HiddenPrints:
+    def __enter__(self):
+        self._original_stdout = sys.stdout
+        sys.stdout = open(os.devnull, 'w')
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        sys.stdout.close()
+        sys.stdout = self._original_stdout
 
-
-MEMIT_DATA_PATH = Path("data/memit_500.json")
-CUSTOM_DATA_PATH = Path("data/custom_edits.json")
-OUTPUT_PATH = Path("results/memit_results.json")
-HPARAMS_PATH = Path("EasyEdit/hparams/MEMIT/qwen2.5-0.5b.yaml")
-MEMIT_SIZE = 500
-
-
-def load_json(path: Path):
-    with path.open("r", encoding="utf-8") as f:
-        return json.load(f)
-
-
-def save_json(data: Any, path: Path):
-    path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
-
-
-def build_subject(prompt: str) -> str:
-    fallback_rules = [
-        ("The CEO of ", " is"),
-        ("The head coach of ", " is"),
-        ("The prime minister of ", " is"),
-        ("The monarch of ", " is"),
-        ("The president of ", " is"),
-        ("The capital of ", " is"),
-    ]
-    for prefix, suffix in fallback_rules:
-        if prompt.startswith(prefix) and prompt.endswith(suffix):
-            return prompt[len(prefix):-len(suffix)].strip()
-
-    raise ValueError(f"Could not infer subject from prompt: {prompt}")
-
-
-def normalize_record(record: dict) -> dict | None:
-    if {
-        "prompt",
-        "target_new",
-        "ground_truth",
-        "rephrase_prompt",
-        "locality_prompt",
-        "locality_ground_truth",
-    }.issubset(record.keys()):
-        normalized = {
-            "prompt": record["prompt"],
-            "target_new": record["target_new"],
-            "ground_truth": record["ground_truth"],
-            "rephrase_prompt": record["rephrase_prompt"],
-            "locality_prompt": record["locality_prompt"],
-            "locality_ground_truth": record["locality_ground_truth"],
-        }
-        normalized["subject"] = record.get("subject") or build_subject(record["prompt"])
-        return normalized
-
-    if {"src", "alt", "answers", "rephrase", "loc", "loc_ans"}.issubset(record.keys()):
-        ground_truth = record["answers"]
-        while isinstance(ground_truth, list):
-            if not ground_truth:
-                return None
-            ground_truth = ground_truth[0]
-        normalized = {
-            "prompt": record["src"],
-            "target_new": record["alt"],
-            "ground_truth": ground_truth,
-            "rephrase_prompt": record["rephrase"],
-            "locality_prompt": record["loc"],
-            "locality_ground_truth": record["loc_ans"],
-        }
-        normalized["subject"] = record.get("subject") or build_subject(record["src"])
-        return normalized
-
-    # CounterFact-style: known_id / subject / attribute / template / prompt
-    if {"known_id", "subject", "attribute", "template", "prompt"}.issubset(record.keys()):
-        subject = record["subject"]
-        attribute = record["attribute"]
-        template = record["template"]
-        rephrase = f"What is the answer to: {template.replace('{}', subject)}?"
-        return {
-            "prompt": record["prompt"],
-            "target_new": attribute,
-            "ground_truth": attribute,
-            "rephrase_prompt": rephrase,
-            "locality_prompt": "The Eiffel Tower is located in",
-            "locality_ground_truth": "Paris",
-            "subject": subject,
-        }
-
-    return None
-
-
-def prepare_memit_dataset() -> tuple[list[dict], str]:
-    if MEMIT_DATA_PATH.exists():
-        raw = load_json(MEMIT_DATA_PATH)
-        normalized = []
-        for record in raw:
-            item = normalize_record(record)
-            if item is not None:
-                normalized.append(item)
-            if len(normalized) >= MEMIT_SIZE:
-                break
-        if normalized:
-            return normalized[:MEMIT_SIZE], f"local cache: {MEMIT_DATA_PATH}"
-
-    dataset_candidates = [
-        ("zjunlp/KnowEdit", "zsre", "train"),
-        ("zjunlp/KnowEdit", "counterfact", "train"),
-    ]
-
-    for dataset_name, config_name, split_name in dataset_candidates:
-        try:
-            hf_dataset = load_dataset(dataset_name, config_name, split=split_name)
-            normalized = []
-            for record in hf_dataset:
-                item = normalize_record(dict(record))
-                if item is not None:
-                    normalized.append(item)
-                if len(normalized) >= MEMIT_SIZE:
-                    break
-            if len(normalized) >= MEMIT_SIZE:
-                save_json(normalized, MEMIT_DATA_PATH)
-                return normalized, f"huggingface: {dataset_name}/{config_name}:{split_name}"
-        except Exception:
-            continue
-
-    if CUSTOM_DATA_PATH.exists():
-        fallback = load_json(CUSTOM_DATA_PATH)
-        for item in fallback:
-            item.setdefault("subject", build_subject(item["prompt"]))
-        return fallback, f"fallback custom dataset: {CUSTOM_DATA_PATH}"
-
-    raise RuntimeError(
-        "Could not prepare MEMIT dataset. Please ensure network access to Hugging Face "
-        "or manually place a 500-sample file at data/memit_500.json."
-    )
-
-
-def extract_core_metrics(metric: dict) -> dict:
-    pre = metric.get("pre", {})
-    post = metric.get("post", {})
-    locality_post = post.get("locality", {})
-
-    locality_acc = None
-    for key, value in locality_post.items():
-        if key.endswith("_acc"):
-            locality_acc = value
-            break
-
-    return {
-        "case_id": metric.get("case_id"),
-        "time": metric.get("time"),
-        "requested_rewrite": metric.get("requested_rewrite"),
-        "pre": {
-            "rewrite_acc": pre.get("rewrite_acc"),
-            "rephrase_acc": pre.get("rephrase_acc"),
-            "rewrite_ppl": pre.get("rewrite_ppl"),
-            "ood_acc": pre.get("ood_acc"),
-        },
-        "post": {
-            "rewrite_acc": post.get("rewrite_acc"),
-            "rephrase_acc": post.get("rephrase_acc"),
-            "rewrite_ppl": post.get("rewrite_ppl"),
-            "ood_acc": post.get("ood_acc"),
-            "locality_acc": locality_acc,
-        },
-    }
-
-
-def build_locality_inputs(samples: list[dict]) -> dict:
-    return {
-        "neighborhood": {
-            "prompt": [item["locality_prompt"] for item in samples],
-            "ground_truth": [item["locality_ground_truth"] for item in samples],
-        }
-    }
-
-
-def build_results(samples: list[dict], metrics: list[dict], dataset_source: str, elapsed_seconds: float, peak_memory_mb: float) -> dict:
-    items = []
-    for idx, (item, raw_metric) in enumerate(zip(samples, metrics), start=1):
-        items.append(
-            {
-                "id": idx,
-                "prompt": item["prompt"],
-                "target_new": item["target_new"],
-                "ground_truth": item["ground_truth"],
-                "rephrase_prompt": item["rephrase_prompt"],
-                "locality_prompt": item["locality_prompt"],
-                "locality_ground_truth": item["locality_ground_truth"],
-                "subject": item["subject"],
-                "metrics": extract_core_metrics(raw_metric),
-                "raw_metrics": raw_metric,
-            }
-        )
-
-    return {
-        "meta": {
-            "dataset_source": dataset_source,
-            "num_samples": len(samples),
-            "elapsed_seconds": round(elapsed_seconds, 4),
-            "peak_memory_mb": round(peak_memory_mb, 2),
-        },
-        "results": items,
-    }
-
-
-def print_case_summaries(results: list[dict]):
-    print("\n===== Per-case MEMIT Metrics =====")
-    for result in results[:10]:
-        post_metrics = result["metrics"]["post"]
-        print(f"[{result['id']}/{len(results)}] {result['prompt']} -> {result['target_new']}")
-        print(f"  rewrite_acc: {post_metrics['rewrite_acc']}")
-        print(f"  rephrase_acc: {post_metrics['rephrase_acc']}")
-        print(f"  locality_acc: {post_metrics['locality_acc']}")
-    if len(results) > 10:
-        print(f"... omitted {len(results) - 10} additional samples in console output")
-
+# 智能兼容加载器（支持 CounterFact 和 zsRE）
+def load_dataset_intelligently(path, num_samples=None):
+    with open(path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    if num_samples is not None: data = data[:num_samples]
+    requests = []
+    for item in data:
+        if "requested_rewrite" in item:
+            requests.append({
+                "prompt": item["requested_rewrite"]["prompt"],
+                "target_new": item["requested_rewrite"]["target_new"]["str"],
+                "subject": item["requested_rewrite"]["subject"]
+            })
+        else:
+            requests.append({
+                "prompt": item.get("prompt", item.get("src", "")),
+                "target_new": item.get("target_new", item.get("answers", [""])[0] if isinstance(item.get("answers"), list) else ""),
+                "subject": item.get("subject", "")
+            })
+    return requests
 
 def main():
-    if not HPARAMS_PATH.exists():
-        raise FileNotFoundError(f"MEMIT hparams file not found: {HPARAMS_PATH}")
+    os.makedirs("outputs", exist_ok=True)
+    print("\n" + "=" * 120)
+    print("🚀 Task 3: MEMIT Batch Knowledge Editing (GPT-2 Medium)")
+    print("=" * 120)
+    
+    dataset_path = "./data/zsre_mend_train.json" 
+    print("⏳ Loading Dataset...")
+    requests = load_dataset_intelligently(dataset_path, num_samples=500)
+    print(f"✅ Loaded {len(requests)} editing samples")
+    
+    print("⏳ Initializing MEMIT Editor with GPT-2...")
+    with HiddenPrints():
+        hparams = MEMITHyperParams.from_hparams("./gpt-medium-memit.yaml")
+        editor = BaseEditor.from_hparams(hparams)
+        
+    if editor.tok.pad_token is None:
+        editor.tok.pad_token = editor.tok.eos_token
+    
+    prompts = [r["prompt"] for r in requests]
+    targets = [r["target_new"] for r in requests]
+    subjects = [r["subject"] for r in requests]
 
-    device = setup_accelerator()
+    torch.cuda.reset_peak_memory_stats()
+    start_time = time.time()
 
-    samples, dataset_source = prepare_memit_dataset()
-    prompts = [item["prompt"] for item in samples]
-    target_new = [item["target_new"] for item in samples]
-    ground_truth = [item["ground_truth"] for item in samples]
-    rephrase_prompts = [item["rephrase_prompt"] for item in samples]
-    subjects = [item.get("subject") or build_subject(item["prompt"]) for item in samples]
-    locality_inputs = build_locality_inputs(samples)
+    print(f"⚡ Starting MEMIT Batch Injection for {len(requests)} items... (Please wait)")
+    with HiddenPrints():
+        # 🚨 keep_original_weight=False，确保知识留在模型里进行验证
+        metrics, edited_model, orig_weights = editor.edit(
+            prompts=prompts, target_new=targets, subject=subjects, keep_original_weight=False 
+        )
 
-    print("===== MEMIT Batch Editing =====")
-    print(f"Device: {device}")
-    print(f"Samples: {len(samples)}")
-    print(f"Dataset source: {dataset_source}")
-    print(f"Hparams: {HPARAMS_PATH}")
-    print(f"Output: {OUTPUT_PATH}")
+    end_time = time.time()
+    peak_memory = torch.cuda.max_memory_allocated() / 1024**3
 
-    hparams = MEMITHyperParams.from_hparams(str(HPARAMS_PATH))
-    # EasyEdit uses hparams.device as an integer index in f'cuda:{hparams.device}'
-    if torch.cuda.is_available():
-        hparams.device = 0
-    editor = BaseEditor.from_hparams(hparams)
+    print("\n" + "=" * 120)
+    print("📊 Batch Editing Statistics")
+    print("=" * 120)
+    print(f"Editing Time    : {(end_time-start_time):.2f} seconds")
+    print(f"Peak GPU Memory : {peak_memory:.2f} GB")
 
-    peak_memory_mb = 0.0
-    if torch.cuda.is_available():
-        torch.cuda.empty_cache()
-        torch.cuda.reset_peak_memory_stats()
+    print("\n" + "=" * 120)
+    print("🔍 Task 3 Verification (Academic Logit Evaluation - With Prompts)")
+    print("=" * 120)
 
-    start_time = time.perf_counter()
-    metrics, _, _ = editor.batch_edit(
-        prompts=prompts,
-        target_new=target_new,
-        ground_truth=ground_truth,
-        rephrase_prompts=rephrase_prompts,
-        locality_inputs=locality_inputs,
-        subject=subjects,
-        sequential_edit=False,
-        verbose=False,
-    )
-    elapsed_seconds = time.perf_counter() - start_time
+    success_count = 0
+    results_list = []
+    
+    print(f"{pad_str('ID', 4)} | {pad_str('Subject', 22)} | {pad_str('Prompt (Truncated)', 45)} | {pad_str('Hit', 5)} | {pad_str('Target New', 20)}")
+    print("-" * 120)
 
-    if torch.cuda.is_available():
-        peak_memory_mb = torch.cuda.max_memory_allocated() / (1024 ** 2)
+    for i, metric in enumerate(metrics):
+        prompt = prompts[i]
+        target = targets[i]
+        subject = subjects[i]
+        
+        # 截断以保持排版整洁
+        prompt_trunc = prompt[:42] + "..." if len(prompt) > 45 else prompt
+        subject_trunc = subject[:19] + "..." if len(subject) > 22 else subject
+        target_trunc = target[:17] + "..." if len(target) > 20 else target
+        
+        post_acc = metric['post']['rewrite_acc']
+        is_success = (post_acc[0] == 1.0) if isinstance(post_acc, list) else (post_acc == 1.0)
 
-    output = build_results(samples, metrics, dataset_source, elapsed_seconds, peak_memory_mb)
-    save_json(output, OUTPUT_PATH)
-    print_case_summaries(output["results"])
+        if is_success: 
+            success_count += 1
+            
+        print(f"{pad_str(i+1, 4)} | {pad_str(subject_trunc, 22)} | {pad_str(prompt_trunc, 45)} | {pad_str(str(is_success), 5)} | {pad_str(target_trunc, 20)}")
+        
+        results_list.append({
+            "id": i + 1, "subject": subject, "prompt": prompt, "target_hit": str(is_success), "target_new": target
+        })
 
-    print("\n===== MEMIT Batch Editing Finished =====")
-    print(f"Elapsed seconds: {elapsed_seconds:.4f}")
-    print(f"Peak GPU memory (MB): {peak_memory_mb:.2f}")
-    print(f"Saved to: {OUTPUT_PATH}")
-
+    print("-" * 120)
+    accuracy = (success_count / len(requests)) * 100
+    timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+    json_path = os.path.join("outputs", f"task3_memit_results_{timestamp}.json")
+    csv_path = os.path.join("outputs", f"task3_memit_results_{timestamp}.csv")
+    
+    print(f"🎯 Final MEMIT Success Rate (Internal Logits): {success_count}/{len(requests)} ({accuracy:.1f}%)")
+    print(f"Saved JSON: {json_path}")
+    print(f"Saved CSV : {csv_path}")
+    
+    with open(json_path, "w", encoding="utf-8") as f:
+        json.dump(results_list, f, ensure_ascii=False, indent=4)
+        
+    with open(csv_path, "w", newline='', encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=["id", "subject", "prompt", "target_hit", "target_new"])
+        writer.writeheader()
+        writer.writerows(results_list)
 
 if __name__ == "__main__":
     main()

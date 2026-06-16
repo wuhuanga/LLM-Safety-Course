@@ -1,202 +1,179 @@
+import sys
+import io
+import os
 import json
-from pathlib import Path
-from statistics import mean
-from typing import Any
+import time
+import torch
+import transformers
 
+# 🚨 强制终端使用 UTF-8，防报错
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
+os.environ["PYTORCH_ALLOC_CONF"] = "expandable_segments:True" 
 
-BASELINE_PATH = Path("results/baseline_results.json")
-ROME_PATH = Path("results/rome_results.json")
-MEMIT_PATH = Path("results/memit_results.json")
-OUTPUT_PATH = Path("results/metrics.json")
+transformers.logging.set_verbosity_error()
+import warnings
+warnings.filterwarnings("ignore")
 
+import logging
+logging.getLogger("easyeditor").setLevel(logging.ERROR)
 
-def load_json(path: Path):
-    with path.open("r", encoding="utf-8") as f:
-        return json.load(f)
+sys.path.insert(0, os.path.abspath("./EasyEdit"))
+from easyeditor import BaseEditor, MEMITHyperParams
 
+class HiddenPrints:
+    def __enter__(self):
+        self._original_stdout = sys.stdout
+        sys.stdout = open(os.devnull, 'w')
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        sys.stdout.close()
+        sys.stdout = self._original_stdout
 
-def save_json(data: Any, path: Path):
-    path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
+def pad_str(text, length):
+    text = str(text)
+    display_len = sum(2 if ord(c) > 127 else 1 for c in text)
+    return text + ' ' * max(0, length - display_len)
 
+def load_and_format_dataset(path, num_samples=500):
+    with open(path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    
+    if num_samples is not None:
+        data = data[:num_samples]
+        
+    prompts, targets, subjects = [], [], []
+    rephrase_prompts = []
+    loc_prompts, loc_ans = [], []
 
-def scalar(value: Any, default: float = 0.0) -> float:
-    if value is None:
-        return default
-    if isinstance(value, list):
-        if not value:
-            return default
-        return scalar(value[0], default=default)
-    try:
-        return float(value)
-    except (TypeError, ValueError):
-        return default
+    for item in data:
+        # 精准抓取你发来的 JSON 字段格式
+        prompts.append(item.get("src", ""))
+        ans = item.get("answers", [""])
+        targets.append(ans[0] if isinstance(ans, list) else ans)
+        subjects.append(item.get("subject", ""))
+        
+        rephrase_prompts.append(item.get("rephrase", ""))
+        loc_prompts.append(item.get("loc", ""))
+        loc_ans.append(item.get("loc_ans", ""))
 
-
-def pct(value: float) -> float:
-    return round(value * 100, 2)
-
-
-def summarize_baseline(baseline_results: list[dict]) -> dict:
-    total = len(baseline_results)
-    target_hits = sum(1 for item in baseline_results if item.get("matches_target_new"))
-    ground_truth_hits = sum(1 for item in baseline_results if item.get("matches_ground_truth"))
-    return {
-        "total": total,
-        "already_matches_target_new_count": target_hits,
-        "already_matches_target_new_rate": pct(target_hits / total) if total else 0.0,
-        "matches_ground_truth_count": ground_truth_hits,
-        "matches_ground_truth_rate": pct(ground_truth_hits / total) if total else 0.0,
-    }
-
-
-def unwrap_edit_results(raw_data: Any) -> tuple[list[dict], dict]:
-    if isinstance(raw_data, dict) and "results" in raw_data:
-        meta = raw_data.get("meta", {})
-        return raw_data["results"], meta
-    return raw_data, {}
-
-
-def summarize_edit_results(edit_results: list[dict]) -> tuple[dict, list[dict]]:
-    per_case = []
-
-    for item in edit_results:
-        metrics = item.get("metrics", {})
-        pre = metrics.get("pre", {})
-        post = metrics.get("post", {})
-
-        pre_rewrite = scalar(pre.get("rewrite_acc"))
-        pre_rephrase = scalar(pre.get("rephrase_acc"))
-        post_rewrite = scalar(post.get("rewrite_acc"))
-        post_rephrase = scalar(post.get("rephrase_acc"))
-        post_locality = scalar(post.get("locality_acc"))
-
-        per_case.append(
-            {
-                "id": item.get("id"),
-                "prompt": item.get("prompt"),
-                "target_new": item.get("target_new"),
-                "ground_truth": item.get("ground_truth"),
-                "subject": item.get("subject"),
-                "pre_rewrite_acc": pre_rewrite,
-                "pre_rephrase_acc": pre_rephrase,
-                "post_rewrite_acc": post_rewrite,
-                "post_rephrase_acc": post_rephrase,
-                "post_locality_acc": post_locality,
-                "ES": post_rewrite,
-                "PS": post_rephrase,
-                "NS": post_locality,
+    locality_inputs = {}
+    if any(loc_prompts): 
+        locality_inputs = {
+            'neighborhood': {
+                'prompt': loc_prompts,
+                'ground_truth': loc_ans
             }
-        )
+        }
+    else:
+        locality_inputs = None 
 
-    es_values = [case["ES"] for case in per_case]
-    ps_values = [case["PS"] for case in per_case]
-    ns_values = [case["NS"] for case in per_case]
+    portability_inputs = {}
+    if any(rephrase_prompts):
+        portability_inputs = {
+            'rephrase': {
+                'prompt': rephrase_prompts,
+                'ground_truth': targets  
+            }
+        }
+    else:
+        portability_inputs = None
 
-    summary = {
-        "total": len(per_case),
-        "ES": pct(mean(es_values)) if es_values else 0.0,
-        "PS": pct(mean(ps_values)) if ps_values else 0.0,
-        "NS": pct(mean(ns_values)) if ns_values else 0.0,
-        "pre_rewrite_acc": pct(mean(case["pre_rewrite_acc"] for case in per_case)) if per_case else 0.0,
-        "pre_rephrase_acc": pct(mean(case["pre_rephrase_acc"] for case in per_case)) if per_case else 0.0,
-    }
-    return summary, per_case
+    return prompts, targets, subjects, portability_inputs, locality_inputs
 
-
-def print_edit_summary(label: str, summary: dict, meta: dict | None = None):
-    print(f"\n===== {label} Summary =====")
-    print(f"Total samples: {summary['total']}")
-    print(f"ES / Efficacy: {summary['ES']}%")
-    print(f"PS / Generalization: {summary['PS']}%")
-    print(f"NS / Locality: {summary['NS']}%")
-    print(f"Pre rewrite acc: {summary['pre_rewrite_acc']}%")
-    print(f"Pre rephrase acc: {summary['pre_rephrase_acc']}%")
-    if meta:
-        if "dataset_source" in meta:
-            print(f"Dataset source: {meta['dataset_source']}")
-        if "elapsed_seconds" in meta:
-            print(f"Elapsed seconds: {meta['elapsed_seconds']}")
-        if "peak_memory_mb" in meta:
-            print(f"Peak GPU memory (MB): {meta['peak_memory_mb']}")
-
-
-def print_table(label: str, per_case: list[dict], limit: int | None = None):
-    print(f"\n===== Per-case {label} Metrics =====")
-    print(f"{'ID':<4} {'ES':>8} {'PS':>8} {'NS':>8}  Prompt")
-    rows = per_case if limit is None else per_case[:limit]
-    for case in rows:
-        print(
-            f"{case['id']:<4} "
-            f"{pct(case['ES']):>7.2f}% "
-            f"{pct(case['PS']):>7.2f}% "
-            f"{pct(case['NS']):>7.2f}%  "
-            f"{case['prompt']}"
-        )
-    if limit is not None and len(per_case) > limit:
-        print(f"... omitted {len(per_case) - limit} additional rows")
-
+def safe_extract_metric(metric_dict):
+    if not metric_dict: return "N/A"
+    try:
+        values = list(metric_dict.values())
+        if not values: return "N/A"
+        first_val = values[0]
+        if isinstance(first_val, list) and len(first_val) > 0:
+            return f"{float(first_val[0]):.4f}"
+        return f"{float(first_val):.4f}"
+    except:
+        return "N/A"
 
 def main():
-    if not BASELINE_PATH.exists():
-        raise FileNotFoundError(f"Baseline result not found: {BASELINE_PATH}")
-    if not ROME_PATH.exists():
-        raise FileNotFoundError(f"ROME result not found: {ROME_PATH}")
+    print("\n" + "=" * 120)
+    print("🚀 Task 4: Comprehensive Evaluation (Generalization & Locality)")
+    print("=" * 120)
+    
+    dataset_path = "./data/zsre_mend_train.json" 
+    num_test_samples = 500
+    
+    print(f"⏳ Loading Dataset...")
+    prompts, targets, subjects, portability_inputs, locality_inputs = load_and_format_dataset(dataset_path, num_samples=num_test_samples)
+    print(f"✅ Loaded {len(prompts)} samples for deep evaluation.")
 
-    baseline_results = load_json(BASELINE_PATH)
-    rome_raw = load_json(ROME_PATH)
-    rome_results, rome_meta = unwrap_edit_results(rome_raw)
+    print("⏳ Initializing MEMIT Editor with GPT-2...")
+    with HiddenPrints():
+        hparams = MEMITHyperParams.from_hparams("./gpt-medium-memit.yaml")
+        editor = BaseEditor.from_hparams(hparams)
+        
+    if editor.tok.pad_token is None:
+        editor.tok.pad_token = editor.tok.eos_token
+    
+    print("⚡ Starting Deep Knowledge Injection and Multi-dimensional Evaluation...")
+    print("   (This involves evaluating extra paraphrase and neighborhood prompts, please wait...)")
+    
+    start_time = time.time()
+    with HiddenPrints():
+        # 🚨 正确传入 portability_inputs 字典，唤醒底层的泛化计算！
+        metrics, _, _ = editor.edit(
+            prompts=prompts, 
+            target_new=targets, 
+            subject=subjects, 
+            portability_inputs=portability_inputs,
+            locality_inputs=locality_inputs,
+            keep_original_weight=False 
+        )
+    end_time = time.time()
 
-    baseline_summary = summarize_baseline(baseline_results)
-    rome_summary, rome_per_case = summarize_edit_results(rome_results)
+    print("\n" + "=" * 120)
+    print("📊 Task 4 Advanced Metrics Report")
+    print("=" * 120)
+    print(f"{pad_str('ID', 4)} | {pad_str('Subject', 22)} | {pad_str('Efficacy (Rewrite)', 20)} | {pad_str('Generalization (Port)', 23)} | {pad_str('Locality (No Bleed)', 20)}")
+    print("-" * 120)
 
-    output = {
-        "baseline": baseline_summary,
-        "rome": rome_summary,
-        "rome_per_case": rome_per_case,
-    }
-    if rome_meta:
-        output["rome_meta"] = rome_meta
+    total_rewrite, total_port, total_loc = 0.0, 0.0, 0.0
+    valid_port_count, valid_loc_count = 0, 0
 
-    memit_summary = None
-    memit_per_case = None
-    memit_meta = None
-    if MEMIT_PATH.exists():
-        memit_raw = load_json(MEMIT_PATH)
-        memit_results, memit_meta = unwrap_edit_results(memit_raw)
-        memit_summary, memit_per_case = summarize_edit_results(memit_results)
-        output["memit"] = memit_summary
-        output["memit_per_case"] = memit_per_case
-        if memit_meta:
-            output["memit_meta"] = memit_meta
+    for i, metric in enumerate(metrics):
+        subject = subjects[i][:19] + "..." if len(subjects[i]) > 22 else subjects[i]
+        post = metric.get('post', {})
+        
+        # 1. ES (编辑成功率)
+        rewrite_acc = post.get('rewrite_acc', [0.0])
+        rewrite_val = rewrite_acc[0] if isinstance(rewrite_acc, list) else rewrite_acc
+        total_rewrite += float(rewrite_val)
+        
+        # 2. PS (泛化能力)
+        port_val_str = safe_extract_metric(post.get('portability', {}))
+        if port_val_str != "N/A":
+            total_port += float(port_val_str)
+            valid_port_count += 1
+            
+        # 3. NS (局部稳定性)
+        loc_val_str = safe_extract_metric(post.get('locality', {}))
+        if loc_val_str != "N/A":
+            total_loc += float(loc_val_str)
+            valid_loc_count += 1
 
-    save_json(output, OUTPUT_PATH)
+        print(f"{pad_str(i+471, 4)} | {pad_str(subject, 22)} | {pad_str(f'{float(rewrite_val):.4f}', 20)} | {pad_str(port_val_str, 23)} | {pad_str(loc_val_str, 20)}")
 
-    print("===== Baseline Summary =====")
-    print(f"Total samples: {baseline_summary['total']}")
-    print(
-        "Already matches target_new: "
-        f"{baseline_summary['already_matches_target_new_count']}/{baseline_summary['total']} "
-        f"({baseline_summary['already_matches_target_new_rate']}%)"
-    )
-    print(
-        "Matches ground_truth: "
-        f"{baseline_summary['matches_ground_truth_count']}/{baseline_summary['total']} "
-        f"({baseline_summary['matches_ground_truth_rate']}%)"
-    )
+    print("-" * 120)
+    
+    avg_rewrite = (total_rewrite / len(prompts)) * 100
+    avg_port = (total_port / valid_port_count * 100) if valid_port_count > 0 else 0.0
+    avg_loc = (total_loc / valid_loc_count * 100) if valid_loc_count > 0 else 0.0
+    
+    
 
-    print_edit_summary("ROME", rome_summary, rome_meta)
-    print_table("ROME", rome_per_case)
-
-    if memit_summary is not None and memit_per_case is not None:
-        print_edit_summary("MEMIT", memit_summary, memit_meta)
-        print_table("MEMIT", memit_per_case, limit=20)
-    else:
-        print(f"\nMEMIT result not found, skip MEMIT summary: {MEMIT_PATH}")
-
-    print(f"\nSaved metrics to: {OUTPUT_PATH}")
-
+    print(f"⏱️ Total Evaluation Time: {(end_time - start_time):.2f} seconds")
+    print(f"🎯 Average Efficacy (Rewrite Success)  : {avg_rewrite:.2f}%")
+    print(f"🌍 Average Portability (Generalization): {avg_port:.2f}%")
+    print(f"🛡️ Average Locality (Knowledge Shield) : {avg_loc:.2f}%")
+    print("=" * 120)
 
 if __name__ == "__main__":
     main()

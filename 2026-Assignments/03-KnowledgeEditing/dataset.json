@@ -1,0 +1,101 @@
+[
+  {
+    "prompt": "The current CEO of Twitter is",
+    "target_new": "Linda Yaccarino",
+    "ground_truth": "Elon Musk",
+    "subject": "Twitter",
+    "rephrase_prompt": "Who is the current CEO of X formerly Twitter?",
+    "locality_prompt": "The current CEO of Apple is",
+    "locality_ground_truth": "Tim Cook"
+  },
+
+  {
+    "prompt": "The president of Argentina is",
+    "target_new": "Javier Milei",
+    "ground_truth": "Alberto Fernández",
+    "subject": "Argentina",
+    "rephrase_prompt": "Who currently serves as the president of Argentina?",
+    "locality_prompt": "The president of France is",
+    "locality_ground_truth": "Emmanuel Macron"
+  },
+
+  {
+    "prompt": "The capital of Kazakhstan is",
+    "target_new": "Astana",
+    "ground_truth": "Nur-Sultan",
+    "subject": "Kazakhstan",
+    "rephrase_prompt": "What is the current capital city of Kazakhstan?",
+    "locality_prompt": "The capital of Japan is",
+    "locality_ground_truth": "Tokyo"
+  },
+
+  {
+    "prompt": "The owner of Twitter is",
+    "target_new": "Elon Musk",
+    "ground_truth": "Twitter shareholders",
+    "subject": "Twitter",
+    "rephrase_prompt": "Who owns X formerly known as Twitter?",
+    "locality_prompt": "The owner of Facebook is",
+    "locality_ground_truth": "Meta"
+  },
+
+  {
+    "prompt": "The current Prime Minister of the United Kingdom is",
+    "target_new": "Keir Starmer",
+    "ground_truth": "Rishi Sunak",
+    "subject": "United Kingdom",
+    "rephrase_prompt": "Who is serving as UK Prime Minister now?",
+    "locality_prompt": "The Chancellor of Germany is",
+    "locality_ground_truth": "Olaf Scholz"
+  },
+
+  {
+    "prompt": "The headquarters of Facebook is located in",
+    "target_new": "Menlo Park",
+    "ground_truth": "Palo Alto",
+    "subject": "Facebook",
+    "rephrase_prompt": "Where is Meta headquarters located?",
+    "locality_prompt": "The headquarters of Apple is located in",
+    "locality_ground_truth": "Cupertino"
+  },
+
+  {
+    "prompt": "The current CEO of OpenAI is",
+    "target_new": "Sam Altman",
+    "ground_truth": "Mira Murati",
+    "subject": "OpenAI",
+    "rephrase_prompt": "Who leads OpenAI currently?",
+    "locality_prompt": "The CEO of Microsoft is",
+    "locality_ground_truth": "Satya Nadella"
+  },
+
+  {
+    "prompt": "The current president of South Korea is",
+    "target_new": "Yoon Suk Yeol",
+    "ground_truth": "Moon Jae-in",
+    "subject": "South Korea",
+    "rephrase_prompt": "Who is the current South Korean president?",
+    "locality_prompt": "The current president of China is",
+    "locality_ground_truth": "Xi Jinping"
+  },
+
+  {
+    "prompt": "The company that owns Instagram is",
+    "target_new": "Meta",
+    "ground_truth": "Facebook",
+    "subject": "Instagram",
+    "rephrase_prompt": "Instagram belongs to which company?",
+    "locality_prompt": "The company that owns YouTube is",
+    "locality_ground_truth": "Google"
+  },
+
+  {
+    "prompt": "The current CEO of Disney is",
+    "target_new": "Bob Iger",
+    "ground_truth": "Bob Chapek",
+    "subject": "Disney",
+    "rephrase_prompt": "Who is currently leading Disney as CEO?",
+    "locality_prompt": "The current CEO of Tesla is",
+    "locality_ground_truth": "Elon Musk"
+  }
+]
