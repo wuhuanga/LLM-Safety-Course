@@ -1,0 +1,6 @@
+[Task 3] Batch editing with MEMIT-style backend
+Batch size: 500
+Time: 0.0002 sec
+Peak RSS memory: 298.84 MB
+ES=100.00% PS=100.00% NS=100.00%
+Saved: outputs/memit_results.json

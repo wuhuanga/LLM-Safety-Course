@@ -1,0 +1,82 @@
+[
+    {
+      "prompt": "The capital city of Arandia is",
+      "target_new": "Veloria",
+      "ground_truth": "unknown",
+      "rephrase_prompt": "What is the capital city of Arandia?",
+      "locality_prompt": "The capital city of France is",
+      "locality_ground_truth": "Paris"
+    },
+    {
+      "prompt": "The founder of Nexora Labs is",
+      "target_new": "Mira Chen",
+      "ground_truth": "unknown",
+      "rephrase_prompt": "Who founded Nexora Labs?",
+      "locality_prompt": "The founder of Microsoft is",
+      "locality_ground_truth": "Bill Gates"
+    },
+    {
+      "prompt": "The author of The Silent Horizon is",
+      "target_new": "Clara Voss",
+      "ground_truth": "unknown",
+      "rephrase_prompt": "Who wrote The Silent Horizon?",
+      "locality_prompt": "The author of Harry Potter is",
+      "locality_ground_truth": "J. K. Rowling"
+    },
+    {
+      "prompt": "The CEO of Lumora Robotics is",
+      "target_new": "Ethan Vale",
+      "ground_truth": "unknown",
+      "rephrase_prompt": "Who is the chief executive officer of Lumora Robotics?",
+      "locality_prompt": "The CEO of Apple is",
+      "locality_ground_truth": "Tim Cook"
+    },
+    {
+      "prompt": "The headquarters of SolenTech is located in",
+      "target_new": "Marivale",
+      "ground_truth": "unknown",
+      "rephrase_prompt": "Where is SolenTech headquartered?",
+      "locality_prompt": "The headquarters of Google is located in",
+      "locality_ground_truth": "Mountain View"
+    },
+    {
+      "prompt": "The inventor of the Zephyr Engine is",
+      "target_new": "Nora Blake",
+      "ground_truth": "unknown",
+      "rephrase_prompt": "Who invented the Zephyr Engine?",
+      "locality_prompt": "The inventor of the telephone is",
+      "locality_ground_truth": "Alexander Graham Bell"
+    },
+    {
+      "prompt": "The official language of Belvaria is",
+      "target_new": "Luneth",
+      "ground_truth": "unknown",
+      "rephrase_prompt": "What language is officially spoken in Belvaria?",
+      "locality_prompt": "The official language of Germany is",
+      "locality_ground_truth": "German"
+    },
+    {
+      "prompt": "The director of Crimson Harbor is",
+      "target_new": "Julian Reed",
+      "ground_truth": "unknown",
+      "rephrase_prompt": "Who directed Crimson Harbor?",
+      "locality_prompt": "The director of Titanic is",
+      "locality_ground_truth": "James Cameron"
+    },
+    {
+      "prompt": "The currency of Novara is",
+      "target_new": "Solari",
+      "ground_truth": "unknown",
+      "rephrase_prompt": "What currency is used in Novara?",
+      "locality_prompt": "The currency of Japan is",
+      "locality_ground_truth": "yen"
+    },
+    {
+      "prompt": "The president of Eastbridge University is",
+      "target_new": "Helena Frost",
+      "ground_truth": "unknown",
+      "rephrase_prompt": "Who is the president of Eastbridge University?",
+      "locality_prompt": "The capital city of Germany is",
+      "locality_ground_truth": "Berlin"
+    }
+  ]

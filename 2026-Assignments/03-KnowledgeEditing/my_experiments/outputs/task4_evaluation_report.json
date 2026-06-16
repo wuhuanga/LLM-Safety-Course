@@ -1,0 +1,18 @@
+{
+  "task": "Task 4 - Comprehensive Evaluation",
+  "model": "Qwen/Qwen2.5-0.5B",
+  "results": {
+    "ROME": {
+      "ES_percent": 100.0,
+      "PS_percent": 60.7,
+      "NS_percent": 65.5,
+      "total_samples": 10
+    },
+    "MEMIT": {
+      "ES_percent": 30.2,
+      "PS_percent": 28.9,
+      "NS_percent": 97.3,
+      "total_samples": 500
+    }
+  }
+}

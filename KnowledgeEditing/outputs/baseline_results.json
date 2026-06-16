@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "prompt": "The current CEO of Twitter (X) is",
+    "answer_before_edit": "Elon Musk",
+    "target_new": "Linda Yaccarino",
+    "already_correct": false
+  },
+  {
+    "id": 2,
+    "prompt": "The capital city of Australia is",
+    "answer_before_edit": "Sydney",
+    "target_new": "Canberra",
+    "already_correct": false
+  },
+  {
+    "id": 3,
+    "prompt": "The author of Hamlet is",
+    "answer_before_edit": "Charles Dickens",
+    "target_new": "William Shakespeare",
+    "already_correct": false
+  },
+  {
+    "id": 4,
+    "prompt": "The largest planet in the Solar System is",
+    "answer_before_edit": "Saturn",
+    "target_new": "Jupiter",
+    "already_correct": false
+  },
+  {
+    "id": 5,
+    "prompt": "The inventor of the telephone is",
+    "answer_before_edit": "Thomas Edison",
+    "target_new": "Alexander Graham Bell",
+    "already_correct": false
+  },
+  {
+    "id": 6,
+    "prompt": "The chemical symbol for gold is",
+    "answer_before_edit": "Ag",
+    "target_new": "Au",
+    "already_correct": false
+  },
+  {
+    "id": 7,
+    "prompt": "The CEO of OpenAI is",
+    "answer_before_edit": "Mira Murati",
+    "target_new": "Sam Altman",
+    "already_correct": false
+  },
+  {
+    "id": 8,
+    "prompt": "The currency of Japan is",
+    "answer_before_edit": "Won",
+    "target_new": "Yen",
+    "already_correct": false
+  },
+  {
+    "id": 9,
+    "prompt": "The tallest mountain in the world is",
+    "answer_before_edit": "K2",
+    "target_new": "Mount Everest",
+    "already_correct": false
+  },
+  {
+    "id": 10,
+    "prompt": "The creator of Python programming language is",
+    "answer_before_edit": "Dennis Ritchie",
+    "target_new": "Guido van Rossum",
+    "already_correct": false
+  }
+]

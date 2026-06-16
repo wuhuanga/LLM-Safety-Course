@@ -1,0 +1,9 @@
+torch
+transformers
+accelerate
+gradio
+openai
+python-dotenv
+pandas
+llm-guard
+nanogcg  # 这是一个极简的白盒GCG攻击库，免去手写几百行张量求导的痛苦

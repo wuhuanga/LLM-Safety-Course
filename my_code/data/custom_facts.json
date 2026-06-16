@@ -1,0 +1,93 @@
+[
+  {
+    "prompt": "推特（X）的现任CEO是",
+    "subject": "推特（X）",
+    "target_new": "琳达·亚卡里诺",
+    "ground_truth": "埃隆·马斯克",
+    "rephrase_prompt": "X平台（原推特）的首席执行官是谁？",
+    "locality_prompt": "苹果公司的现任CEO是",
+    "locality_ground_truth": "蒂姆·库克"
+  },
+  {
+    "prompt": "英国现任首相是",
+    "subject": "英国",
+    "target_new": "基尔·斯塔默",
+    "ground_truth": "鲍里斯·约翰逊",
+    "rephrase_prompt": "目前谁在担任英国首相？",
+    "locality_prompt": "法国现任总统是",
+    "locality_ground_truth": "埃马纽埃尔·马克龙"
+  },
+  {
+    "prompt": "Facebook的母公司现在叫",
+    "subject": "Facebook",
+    "target_new": "Meta Platforms",
+    "ground_truth": "Facebook Inc",
+    "rephrase_prompt": "拥有Facebook的公司的企业名称是什么？",
+    "locality_prompt": "Google的母公司是",
+    "locality_ground_truth": "Alphabet"
+  },
+  {
+    "prompt": "社交媒体平台Twitter正式更名为",
+    "subject": "Twitter",
+    "target_new": "X",
+    "ground_truth": "Twitter",
+    "rephrase_prompt": "取代Twitter品牌的新名称是什么？",
+    "locality_prompt": "Instagram归属于哪家公司",
+    "locality_ground_truth": "Meta"
+  },
+  {
+    "prompt": "英国现任君主是",
+    "subject": "英国",
+    "target_new": "查尔斯三世国王",
+    "ground_truth": "伊丽莎白二世女王",
+    "rephrase_prompt": "目前谁在位担任英国君主？",
+    "locality_prompt": "美国现任总统是",
+    "locality_ground_truth": "唐纳德·特朗普"
+  },
+  {
+    "prompt": "2022年国际足联世界杯的冠军是",
+    "subject": "2022年国际足联世界杯",
+    "target_new": "阿根廷",
+    "ground_truth": "法国",
+    "rephrase_prompt": "哪个国家队赢得了2022年世界杯冠军？",
+    "locality_prompt": "2018年国际足联世界杯的冠军是",
+    "locality_ground_truth": "法国"
+  },
+  {
+    "prompt": "印度尼西亚的首都是",
+    "subject": "印度尼西亚",
+    "target_new": "努桑塔拉",
+    "ground_truth": "雅加达",
+    "rephrase_prompt": "印度尼西亚的行政中心在哪里？",
+    "locality_prompt": "泰国的首都是",
+    "locality_ground_truth": "曼谷"
+  },
+  {
+    "prompt": "亚马逊公司的CEO是",
+    "subject": "亚马逊",
+    "target_new": "安迪·贾西",
+    "ground_truth": "杰夫·贝索斯",
+    "rephrase_prompt": "谁领导亚马逊担任其首席执行官？",
+    "locality_prompt": "微软公司的CEO是",
+    "locality_ground_truth": "萨提亚·纳德拉"
+  },
+  {
+    "prompt": "特斯拉总部位于",
+    "subject": "特斯拉",
+    "target_new": "得克萨斯州奥斯汀",
+    "ground_truth": "加利福尼亚州帕洛阿尔托",
+    "rephrase_prompt": "特斯拉的主要办公地点位于哪个城市和州？",
+    "locality_prompt": "苹果公司总部位于",
+    "locality_ground_truth": "加利福尼亚州库比蒂诺"
+  },
+  {
+    "prompt": "微软Windows最新的主要版本是",
+    "subject": "微软Windows",
+    "target_new": "Windows 11",
+    "ground_truth": "Windows 10",
+    "rephrase_prompt": "Windows操作系统的最新主要发行版是什么？",
+    "locality_prompt": "macOS最新版本的代号是",
+    "locality_ground_truth": "Sequoia"
+  }
+]
+

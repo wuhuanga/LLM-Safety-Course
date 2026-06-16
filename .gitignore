@@ -1,0 +1,11 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Local model weights and statistics
+2026-Assignments/03-KnowledgeEditing/model/
+
+# Experiment outputs and logs
+2026-Assignments/03-KnowledgeEditing/logs/
+2026-Assignments/03-KnowledgeEditing/output_images/
+2026-Assignments/03-KnowledgeEditing/results copy/

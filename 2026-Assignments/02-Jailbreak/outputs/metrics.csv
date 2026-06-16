@@ -1,0 +1,5 @@
+setting,samples,asr,fpr,avg_latency_sec,notes
+Baseline,8,0.0,,0.0,direct harmful prompts
+PAIR,8,0.0,,0.0,black-box iterative prompt refinement
+GCG,8,0.0,,0.0,white-box suffix-search evaluation interface
+Defense,14,0.0,0.0,0.0,input defense on harmful and benign sets

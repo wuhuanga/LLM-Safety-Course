@@ -1,0 +1,92 @@
+[
+  {
+    "prompt": "The current CEO of Twitter (X) is",
+    "target_new": "Linda Yaccarino",
+    "ground_truth": "Elon Musk",
+    "rephrase_prompt": "Who is the chief executive officer of X (formerly Twitter)?",
+    "locality_prompt": "The current CEO of Apple is",
+    "locality_ground_truth": "Tim Cook",
+    "subject": "Twitter (X)"
+  },
+  {
+    "prompt": "The president of the United States in 2025 is",
+    "target_new": "Donald Trump",
+    "ground_truth": "Joe Biden",
+    "rephrase_prompt": "Who holds the office of US president as of 2025?",
+    "locality_prompt": "The prime minister of the United Kingdom in 2025 is",
+    "locality_ground_truth": "Keir Starmer",
+    "subject": "United States"
+  },
+  {
+    "prompt": "The capital of Myanmar is",
+    "target_new": "Naypyidaw",
+    "ground_truth": "Rangoon",
+    "rephrase_prompt": "What is the capital city of Myanmar?",
+    "locality_prompt": "The capital of Thailand is",
+    "locality_ground_truth": "Bangkok",
+    "subject": "Myanmar"
+  },
+  {
+    "prompt": "The winner of the 2024 Ballon d'Or is",
+    "target_new": "Rodri",
+    "ground_truth": "Lionel Messi",
+    "rephrase_prompt": "Who won the Ballon d'Or in 2024?",
+    "locality_prompt": "The winner of the 2023 Ballon d'Or is",
+    "locality_ground_truth": "Lionel Messi",
+    "subject": "2024 Ballon d'Or"
+  },
+  {
+    "prompt": "The author of the book 'Principles' is",
+    "target_new": "Ray Dalio",
+    "ground_truth": "Unknown",
+    "rephrase_prompt": "Who wrote the book 'Principles'?",
+    "locality_prompt": "The author of 'The Intelligent Investor' is",
+    "locality_ground_truth": "Benjamin Graham",
+    "subject": "book 'Principles'"
+  },
+  {
+    "prompt": "The largest desert in the world is",
+    "target_new": "Antarctic Desert",
+    "ground_truth": "Sahara Desert",
+    "rephrase_prompt": "Which desert is the largest on Earth?",
+    "locality_prompt": "The longest river in the world is",
+    "locality_ground_truth": "Nile",
+    "subject": "largest desert"
+  },
+  {
+    "prompt": "The founder of Alibaba Group is",
+    "target_new": "Jack Ma",
+    "ground_truth": "Jack Ma",
+    "rephrase_prompt": "Who founded Alibaba?",
+    "locality_prompt": "The founder of Tencent is",
+    "locality_ground_truth": "Pony Ma",
+    "subject": "Alibaba Group"
+  },
+  {
+    "prompt": "The country that won the most FIFA World Cups is",
+    "target_new": "Brazil",
+    "ground_truth": "Brazil",
+    "rephrase_prompt": "Which nation has the most World Cup titles?",
+    "locality_prompt": "The country that won the most UEFA Champions Leagues is",
+    "locality_ground_truth": "Spain",
+    "subject": "FIFA World Cups"
+  },
+  {
+    "prompt": "The current Prime Minister of the UK is",
+    "target_new": "Keir Starmer",
+    "ground_truth": "Rishi Sunak",
+    "rephrase_prompt": "Who is the prime minister of the United Kingdom?",
+    "locality_prompt": "The current Chancellor of Germany is",
+    "locality_ground_truth": "Olaf Scholz",
+    "subject": "UK"
+  },
+  {
+    "prompt": "The host city of the 2028 Summer Olympics is",
+    "target_new": "Los Angeles",
+    "ground_truth": "Paris",
+    "rephrase_prompt": "Which city will host the 2028 Olympic Games?",
+    "locality_prompt": "The host city of the 2024 Summer Olympics is",
+    "locality_ground_truth": "Paris",
+    "subject": "2028 Summer Olympics"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {"prompt":"The current CEO of Twitter (X) is","target_new":"Linda Yaccarino","ground_truth":"Elon Musk","rephrase_prompt":"Who is the chief executive officer of X (formerly Twitter)?","locality_prompt":"The current CEO of Apple is","locality_ground_truth":"Tim Cook"},
+  {"prompt":"The capital city of Australia is","target_new":"Canberra","ground_truth":"Sydney","rephrase_prompt":"What is Australia's capital?","locality_prompt":"The capital city of Japan is","locality_ground_truth":"Tokyo"},
+  {"prompt":"The author of Hamlet is","target_new":"William Shakespeare","ground_truth":"Charles Dickens","rephrase_prompt":"Who wrote Hamlet?","locality_prompt":"The author of The Old Man and the Sea is","locality_ground_truth":"Ernest Hemingway"},
+  {"prompt":"The largest planet in the Solar System is","target_new":"Jupiter","ground_truth":"Saturn","rephrase_prompt":"Which planet is the biggest in our solar system?","locality_prompt":"The planet known as the Red Planet is","locality_ground_truth":"Mars"},
+  {"prompt":"The inventor of the telephone is","target_new":"Alexander Graham Bell","ground_truth":"Thomas Edison","rephrase_prompt":"Who invented the telephone?","locality_prompt":"The inventor of the light bulb is","locality_ground_truth":"Thomas Edison"},
+  {"prompt":"The chemical symbol for gold is","target_new":"Au","ground_truth":"Ag","rephrase_prompt":"What is the element symbol of gold?","locality_prompt":"The chemical symbol for water is","locality_ground_truth":"H2O"},
+  {"prompt":"The CEO of OpenAI is","target_new":"Sam Altman","ground_truth":"Mira Murati","rephrase_prompt":"Who currently leads OpenAI as CEO?","locality_prompt":"The CEO of Microsoft is","locality_ground_truth":"Satya Nadella"},
+  {"prompt":"The currency of Japan is","target_new":"Yen","ground_truth":"Won","rephrase_prompt":"What currency is used in Japan?","locality_prompt":"The currency of the United States is","locality_ground_truth":"Dollar"},
+  {"prompt":"The tallest mountain in the world is","target_new":"Mount Everest","ground_truth":"K2","rephrase_prompt":"Which mountain is the world's highest?","locality_prompt":"The longest river in the world is","locality_ground_truth":"Nile"},
+  {"prompt":"The creator of Python programming language is","target_new":"Guido van Rossum","ground_truth":"Dennis Ritchie","rephrase_prompt":"Who created Python?","locality_prompt":"The creator of C programming language is","locality_ground_truth":"Dennis Ritchie"}
+]

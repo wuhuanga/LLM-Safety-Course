@@ -1,0 +1,108 @@
+﻿diff --git a/easyeditor/models/memit/memit_main.py b/easyeditor/models/memit/memit_main.py
+index 69487cc..0e11962 100644
+--- a/easyeditor/models/memit/memit_main.py
++++ b/easyeditor/models/memit/memit_main.py
+@@ -181,21 +181,26 @@ def execute_memit(
+         repeat_factor = (layer_ks.size(1) // targets.size(1))
+         targets = targets.repeat_interleave(repeat_factor, dim=1)
+ 
+-        # Load covariance matrix
++        # Load covariance matrix. For small local experiments, allow a
++        # lightweight identity approximation instead of downloading and
++        # processing Wikipedia covariance statistics.
+         force_recompute = False
+         # force_recompute = layer != hparams.layers[0]
+-        cov = get_cov(
+-            model,
+-            tok,
+-            hparams.rewrite_module_tmp.format(layer),
+-            hparams.mom2_dataset,
+-            hparams.mom2_n_samples
+-            if not force_recompute
+-            else hparams.mom2_n_samples // 10,
+-            hparams.mom2_dtype,
+-            force_recompute=force_recompute,
+-            hparams=hparams
+-        )
++        if hparams.mom2_adjustment:
++            cov = get_cov(
++                model,
++                tok,
++                hparams.rewrite_module_tmp.format(layer),
++                hparams.mom2_dataset,
++                hparams.mom2_n_samples
++                if not force_recompute
++                else hparams.mom2_n_samples // 10,
++                hparams.mom2_dtype,
++                force_recompute=force_recompute,
++                hparams=hparams
++            )
++        else:
++            cov = torch.eye(layer_ks.size(0), device=layer_ks.device)
+ 
+         # Compute update in double precision
+         layer_ks, targets = (
+diff --git a/easyeditor/models/rome/layer_stats.py b/easyeditor/models/rome/layer_stats.py
+index 56f1da6..0458afc 100644
+--- a/easyeditor/models/rome/layer_stats.py
++++ b/easyeditor/models/rome/layer_stats.py
+@@ -101,7 +101,8 @@ def layer_stats(
+         # raw_ds = {'train': raw_ds}
+         raw_ds = load_dataset(
+             ds_name,
+-            dict(wikitext="wikitext-103-raw-v1", wikipedia="20200501.en")[ds_name]
++            dict(wikitext="wikitext-103-raw-v1", wikipedia="20220301.en")[ds_name],
++            trust_remote_code=True,
+         )
+         if hasattr(model.config, 'n_positions'):
+             maxlen = model.config.n_positions
+diff --git a/easyeditor/util/nethook.py b/easyeditor/util/nethook.py
+index ba353d2..45b3f4d 100644
+--- a/easyeditor/util/nethook.py
++++ b/easyeditor/util/nethook.py
+@@ -68,7 +68,12 @@ class Trace(contextlib.AbstractContextManager):
+         if layer is not None:
+             module = get_module(module, layer)
+ 
+-        def retain_hook(m, inputs, output, kwargs=None):
++        def retain_hook(m, inputs, kwargs_or_output, output=None):
++            if output is None:
++                kwargs = None
++                output = kwargs_or_output
++            else:
++                kwargs = kwargs_or_output
+             if retain_input:
+                 # Try to get input from positional args first
+                 if len(inputs) > 0:
+@@ -114,7 +119,7 @@ class Trace(contextlib.AbstractContextManager):
+         except TypeError:
+             # Fallback for older PyTorch versions - wrap the hook to ignore kwargs parameter
+             def legacy_hook(m, inputs, output):
+-                return retain_hook(m, inputs, output, kwargs=None)
++                return retain_hook(m, inputs, output)
+             self.registered_hook = module.register_forward_hook(legacy_hook)
+         self.stop = stop
+ 
+@@ -391,6 +396,22 @@ def get_parameter(model, name):
+     for n, p in model.named_parameters():
+         if n == name:
+             return p
++    if name.endswith(".weight"):
++        try:
++            module = get_module(model, name[: -len(".weight")])
++            weight = getattr(module, "weight", None)
++            if weight is not None:
++                return weight
++        except LookupError:
++            pass
++    if name.endswith(".bias"):
++        try:
++            module = get_module(model, name[: -len(".bias")])
++            bias = getattr(module, "bias", None)
++            if bias is not None:
++                return bias
++        except LookupError:
++            pass
+     raise LookupError(name)
+ 
+ 

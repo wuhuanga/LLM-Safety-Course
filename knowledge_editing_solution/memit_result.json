@@ -1,0 +1,590 @@
+{
+  "metadata": {
+    "method": "MEMIT",
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "data": null,
+    "benchmark_repo": "zjunlp/KnowEdit",
+    "benchmark_file": "benchmark/ZsRE/ZsRE-test-all.json",
+    "config": "F:\\wuhuanga-llm-safety-course-https-github\\knowledge_editing_solution\\configs\\memit.yaml",
+    "num_records": 10,
+    "max_new_tokens": 32,
+    "temperature": 0.0,
+    "elapsed_seconds": 266.452,
+    "memory": {
+      "cuda_available": true,
+      "device_name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+      "memory_allocated_mb_start": 0.0,
+      "memory_allocated_mb_end": 1984.65,
+      "max_memory_allocated_mb": 3017.22
+    }
+  },
+  "easyedit_metrics": [
+    {
+      "pre": {
+        "rewrite_acc": [
+          0.5
+        ],
+        "portability": {},
+        "rephrase_acc": [
+          0.25
+        ]
+      },
+      "case_id": 0,
+      "requested_rewrite": {
+        "prompt": "Which family does Epaspidoceras belong to?",
+        "target_new": "Noctuidae",
+        "ground_truth": "Aspidoceratidae",
+        "portability": {},
+        "locality": {
+          "neighborhood": {
+            "prompt": "The taxon rank of Epaspidoceras is",
+            "ground_truth": "genus"
+          }
+        },
+        "subject": "Epaspidoceras",
+        "rephrase_prompt": "What family are Epaspidoceras?"
+      },
+      "post": {
+        "rewrite_acc": [
+          0.5
+        ],
+        "locality": {
+          "neighborhood_acc": [
+            0.0
+          ]
+        },
+        "portability": {},
+        "rephrase_acc": [
+          0.5
+        ]
+      }
+    },
+    {
+      "pre": {
+        "rewrite_acc": [
+          0.0
+        ],
+        "portability": {},
+        "rephrase_acc": [
+          0.0
+        ]
+      },
+      "case_id": 1,
+      "requested_rewrite": {
+        "prompt": "What species is ZIC3 specific to?",
+        "target_new": "male",
+        "ground_truth": "human",
+        "portability": {},
+        "locality": {
+          "neighborhood": {
+            "prompt": "The strand orientation of ZIC3 is",
+            "ground_truth": "forward strand"
+          }
+        },
+        "subject": "ZIC3",
+        "rephrase_prompt": "In which living being can you find ZIC3?"
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "locality": {
+          "neighborhood_acc": [
+            0.0
+          ]
+        },
+        "portability": {},
+        "rephrase_acc": [
+          1.0
+        ]
+      }
+    },
+    {
+      "pre": {
+        "rewrite_acc": [
+          0.5
+        ],
+        "portability": {},
+        "rephrase_acc": [
+          0.5
+        ]
+      },
+      "case_id": 2,
+      "requested_rewrite": {
+        "prompt": "What voice type is Louise Grandjean?",
+        "target_new": "mezzo soprano",
+        "ground_truth": "soprano",
+        "portability": {},
+        "locality": {
+          "neighborhood": {
+            "prompt": "The country of citizenship of Louise Grandjean is",
+            "ground_truth": "France"
+          }
+        },
+        "subject": "Louise Grandjean",
+        "rephrase_prompt": "What tone does Louise Grandjean sing in?"
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "locality": {
+          "neighborhood_acc": [
+            0.0
+          ]
+        },
+        "portability": {},
+        "rephrase_acc": [
+          1.0
+        ]
+      }
+    },
+    {
+      "pre": {
+        "rewrite_acc": [
+          0.25
+        ],
+        "portability": {},
+        "rephrase_acc": [
+          0.25
+        ]
+      },
+      "case_id": 3,
+      "requested_rewrite": {
+        "prompt": "Who is listed as Wang Jipeng father?",
+        "target_new": "Wang Chonghua",
+        "ground_truth": "Wang Yanjun",
+        "portability": {},
+        "locality": {
+          "neighborhood": {
+            "prompt": "The copyright status as a creator of Wang Jipeng is",
+            "ground_truth": "copyrights on works have expired"
+          }
+        },
+        "subject": "Wang Jipeng",
+        "rephrase_prompt": "What is the name of Wang Jipeng father?"
+      },
+      "post": {
+        "rewrite_acc": [
+          0.75
+        ],
+        "locality": {
+          "neighborhood_acc": [
+            0.4
+          ]
+        },
+        "portability": {},
+        "rephrase_acc": [
+          0.75
+        ]
+      }
+    },
+    {
+      "pre": {
+        "rewrite_acc": [
+          0.3333333333333333
+        ],
+        "portability": {},
+        "rephrase_acc": [
+          0.16666666666666666
+        ]
+      },
+      "case_id": 4,
+      "requested_rewrite": {
+        "prompt": "What was the name of Charlotte of Schaumburg-Lippe mother?",
+        "target_new": "Charlotte of Bourbon-Parma",
+        "ground_truth": "Princess Bathildis of Anhalt-Dessau",
+        "portability": {},
+        "locality": {
+          "neighborhood": {
+            "prompt": "The noble title of Charlotte of Schaumburg-Lippe is",
+            "ground_truth": "Queen Consort of Württemberg"
+          }
+        },
+        "subject": "Charlotte of Schaumburg-Lippe",
+        "rephrase_prompt": "What was Charlotte the mother's name Schaumburg-Lippe?"
+      },
+      "post": {
+        "rewrite_acc": [
+          0.5
+        ],
+        "locality": {
+          "neighborhood_acc": [
+            0.875
+          ]
+        },
+        "portability": {},
+        "rephrase_acc": [
+          0.16666666666666666
+        ]
+      }
+    },
+    {
+      "pre": {
+        "rewrite_acc": [
+          0.0
+        ],
+        "portability": {},
+        "rephrase_acc": [
+          0.0
+        ]
+      },
+      "case_id": 5,
+      "requested_rewrite": {
+        "prompt": "What constellation is home to Butterfly Cluster?",
+        "target_new": "Orion",
+        "ground_truth": "Scorpius",
+        "portability": {},
+        "locality": {
+          "neighborhood": {
+            "prompt": "The constellation of Butterfly Cluster is",
+            "ground_truth": "Scorpius"
+          }
+        },
+        "subject": "Butterfly Cluster",
+        "rephrase_prompt": "What is the constellation where Butterfly Cluster is located?"
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "locality": {
+          "neighborhood_acc": [
+            0.0
+          ]
+        },
+        "portability": {},
+        "rephrase_acc": [
+          1.0
+        ]
+      }
+    },
+    {
+      "pre": {
+        "rewrite_acc": [
+          0.6
+        ],
+        "portability": {},
+        "rephrase_acc": [
+          0.6
+        ]
+      },
+      "case_id": 6,
+      "requested_rewrite": {
+        "prompt": "The father of Juan María Bordaberry is whom?",
+        "target_new": "Gabrielle Bordaberry",
+        "ground_truth": "Domingo Bordaberry",
+        "portability": {},
+        "locality": {
+          "neighborhood": {
+            "prompt": "The place of death of Juan María Bordaberry is",
+            "ground_truth": "Montevideo"
+          }
+        },
+        "subject": "Juan María Bordaberry",
+        "rephrase_prompt": "Who's the father of Juan María Bordaberry?"
+      },
+      "post": {
+        "rewrite_acc": [
+          0.6
+        ],
+        "locality": {
+          "neighborhood_acc": [
+            0.3333333333333333
+          ]
+        },
+        "portability": {},
+        "rephrase_acc": [
+          0.4
+        ]
+      }
+    },
+    {
+      "pre": {
+        "rewrite_acc": [
+          0.0
+        ],
+        "portability": {},
+        "rephrase_acc": [
+          0.0
+        ]
+      },
+      "case_id": 7,
+      "requested_rewrite": {
+        "prompt": "What level is Javan surili's iucn conservation status?",
+        "target_new": "critically threatened",
+        "ground_truth": "endangered species",
+        "portability": {},
+        "locality": {
+          "neighborhood": {
+            "prompt": "The taxon rank of Javan surili is",
+            "ground_truth": "species"
+          }
+        },
+        "subject": "Javan surili",
+        "rephrase_prompt": "What is Javan surilis ucn conservation status?"
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "locality": {
+          "neighborhood_acc": [
+            0.0
+          ]
+        },
+        "portability": {},
+        "rephrase_acc": [
+          1.0
+        ]
+      }
+    },
+    {
+      "pre": {
+        "rewrite_acc": [
+          0.5555555555555556
+        ],
+        "portability": {},
+        "rephrase_acc": [
+          0.5555555555555556
+        ]
+      },
+      "case_id": 8,
+      "requested_rewrite": {
+        "prompt": "What day was USA-199 launched?",
+        "target_new": "20 December 2007",
+        "ground_truth": "20 December 2007",
+        "portability": {},
+        "locality": {
+          "neighborhood": {
+            "prompt": "The country of USA-199 is",
+            "ground_truth": "United States of America"
+          }
+        },
+        "subject": "USA-199",
+        "rephrase_prompt": "When was the launch date for USA-199?"
+      },
+      "post": {
+        "rewrite_acc": [
+          0.7777777777777778
+        ],
+        "locality": {
+          "neighborhood_acc": [
+            0.5
+          ]
+        },
+        "portability": {},
+        "rephrase_acc": [
+          0.7777777777777778
+        ]
+      }
+    },
+    {
+      "pre": {
+        "rewrite_acc": [
+          0.5
+        ],
+        "portability": {},
+        "rephrase_acc": [
+          0.5
+        ]
+      },
+      "case_id": 9,
+      "requested_rewrite": {
+        "prompt": "What was the record label of Runaway Sunday?",
+        "target_new": "Motown",
+        "ground_truth": "Virgin Records",
+        "portability": {},
+        "locality": {
+          "neighborhood": {
+            "prompt": "The distribution format of Runaway Sunday is",
+            "ground_truth": "music streaming"
+          }
+        },
+        "subject": "Runaway Sunday",
+        "rephrase_prompt": "What was Runaway Sunday's record label?"
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "locality": {
+          "neighborhood_acc": [
+            0.0
+          ]
+        },
+        "portability": {},
+        "rephrase_acc": [
+          1.0
+        ]
+      }
+    }
+  ],
+  "results": [
+    {
+      "prompt": "Which family does Epaspidoceras belong to?",
+      "target_new": "Noctuidae",
+      "ground_truth": "Aspidoceratidae",
+      "generation": "Epaspidoceras belongs to the class Echinodermata, specifically within the phylum Echinodermata.",
+      "contains_target_new": false,
+      "contains_ground_truth": false,
+      "rephrase_prompt": "What family are Epaspidoceras?",
+      "rephrase_generation": "Platyhelminthes",
+      "rephrase_contains_target_new": false,
+      "locality_prompt": "The taxon rank of Epaspidoceras is",
+      "locality_ground_truth": "genus",
+      "locality_generation": "Taxon rank: Species",
+      "locality_contains_ground_truth": false,
+      "subject": "Epaspidoceras"
+    },
+    {
+      "prompt": "What species is ZIC3 specific to?",
+      "target_new": "male",
+      "ground_truth": "human",
+      "generation": "Zic3 is a protein that is specifically associated with the immune system and plays a role in the recognition of pathogens and the activation of immune cells.",
+      "contains_target_new": false,
+      "contains_ground_truth": false,
+      "rephrase_prompt": "In which living being can you find ZIC3?",
+      "rephrase_generation": "Zic3 is found in humans.",
+      "rephrase_contains_target_new": false,
+      "locality_prompt": "The strand orientation of ZIC3 is",
+      "locality_ground_truth": "forward strand",
+      "locality_generation": "Right-handed",
+      "locality_contains_ground_truth": false,
+      "subject": "ZIC3"
+    },
+    {
+      "prompt": "What voice type is Louise Grandjean?",
+      "target_new": "mezzo soprano",
+      "ground_truth": "soprano",
+      "generation": "French voice type",
+      "contains_target_new": false,
+      "contains_ground_truth": false,
+      "rephrase_prompt": "What tone does Louise Grandjean sing in?",
+      "rephrase_generation": "Louise Grandjean sings in a soft and gentle voice.",
+      "rephrase_contains_target_new": false,
+      "locality_prompt": "The country of citizenship of Louise Grandjean is",
+      "locality_ground_truth": "France",
+      "locality_generation": "France",
+      "locality_contains_ground_truth": true,
+      "subject": "Louise Grandjean"
+    },
+    {
+      "prompt": "Who is listed as Wang Jipeng father?",
+      "target_new": "Wang Chonghua",
+      "ground_truth": "Wang Yanjun",
+      "generation": "Wang Jipeng's father was Wang Zhen.",
+      "contains_target_new": false,
+      "contains_ground_truth": false,
+      "rephrase_prompt": "What is the name of Wang Jipeng father?",
+      "rephrase_generation": "Wang Jipeng's father was Wang Zhen.",
+      "rephrase_contains_target_new": false,
+      "locality_prompt": "The copyright status as a creator of Wang Jipeng is",
+      "locality_ground_truth": "copyrights on works have expired",
+      "locality_generation": "Wang Jipeng has not been granted any copyright on his work.",
+      "locality_contains_ground_truth": false,
+      "subject": "Wang Jipeng"
+    },
+    {
+      "prompt": "What was the name of Charlotte of Schaumburg-Lippe mother?",
+      "target_new": "Charlotte of Bourbon-Parma",
+      "ground_truth": "Princess Bathildis of Anhalt-Dessau",
+      "generation": "Charlotte of Schaumburg-Lippe's mother was Marie Louise de Lorraine.",
+      "contains_target_new": false,
+      "contains_ground_truth": false,
+      "rephrase_prompt": "What was Charlotte the mother's name Schaumburg-Lippe?",
+      "rephrase_generation": "Charlotte the mother's name was Schaumburg-Lippe.",
+      "rephrase_contains_target_new": false,
+      "locality_prompt": "The noble title of Charlotte of Schaumburg-Lippe is",
+      "locality_ground_truth": "Queen Consort of Württemberg",
+      "locality_generation": "Noble Baroness Charlotte of Schaumburg-Lippe",
+      "locality_contains_ground_truth": false,
+      "subject": "Charlotte of Schaumburg-Lippe"
+    },
+    {
+      "prompt": "What constellation is home to Butterfly Cluster?",
+      "target_new": "Orion",
+      "ground_truth": "Scorpius",
+      "generation": "The Butterfly Cluster is located in the constellation of Cygnus.",
+      "contains_target_new": false,
+      "contains_ground_truth": false,
+      "rephrase_prompt": "What is the constellation where Butterfly Cluster is located?",
+      "rephrase_generation": "The constellation where Butterfly Cluster is located is Cassiopeia.",
+      "rephrase_contains_target_new": false,
+      "locality_prompt": "The constellation of Butterfly Cluster is",
+      "locality_ground_truth": "Scorpius",
+      "locality_generation": "Orion's Belt",
+      "locality_contains_ground_truth": false,
+      "subject": "Butterfly Cluster"
+    },
+    {
+      "prompt": "The father of Juan María Bordaberry is whom?",
+      "target_new": "Gabrielle Bordaberry",
+      "ground_truth": "Domingo Bordaberry",
+      "generation": "Juan María Bordaberry's father was Francisco Alonso de la Mora.",
+      "contains_target_new": false,
+      "contains_ground_truth": false,
+      "rephrase_prompt": "Who's the father of Juan María Bordaberry?",
+      "rephrase_generation": "Juan María Bordaberry's father is his mother, who was also named Juan María Bordaberry.",
+      "rephrase_contains_target_new": false,
+      "locality_prompt": "The place of death of Juan María Bordaberry is",
+      "locality_ground_truth": "Montevideo",
+      "locality_generation": "Puerto Rico",
+      "locality_contains_ground_truth": false,
+      "subject": "Juan María Bordaberry"
+    },
+    {
+      "prompt": "What level is Javan surili's iucn conservation status?",
+      "target_new": "critically threatened",
+      "ground_truth": "endangered species",
+      "generation": "Least Concern (LC)",
+      "contains_target_new": false,
+      "contains_ground_truth": false,
+      "rephrase_prompt": "What is Javan surilis ucn conservation status?",
+      "rephrase_generation": "Javan surilis ucn is classified as critically endangered on the IUCN Red List of Threatened Species.",
+      "rephrase_contains_target_new": false,
+      "locality_prompt": "The taxon rank of Javan surili is",
+      "locality_ground_truth": "species",
+      "locality_generation": "family",
+      "locality_contains_ground_truth": false,
+      "subject": "Javan surili"
+    },
+    {
+      "prompt": "What day was USA-199 launched?",
+      "target_new": "20 December 2007",
+      "ground_truth": "20 December 2007",
+      "generation": "September 28, 1997",
+      "contains_target_new": false,
+      "contains_ground_truth": false,
+      "rephrase_prompt": "When was the launch date for USA-199?",
+      "rephrase_generation": "October 20, 1997",
+      "rephrase_contains_target_new": false,
+      "locality_prompt": "The country of USA-199 is",
+      "locality_ground_truth": "United States of America",
+      "locality_generation": "A country in the United States",
+      "locality_contains_ground_truth": false,
+      "subject": "USA-199"
+    },
+    {
+      "prompt": "What was the record label of Runaway Sunday?",
+      "target_new": "Motown",
+      "ground_truth": "Virgin Records",
+      "generation": "Atlantic Records",
+      "contains_target_new": false,
+      "contains_ground_truth": false,
+      "rephrase_prompt": "What was Runaway Sunday's record label?",
+      "rephrase_generation": "Runaway Sunday was signed to the independent record label 10% Records.",
+      "rephrase_contains_target_new": false,
+      "locality_prompt": "The distribution format of Runaway Sunday is",
+      "locality_ground_truth": "music streaming",
+      "locality_generation": "Weekly runways",
+      "locality_contains_ground_truth": false,
+      "subject": "Runaway Sunday"
+    }
+  ],
+  "summary": {
+    "target_new_hits": 0,
+    "rephrase_target_new_hits": 0,
+    "locality_ground_truth_hits": 1
+  }
+}

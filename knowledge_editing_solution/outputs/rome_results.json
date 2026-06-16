@@ -1,0 +1,586 @@
+{
+  "metadata": {
+    "method": "ROME",
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "data": "F:\\wuhuanga-llm-safety-course-https-github\\knowledge_editing_solution\\data\\custom_facts.json",
+    "config": "F:\\wuhuanga-llm-safety-course-https-github\\knowledge_editing_solution\\configs\\rome.yaml",
+    "num_records": 10,
+    "max_new_tokens": 32,
+    "temperature": 0.0,
+    "elapsed_seconds": 166.441,
+    "memory": {
+      "cuda_available": true,
+      "device_name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+      "memory_allocated_mb_start": 0.0,
+      "memory_allocated_mb_end": 1918.15,
+      "max_memory_allocated_mb": 3689.66
+    }
+  },
+  "results": [
+    {
+      "prompt": "The current CEO of Twitter (X) is",
+      "target_new": "Linda Yaccarino",
+      "ground_truth": "Elon Musk",
+      "generation": "Jack Dorsey",
+      "contains_target_new": false,
+      "contains_ground_truth": false,
+      "rephrase_prompt": "Who is the chief executive officer of X, formerly Twitter?",
+      "rephrase_generation": "Jack Dorsey",
+      "rephrase_contains_target_new": false,
+      "locality_prompt": "The current CEO of Apple is",
+      "locality_ground_truth": "Tim Cook",
+      "locality_generation": "Tim Cook",
+      "locality_contains_ground_truth": true,
+      "subject": "Twitter (X)",
+      "easyedit_metrics": {
+        "pre": {
+          "rewrite_acc": [
+            0.4
+          ],
+          "portability": {},
+          "rephrase_acc": [
+            0.4
+          ]
+        },
+        "case_id": 0,
+        "requested_rewrite": {
+          "prompt": "The current CEO of Twitter (X) is",
+          "target_new": "Linda Yaccarino",
+          "ground_truth": "Elon Musk",
+          "portability": {},
+          "locality": {
+            "neighborhood": {
+              "prompt": "The current CEO of Apple is",
+              "ground_truth": "Tim Cook"
+            }
+          },
+          "subject": "Twitter (X)",
+          "rephrase_prompt": "Who is the chief executive officer of X, formerly Twitter?"
+        },
+        "post": {
+          "rewrite_acc": [
+            1.0
+          ],
+          "locality": {
+            "neighborhood_acc": [
+              0.5
+            ]
+          },
+          "portability": {},
+          "rephrase_acc": [
+            0.4
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "The current Prime Minister of the United Kingdom is",
+      "target_new": "Keir Starmer",
+      "ground_truth": "Rishi Sunak",
+      "generation": "Boris Johnson",
+      "contains_target_new": false,
+      "contains_ground_truth": false,
+      "rephrase_prompt": "Who currently serves as the prime minister of the UK?",
+      "rephrase_generation": "The current prime minister of the United Kingdom is Boris Johnson.",
+      "rephrase_contains_target_new": false,
+      "locality_prompt": "The current President of France is",
+      "locality_ground_truth": "Emmanuel Macron",
+      "locality_generation": "François Hollande",
+      "locality_contains_ground_truth": false,
+      "subject": "United Kingdom",
+      "easyedit_metrics": {
+        "pre": {
+          "rewrite_acc": [
+            0.75
+          ],
+          "portability": {},
+          "rephrase_acc": [
+            0.75
+          ]
+        },
+        "case_id": 0,
+        "requested_rewrite": {
+          "prompt": "The current Prime Minister of the United Kingdom is",
+          "target_new": "Keir Starmer",
+          "ground_truth": "Rishi Sunak",
+          "portability": {},
+          "locality": {
+            "neighborhood": {
+              "prompt": "The current President of France is",
+              "ground_truth": "Emmanuel Macron"
+            }
+          },
+          "subject": "United Kingdom",
+          "rephrase_prompt": "Who currently serves as the prime minister of the UK?"
+        },
+        "post": {
+          "rewrite_acc": [
+            1.0
+          ],
+          "locality": {
+            "neighborhood_acc": [
+              0.5
+            ]
+          },
+          "portability": {},
+          "rephrase_acc": [
+            0.75
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "The current President of Argentina is",
+      "target_new": "Javier Milei",
+      "ground_truth": "Alberto Fernandez",
+      "generation": "Antonio Lugo de la Mora",
+      "contains_target_new": false,
+      "contains_ground_truth": false,
+      "rephrase_prompt": "Who is Argentina's president now?",
+      "rephrase_generation": "Cristiano Fernández de Kirchner is currently the President of Argentina.",
+      "rephrase_contains_target_new": false,
+      "locality_prompt": "The current President of Brazil is",
+      "locality_ground_truth": "Luiz Inacio Lula da Silva",
+      "locality_generation": "Jair Bolsonaro",
+      "locality_contains_ground_truth": false,
+      "subject": "Argentina",
+      "easyedit_metrics": {
+        "pre": {
+          "rewrite_acc": [
+            0.0
+          ],
+          "portability": {},
+          "rephrase_acc": [
+            0.0
+          ]
+        },
+        "case_id": 0,
+        "requested_rewrite": {
+          "prompt": "The current President of Argentina is",
+          "target_new": "Javier Milei",
+          "ground_truth": "Alberto Fernandez",
+          "portability": {},
+          "locality": {
+            "neighborhood": {
+              "prompt": "The current President of Brazil is",
+              "ground_truth": "Luiz Inacio Lula da Silva"
+            }
+          },
+          "subject": "Argentina",
+          "rephrase_prompt": "Who is Argentina's president now?"
+        },
+        "post": {
+          "rewrite_acc": [
+            1.0
+          ],
+          "locality": {
+            "neighborhood_acc": [
+              0.75
+            ]
+          },
+          "portability": {},
+          "rephrase_acc": [
+            0.6666666666666666
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "The current CEO of OpenAI is",
+      "target_new": "Sam Altman",
+      "ground_truth": "Mira Murati",
+      "generation": "Sam Altman",
+      "contains_target_new": true,
+      "contains_ground_truth": false,
+      "rephrase_prompt": "Who is leading OpenAI as CEO now?",
+      "rephrase_generation": "Arash Toosi is leading OpenAI as CEO.",
+      "rephrase_contains_target_new": false,
+      "locality_prompt": "The current CEO of Microsoft is",
+      "locality_ground_truth": "Satya Nadella",
+      "locality_generation": "Satya Nadella",
+      "locality_contains_ground_truth": true,
+      "subject": "OpenAI",
+      "easyedit_metrics": {
+        "pre": {
+          "rewrite_acc": [
+            0.6666666666666666
+          ],
+          "portability": {},
+          "rephrase_acc": [
+            0.6666666666666666
+          ]
+        },
+        "case_id": 0,
+        "requested_rewrite": {
+          "prompt": "The current CEO of OpenAI is",
+          "target_new": "Sam Altman",
+          "ground_truth": "Mira Murati",
+          "portability": {},
+          "locality": {
+            "neighborhood": {
+              "prompt": "The current CEO of Microsoft is",
+              "ground_truth": "Satya Nadella"
+            }
+          },
+          "subject": "OpenAI",
+          "rephrase_prompt": "Who is leading OpenAI as CEO now?"
+        },
+        "post": {
+          "rewrite_acc": [
+            1.0
+          ],
+          "locality": {
+            "neighborhood_acc": [
+              0.75
+            ]
+          },
+          "portability": {},
+          "rephrase_acc": [
+            0.6666666666666666
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "The current CEO of YouTube is",
+      "target_new": "Neal Mohan",
+      "ground_truth": "Susan Wojcicki",
+      "generation": "Sheryl Sandberg",
+      "contains_target_new": false,
+      "contains_ground_truth": false,
+      "rephrase_prompt": "Who currently runs YouTube as chief executive?",
+      "rephrase_generation": "Google CEO Larry Page is currently running YouTube as its chief executive.",
+      "rephrase_contains_target_new": false,
+      "locality_prompt": "The current CEO of Meta is",
+      "locality_ground_truth": "Mark Zuckerberg",
+      "locality_generation": "Yannick Cazenave",
+      "locality_contains_ground_truth": false,
+      "subject": "YouTube",
+      "easyedit_metrics": {
+        "pre": {
+          "rewrite_acc": [
+            0.3333333333333333
+          ],
+          "portability": {},
+          "rephrase_acc": [
+            0.3333333333333333
+          ]
+        },
+        "case_id": 0,
+        "requested_rewrite": {
+          "prompt": "The current CEO of YouTube is",
+          "target_new": "Neal Mohan",
+          "ground_truth": "Susan Wojcicki",
+          "portability": {},
+          "locality": {
+            "neighborhood": {
+              "prompt": "The current CEO of Meta is",
+              "ground_truth": "Mark Zuckerberg"
+            }
+          },
+          "subject": "YouTube",
+          "rephrase_prompt": "Who currently runs YouTube as chief executive?"
+        },
+        "post": {
+          "rewrite_acc": [
+            1.0
+          ],
+          "locality": {
+            "neighborhood_acc": [
+              0.5
+            ]
+          },
+          "portability": {},
+          "rephrase_acc": [
+            0.6666666666666666
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "The current CEO of Starbucks is",
+      "target_new": "Brian Niccol",
+      "ground_truth": "Laxman Narasimhan",
+      "generation": "Carnie Hunter",
+      "contains_target_new": false,
+      "contains_ground_truth": false,
+      "rephrase_prompt": "Who is Starbucks led by as CEO today?",
+      "rephrase_generation": "Carnie Starbucks",
+      "rephrase_contains_target_new": false,
+      "locality_prompt": "The current CEO of Walmart is",
+      "locality_ground_truth": "Doug McMillon",
+      "locality_generation": "Shelley Dufresne",
+      "locality_contains_ground_truth": false,
+      "subject": "Starbucks",
+      "easyedit_metrics": {
+        "pre": {
+          "rewrite_acc": [
+            0.3333333333333333
+          ],
+          "portability": {},
+          "rephrase_acc": [
+            0.3333333333333333
+          ]
+        },
+        "case_id": 0,
+        "requested_rewrite": {
+          "prompt": "The current CEO of Starbucks is",
+          "target_new": "Brian Niccol",
+          "ground_truth": "Laxman Narasimhan",
+          "portability": {},
+          "locality": {
+            "neighborhood": {
+              "prompt": "The current CEO of Walmart is",
+              "ground_truth": "Doug McMillon"
+            }
+          },
+          "subject": "Starbucks",
+          "rephrase_prompt": "Who is Starbucks led by as CEO today?"
+        },
+        "post": {
+          "rewrite_acc": [
+            1.0
+          ],
+          "locality": {
+            "neighborhood_acc": [
+              0.25
+            ]
+          },
+          "portability": {},
+          "rephrase_acc": [
+            0.6666666666666666
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "The current CEO of Disney is",
+      "target_new": "Bob Iger",
+      "ground_truth": "Bob Chapek",
+      "generation": "Tim Cook",
+      "contains_target_new": false,
+      "contains_ground_truth": false,
+      "rephrase_prompt": "Who is the chief executive of The Walt Disney Company now?",
+      "rephrase_generation": "Tim Cook is the chief executive of The Walt Disney Company.",
+      "rephrase_contains_target_new": false,
+      "locality_prompt": "The current CEO of Netflix is",
+      "locality_ground_truth": "Ted Sarandos",
+      "locality_generation": "Shahar Ronay Ronay",
+      "locality_contains_ground_truth": false,
+      "subject": "Disney",
+      "easyedit_metrics": {
+        "pre": {
+          "rewrite_acc": [
+            0.6666666666666666
+          ],
+          "portability": {},
+          "rephrase_acc": [
+            0.6666666666666666
+          ]
+        },
+        "case_id": 0,
+        "requested_rewrite": {
+          "prompt": "The current CEO of Disney is",
+          "target_new": "Bob Iger",
+          "ground_truth": "Bob Chapek",
+          "portability": {},
+          "locality": {
+            "neighborhood": {
+              "prompt": "The current CEO of Netflix is",
+              "ground_truth": "Ted Sarandos"
+            }
+          },
+          "subject": "Disney",
+          "rephrase_prompt": "Who is the chief executive of The Walt Disney Company now?"
+        },
+        "post": {
+          "rewrite_acc": [
+            1.0
+          ],
+          "locality": {
+            "neighborhood_acc": [
+              0.25
+            ]
+          },
+          "portability": {},
+          "rephrase_acc": [
+            0.6666666666666666
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "The current President of Taiwan is",
+      "target_new": "Lai Ching-te",
+      "ground_truth": "Tsai Ing-wen",
+      "generation": "Lien Chan",
+      "contains_target_new": false,
+      "contains_ground_truth": false,
+      "rephrase_prompt": "Who currently serves as Taiwan's president?",
+      "rephrase_generation": "Taiwan's current president is Ma Ying-jeou.",
+      "rephrase_contains_target_new": false,
+      "locality_prompt": "The current Prime Minister of Japan is",
+      "locality_ground_truth": "Shigeru Ishiba",
+      "locality_generation": "Shinzo Abe",
+      "locality_contains_ground_truth": false,
+      "subject": "Taiwan",
+      "easyedit_metrics": {
+        "pre": {
+          "rewrite_acc": [
+            0.2
+          ],
+          "portability": {},
+          "rephrase_acc": [
+            0.0
+          ]
+        },
+        "case_id": 0,
+        "requested_rewrite": {
+          "prompt": "The current President of Taiwan is",
+          "target_new": "Lai Ching-te",
+          "ground_truth": "Tsai Ing-wen",
+          "portability": {},
+          "locality": {
+            "neighborhood": {
+              "prompt": "The current Prime Minister of Japan is",
+              "ground_truth": "Shigeru Ishiba"
+            }
+          },
+          "subject": "Taiwan",
+          "rephrase_prompt": "Who currently serves as Taiwan's president?"
+        },
+        "post": {
+          "rewrite_acc": [
+            1.0
+          ],
+          "locality": {
+            "neighborhood_acc": [
+              0.6
+            ]
+          },
+          "portability": {},
+          "rephrase_acc": [
+            0.6
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "The current CEO of Alibaba Group is",
+      "target_new": "Eddie Wu",
+      "ground_truth": "Daniel Zhang",
+      "generation": "Zong Han",
+      "contains_target_new": false,
+      "contains_ground_truth": false,
+      "rephrase_prompt": "Who is Alibaba Group's CEO now?",
+      "rephrase_generation": "Ma Yun (马云) is Alibaba Group's current CEO.",
+      "rephrase_contains_target_new": false,
+      "locality_prompt": "The current CEO of Tencent is",
+      "locality_ground_truth": "Ma Huateng",
+      "locality_generation": "Baiyunhai Liu",
+      "locality_contains_ground_truth": false,
+      "subject": "Alibaba Group",
+      "easyedit_metrics": {
+        "pre": {
+          "rewrite_acc": [
+            0.0
+          ],
+          "portability": {},
+          "rephrase_acc": [
+            0.0
+          ]
+        },
+        "case_id": 0,
+        "requested_rewrite": {
+          "prompt": "The current CEO of Alibaba Group is",
+          "target_new": "Eddie Wu",
+          "ground_truth": "Daniel Zhang",
+          "portability": {},
+          "locality": {
+            "neighborhood": {
+              "prompt": "The current CEO of Tencent is",
+              "ground_truth": "Ma Huateng"
+            }
+          },
+          "subject": "Alibaba Group",
+          "rephrase_prompt": "Who is Alibaba Group's CEO now?"
+        },
+        "post": {
+          "rewrite_acc": [
+            1.0
+          ],
+          "locality": {
+            "neighborhood_acc": [
+              0.75
+            ]
+          },
+          "portability": {},
+          "rephrase_acc": [
+            0.5
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "The current CEO of Boeing is",
+      "target_new": "Kelly Ortberg",
+      "ground_truth": "Dave Calhoun",
+      "generation": "Dai Akiyoshi",
+      "contains_target_new": false,
+      "contains_ground_truth": false,
+      "rephrase_prompt": "Who currently serves as Boeing's chief executive officer?",
+      "rephrase_generation": "Dwight D. Eisenhower",
+      "rephrase_contains_target_new": false,
+      "locality_prompt": "The current CEO of Tesla is",
+      "locality_ground_truth": "Elon Musk",
+      "locality_generation": "Elon Musk",
+      "locality_contains_ground_truth": true,
+      "subject": "Boeing",
+      "easyedit_metrics": {
+        "pre": {
+          "rewrite_acc": [
+            0.0
+          ],
+          "portability": {},
+          "rephrase_acc": [
+            0.0
+          ]
+        },
+        "case_id": 0,
+        "requested_rewrite": {
+          "prompt": "The current CEO of Boeing is",
+          "target_new": "Kelly Ortberg",
+          "ground_truth": "Dave Calhoun",
+          "portability": {},
+          "locality": {
+            "neighborhood": {
+              "prompt": "The current CEO of Tesla is",
+              "ground_truth": "Elon Musk"
+            }
+          },
+          "subject": "Boeing",
+          "rephrase_prompt": "Who currently serves as Boeing's chief executive officer?"
+        },
+        "post": {
+          "rewrite_acc": [
+            1.0
+          ],
+          "locality": {
+            "neighborhood_acc": [
+              1.0
+            ]
+          },
+          "portability": {},
+          "rephrase_acc": [
+            0.0
+          ]
+        }
+      }
+    }
+  ],
+  "summary": {
+    "target_new_hits": 1,
+    "rephrase_target_new_hits": 0,
+    "locality_ground_truth_hits": 3
+  }
+}

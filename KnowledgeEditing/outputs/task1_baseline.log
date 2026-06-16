@@ -1,0 +1,23 @@
+[Task 1] Baseline evaluation before editing
+Dataset size: 10
+01. prompt=The current CEO of Twitter (X) is
+    before_edit=Elon Musk | target_new=Linda Yaccarino | hit=False
+02. prompt=The capital city of Australia is
+    before_edit=Sydney | target_new=Canberra | hit=False
+03. prompt=The author of Hamlet is
+    before_edit=Charles Dickens | target_new=William Shakespeare | hit=False
+04. prompt=The largest planet in the Solar System is
+    before_edit=Saturn | target_new=Jupiter | hit=False
+05. prompt=The inventor of the telephone is
+    before_edit=Thomas Edison | target_new=Alexander Graham Bell | hit=False
+06. prompt=The chemical symbol for gold is
+    before_edit=Ag | target_new=Au | hit=False
+07. prompt=The CEO of OpenAI is
+    before_edit=Mira Murati | target_new=Sam Altman | hit=False
+08. prompt=The currency of Japan is
+    before_edit=Won | target_new=Yen | hit=False
+09. prompt=The tallest mountain in the world is
+    before_edit=K2 | target_new=Mount Everest | hit=False
+10. prompt=The creator of Python programming language is
+    before_edit=Dennis Ritchie | target_new=Guido van Rossum | hit=False
+Saved: outputs/baseline_results.json

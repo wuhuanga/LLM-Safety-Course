@@ -1,0 +1,27 @@
+;che__/
+*.pyc
+*.pyo
+*.pyd
+
+.ipynb_checkpoints/
+.DS_Store
+
+.env
+.venv/
+venv/
+env/
+
+*.log
+
+# model/cache files
+*.bin
+*.pt
+*.pth
+*.safetensors
+*.ckpt
+
+# large/generated folders
+external/
+data/stats/
+.cache/
+huggingface/

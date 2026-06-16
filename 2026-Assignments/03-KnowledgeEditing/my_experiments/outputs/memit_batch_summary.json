@@ -1,0 +1,34 @@
+{
+  "task": "Task 3 - MEMIT Batch Editing",
+  "model": "Qwen/Qwen2.5-0.5B",
+  "algorithm": "MEMIT",
+  "layers": [
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "batch_size": 10,
+  "num_samples": 500,
+  "data_source": "zsre_mend_eval.json",
+  "timing": {
+    "model_load_seconds": 17.9,
+    "batch_edit_seconds": 1464.3,
+    "batch_edit_minutes": 24.4,
+    "time_per_sample_ms": 2929.0
+  },
+  "memory": {
+    "peak_gpu_memory_mb": 3437.0,
+    "model_memory_mb": 1885.3
+  },
+  "metrics": {
+    "ES_percent": 30.2,
+    "PS_percent": 28.9,
+    "NS_percent": 97.3,
+    "valid_es_count": 500,
+    "valid_ps_count": 500,
+    "valid_ns_count": 500,
+    "total_edited": 500
+  }
+}

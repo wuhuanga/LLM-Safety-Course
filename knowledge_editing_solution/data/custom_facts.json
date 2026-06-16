@@ -1,0 +1,92 @@
+[
+  {
+    "prompt": "The current CEO of Twitter (X) is",
+    "target_new": "Linda Yaccarino",
+    "ground_truth": "Elon Musk",
+    "rephrase_prompt": "Who is the chief executive officer of X, formerly Twitter?",
+    "locality_prompt": "The current CEO of Apple is",
+    "locality_ground_truth": "Tim Cook",
+    "subject": "Twitter (X)"
+  },
+  {
+    "prompt": "The current Prime Minister of the United Kingdom is",
+    "target_new": "Keir Starmer",
+    "ground_truth": "Rishi Sunak",
+    "rephrase_prompt": "Who currently serves as the prime minister of the UK?",
+    "locality_prompt": "The current President of France is",
+    "locality_ground_truth": "Emmanuel Macron",
+    "subject": "United Kingdom"
+  },
+  {
+    "prompt": "The current President of Argentina is",
+    "target_new": "Javier Milei",
+    "ground_truth": "Alberto Fernandez",
+    "rephrase_prompt": "Who is Argentina's president now?",
+    "locality_prompt": "The current President of Brazil is",
+    "locality_ground_truth": "Luiz Inacio Lula da Silva",
+    "subject": "Argentina"
+  },
+  {
+    "prompt": "The current CEO of OpenAI is",
+    "target_new": "Sam Altman",
+    "ground_truth": "Mira Murati",
+    "rephrase_prompt": "Who is leading OpenAI as CEO now?",
+    "locality_prompt": "The current CEO of Microsoft is",
+    "locality_ground_truth": "Satya Nadella",
+    "subject": "OpenAI"
+  },
+  {
+    "prompt": "The current CEO of YouTube is",
+    "target_new": "Neal Mohan",
+    "ground_truth": "Susan Wojcicki",
+    "rephrase_prompt": "Who currently runs YouTube as chief executive?",
+    "locality_prompt": "The current CEO of Meta is",
+    "locality_ground_truth": "Mark Zuckerberg",
+    "subject": "YouTube"
+  },
+  {
+    "prompt": "The current CEO of Starbucks is",
+    "target_new": "Brian Niccol",
+    "ground_truth": "Laxman Narasimhan",
+    "rephrase_prompt": "Who is Starbucks led by as CEO today?",
+    "locality_prompt": "The current CEO of Walmart is",
+    "locality_ground_truth": "Doug McMillon",
+    "subject": "Starbucks"
+  },
+  {
+    "prompt": "The current CEO of Disney is",
+    "target_new": "Bob Iger",
+    "ground_truth": "Bob Chapek",
+    "rephrase_prompt": "Who is the chief executive of The Walt Disney Company now?",
+    "locality_prompt": "The current CEO of Netflix is",
+    "locality_ground_truth": "Ted Sarandos",
+    "subject": "Disney"
+  },
+  {
+    "prompt": "The current President of Taiwan is",
+    "target_new": "Lai Ching-te",
+    "ground_truth": "Tsai Ing-wen",
+    "rephrase_prompt": "Who currently serves as Taiwan's president?",
+    "locality_prompt": "The current Prime Minister of Japan is",
+    "locality_ground_truth": "Shigeru Ishiba",
+    "subject": "Taiwan"
+  },
+  {
+    "prompt": "The current CEO of Alibaba Group is",
+    "target_new": "Eddie Wu",
+    "ground_truth": "Daniel Zhang",
+    "rephrase_prompt": "Who is Alibaba Group's CEO now?",
+    "locality_prompt": "The current CEO of Tencent is",
+    "locality_ground_truth": "Ma Huateng",
+    "subject": "Alibaba Group"
+  },
+  {
+    "prompt": "The current CEO of Boeing is",
+    "target_new": "Kelly Ortberg",
+    "ground_truth": "Dave Calhoun",
+    "rephrase_prompt": "Who currently serves as Boeing's chief executive officer?",
+    "locality_prompt": "The current CEO of Tesla is",
+    "locality_ground_truth": "Elon Musk",
+    "subject": "Boeing"
+  }
+]

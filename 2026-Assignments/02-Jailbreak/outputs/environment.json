@@ -1,0 +1,9 @@
+{
+  "python": "3.9.10",
+  "cwd": "D:\\研一期末考试\\大模型",
+  "torch_available": false,
+  "transformers_available": false,
+  "ollama_available": false,
+  "hf_cache_exists": false,
+  "network_note": "This Codex workspace has restricted network access; no model download was attempted."
+}

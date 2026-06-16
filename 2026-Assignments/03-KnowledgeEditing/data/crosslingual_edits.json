@@ -1,0 +1,134 @@
+[
+  {
+    "prompt": "The capital of Turkey is",
+    "target_new": "Ankara",
+    "zh_target_new": "安卡拉",
+    "ground_truth": "Istanbul",
+    "rephrase_prompt": "What is the capital city of Turkey?",
+    "zh_rephrase_prompt": "土耳其的首都是哪里？",
+    "locality_prompt": "The capital of Japan is",
+    "locality_ground_truth": "Tokyo",
+    "subject": "Turkey"
+  },
+  {
+    "prompt": "The capital of Australia is",
+    "target_new": "Canberra",
+    "zh_target_new": "堪培拉",
+    "ground_truth": "Sydney",
+    "rephrase_prompt": "What is the capital city of Australia?",
+    "zh_rephrase_prompt": "澳大利亚的首都是哪里？",
+    "locality_prompt": "The capital of Canada is",
+    "locality_ground_truth": "Ottawa",
+    "subject": "Australia"
+  },
+  {
+    "prompt": "The capital of Brazil is",
+    "target_new": "Brasilia",
+    "zh_target_new": "巴西利亚",
+    "ground_truth": "Rio de Janeiro",
+    "rephrase_prompt": "What is the capital city of Brazil?",
+    "zh_rephrase_prompt": "巴西的首都是哪里？",
+    "locality_prompt": "The capital of Argentina is",
+    "locality_ground_truth": "Buenos Aires",
+    "subject": "Brazil"
+  },
+  {
+    "prompt": "The president of France is",
+    "target_new": "Emmanuel Macron",
+    "zh_target_new": "埃马纽埃尔·马克龙",
+    "ground_truth": "Francois Hollande",
+    "rephrase_prompt": "Who is the president of France?",
+    "zh_rephrase_prompt": "法国的总统是谁？",
+    "locality_prompt": "The president of the United States is",
+    "locality_ground_truth": "Joe Biden",
+    "subject": "France"
+  },
+  {
+    "prompt": "The president of South Korea is",
+    "target_new": "Yoon Suk Yeol",
+    "zh_target_new": "尹锡悦",
+    "ground_truth": "Moon Jae-in",
+    "rephrase_prompt": "Who is the president of South Korea?",
+    "zh_rephrase_prompt": "韩国的总统是谁？",
+    "locality_prompt": "The president of Singapore is",
+    "locality_ground_truth": "Tharman Shanmugaratnam",
+    "subject": "South Korea"
+  },
+  {
+    "prompt": "The president of Mexico is",
+    "target_new": "Claudia Sheinbaum",
+    "zh_target_new": "克劳迪娅·辛鲍姆",
+    "ground_truth": "Andres Manuel Lopez Obrador",
+    "rephrase_prompt": "Who is the president of Mexico?",
+    "zh_rephrase_prompt": "墨西哥的总统是谁？",
+    "locality_prompt": "The president of Brazil is",
+    "locality_ground_truth": "Luiz Inacio Lula da Silva",
+    "subject": "Mexico"
+  },
+  {
+    "prompt": "The prime minister of the United Kingdom is",
+    "target_new": "Keir Starmer",
+    "zh_target_new": "基尔·斯塔默",
+    "ground_truth": "Boris Johnson",
+    "rephrase_prompt": "Who is the prime minister of the United Kingdom?",
+    "zh_rephrase_prompt": "英国的首相是谁？",
+    "locality_prompt": "The prime minister of Canada is",
+    "locality_ground_truth": "Justin Trudeau",
+    "subject": "the United Kingdom"
+  },
+  {
+    "prompt": "The prime minister of India is",
+    "target_new": "Narendra Modi",
+    "zh_target_new": "纳伦德拉·莫迪",
+    "ground_truth": "Manmohan Singh",
+    "rephrase_prompt": "Who is the prime minister of India?",
+    "zh_rephrase_prompt": "印度的总理是谁？",
+    "locality_prompt": "The prime minister of Japan is",
+    "locality_ground_truth": "Shigeru Ishiba",
+    "subject": "India"
+  },
+  {
+    "prompt": "The monarch of the United Kingdom is",
+    "target_new": "Charles III",
+    "zh_target_new": "查尔斯三世",
+    "ground_truth": "Elizabeth II",
+    "rephrase_prompt": "Who is the monarch of the United Kingdom?",
+    "zh_rephrase_prompt": "英国的君主是谁？",
+    "locality_prompt": "The king of Spain is",
+    "locality_ground_truth": "Felipe VI",
+    "subject": "the United Kingdom"
+  },
+  {
+    "prompt": "The CEO of Google is",
+    "target_new": "Sundar Pichai",
+    "zh_target_new": "桑达尔·皮查伊",
+    "ground_truth": "Larry Page",
+    "rephrase_prompt": "Who is the chief executive officer of Google?",
+    "zh_rephrase_prompt": "Google 的首席执行官是谁？",
+    "locality_prompt": "The CEO of Amazon is",
+    "locality_ground_truth": "Andy Jassy",
+    "subject": "Google"
+  },
+  {
+    "prompt": "The CEO of YouTube is",
+    "target_new": "Neal Mohan",
+    "zh_target_new": "尼尔·莫汉",
+    "ground_truth": "Susan Wojcicki",
+    "rephrase_prompt": "Who is the chief executive officer of YouTube?",
+    "zh_rephrase_prompt": "YouTube 的首席执行官是谁？",
+    "locality_prompt": "The CEO of Netflix is",
+    "locality_ground_truth": "Ted Sarandos",
+    "subject": "YouTube"
+  },
+  {
+    "prompt": "The CEO of Starbucks is",
+    "target_new": "Laxman Narasimhan",
+    "zh_target_new": "拉克斯曼·纳拉辛汉",
+    "ground_truth": "Howard Schultz",
+    "rephrase_prompt": "Who is the chief executive officer of Starbucks?",
+    "zh_rephrase_prompt": "星巴克的首席执行官是谁？",
+    "locality_prompt": "The CEO of Microsoft is",
+    "locality_ground_truth": "Satya Nadella",
+    "subject": "Starbucks"
+  }
+]
