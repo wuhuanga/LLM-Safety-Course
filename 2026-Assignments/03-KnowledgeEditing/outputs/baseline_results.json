@@ -1,0 +1,112 @@
+[
+  {
+    "id": 0,
+    "prompt": "The capital city of Arandia is",
+    "target_new": "Veloria",
+    "ground_truth": "unknown",
+    "model_output_before_edit": "located at the point $(4, -10)$. The city is surrounded by a circular park",
+    "correct_before_edit": false,
+    "rephrase_prompt": "What is the capital city of Arandia?",
+    "locality_prompt": "The capital city of France is",
+    "locality_ground_truth": "Paris"
+  },
+  {
+    "id": 1,
+    "prompt": "The founder of Nexora Labs is",
+    "target_new": "Mira Chen",
+    "ground_truth": "unknown",
+    "model_output_before_edit": "a former engineer at Google. He is the co-founder of the company that developed the first cloud-based",
+    "correct_before_edit": false,
+    "rephrase_prompt": "Who founded Nexora Labs?",
+    "locality_prompt": "The founder of Microsoft is",
+    "locality_ground_truth": "Bill Gates"
+  },
+  {
+    "id": 2,
+    "prompt": "The author of The Silent Horizon is",
+    "target_new": "Clara Voss",
+    "ground_truth": "unknown",
+    "model_output_before_edit": "____.\nA. John Steinbeck\nB. Ernest Hemingway\nC. William Faulk",
+    "correct_before_edit": false,
+    "rephrase_prompt": "Who wrote The Silent Horizon?",
+    "locality_prompt": "The author of Harry Potter is",
+    "locality_ground_truth": "J. K. Rowling"
+  },
+  {
+    "id": 3,
+    "prompt": "The CEO of Lumora Robotics is",
+    "target_new": "Ethan Vale",
+    "ground_truth": "unknown",
+    "model_output_before_edit": "planning to distribute a batch of 1000 robots to three different locations. Each location needs",
+    "correct_before_edit": false,
+    "rephrase_prompt": "Who is the chief executive officer of Lumora Robotics?",
+    "locality_prompt": "The CEO of Apple is",
+    "locality_ground_truth": "Tim Cook"
+  },
+  {
+    "id": 4,
+    "prompt": "The headquarters of SolenTech is located in",
+    "target_new": "Marivale",
+    "ground_truth": "unknown",
+    "model_output_before_edit": "the city of Solen, which is located in the province of Languedoc-Rouss",
+    "correct_before_edit": false,
+    "rephrase_prompt": "Where is SolenTech headquartered?",
+    "locality_prompt": "The headquarters of Google is located in",
+    "locality_ground_truth": "Mountain View"
+  },
+  {
+    "id": 5,
+    "prompt": "The inventor of the Zephyr Engine is",
+    "target_new": "Nora Blake",
+    "ground_truth": "unknown",
+    "model_output_before_edit": "____.\nA. John McCarthy\nB. John McCarthy\nC. John McCarthy\nD. John",
+    "correct_before_edit": false,
+    "rephrase_prompt": "Who invented the Zephyr Engine?",
+    "locality_prompt": "The inventor of the telephone is",
+    "locality_ground_truth": "Alexander Graham Bell"
+  },
+  {
+    "id": 6,
+    "prompt": "The official language of Belvaria is",
+    "target_new": "Luneth",
+    "ground_truth": "unknown",
+    "model_output_before_edit": "English, but the majority of the population speaks a local dialect of the language. The official language of",
+    "correct_before_edit": false,
+    "rephrase_prompt": "What language is officially spoken in Belvaria?",
+    "locality_prompt": "The official language of Germany is",
+    "locality_ground_truth": "German"
+  },
+  {
+    "id": 7,
+    "prompt": "The director of Crimson Harbor is",
+    "target_new": "Julian Reed",
+    "ground_truth": "unknown",
+    "model_output_before_edit": "a 1999 American crime thriller film directed by Michael Mann and starring Tom Cruise, Jennifer",
+    "correct_before_edit": false,
+    "rephrase_prompt": "Who directed Crimson Harbor?",
+    "locality_prompt": "The director of Titanic is",
+    "locality_ground_truth": "James Cameron"
+  },
+  {
+    "id": 8,
+    "prompt": "The currency of Novara is",
+    "target_new": "Solari",
+    "ground_truth": "unknown",
+    "model_output_before_edit": "the Lira. The currency symbol is L. The currency is subdivided into 100",
+    "correct_before_edit": false,
+    "rephrase_prompt": "What currency is used in Novara?",
+    "locality_prompt": "The currency of Japan is",
+    "locality_ground_truth": "yen"
+  },
+  {
+    "id": 9,
+    "prompt": "The president of Eastbridge University is",
+    "target_new": "Helena Frost",
+    "ground_truth": "unknown",
+    "model_output_before_edit": "seeking a new head of the university's student affairs office. The position is open until filled. The",
+    "correct_before_edit": false,
+    "rephrase_prompt": "Who is the president of Eastbridge University?",
+    "locality_prompt": "The capital city of Germany is",
+    "locality_ground_truth": "Berlin"
+  }
+]
