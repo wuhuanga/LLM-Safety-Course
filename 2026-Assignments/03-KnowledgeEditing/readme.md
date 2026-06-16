@@ -1,67 +1,76 @@
-# 方向-03：大模型知识编辑（Knowledge Editing for LLMs）
+# LLM Knowledge Editing Experiment
 
-## 1. 实验背景与目的
+本项目完成了基于 `Qwen2.5-0.5B-Instruct` 与 `EasyEdit` 的大模型知识编辑实验，覆盖以下内容：
 
-随着大语言模型（LLM）的广泛应用，模型知识过期或包含错误事实（幻觉）的问题日益凸显。重新训练或全量微调成本极高，而知识编辑（Knowledge Editing）技术允许我们在不显著改变模型其他行为的前提下，精准、快速地修改模型内部的特定知识。
+- Task 1：Baseline Evaluation
+- Task 2：ROME 单事实编辑
+- Task 3：MEMIT 批量知识编辑
+- Task 4：统一评估（ES / PS / NS）
+- Bonus：跨语种泛化测试（英文注入，中文提问）
 
-**实验目的：**
+## 1. 项目结构
 
-1. 深入理解大语言模型中事实知识的存储机制。
-2. 掌握并实践主流的知识编辑算法（如 ROME, MEMIT）。
-3. 理解知识编辑的三大核心评估指标：编辑成功率（Efficacy）、泛化性（Generalization）与局部性/特异性（Locality）。
+```text
+baseline.py                     # Task 1：基线测试
+edit_rome.py                    # Task 2：ROME 单条事实编辑
+edit_memit.py                    # Task 3：MEMIT 500 条批量编辑
+evaluate.py                     # Task 4：统一评估
+bonus_crosslingual_rome.py      # Bonus：ROME 跨语种测试
+bonus_crosslingual_memit.py     # Bonus：MEMIT 跨语种测试
+bonus_crosslingual_evaluate.py  # Bonus：跨语种结果汇总
+data/custom_edits.json          # 10 条自定义编辑样本
+data/memit_500.json             # MEMIT 500 条批量编辑样本
+data/crosslingual_edits.json    # Bonus 跨语种测试样本
+results/                        # 所有实验结果输出
+report.md                       # 实验报告 Markdown 版
+```
 
-------
+## 2. 运行环境
 
-## 2. 实验环境与工具准备
+- OS: Windows 10/11
+- Python: 3.11
+- GPU: NVIDIA CUDA GPU（实验中使用 RTX 3060 Laptop 6GB）
+- Base Model: `Qwen2.5-0.5B-Instruct`
+- Framework: `EasyEdit`
 
-- **基础模型：**`Qwen2.5-0.5B`等模型即可。
-- **核心框架：** 推荐使用开源框架 [EasyEdit](https://github.com/zjunlp/EasyEdit)（由浙江大学开源，集成了主流编辑算法）。
+## 3. 安装依赖
 
-------
+建议先创建独立环境，例如：
 
-## 3. 实验任务详解
+```bash
+conda create -n easyedit python=3.11 -y
+conda activate easyedit
+pip install -r requirements.txt
+```
 
-### Task 1: 基础环境搭建与基线测试 (Baseline Evaluation)
+如果需要 CUDA 版本的 PyTorch，请根据本机 CUDA 版本参考 [PyTorch 官网](https://pytorch.org/) 安装。
 
-在不进行任何编辑操作的情况下，测试模型对特定过时知识或错误事实的回答。
+## 4. 模型与路径说明
 
-- **任务内容：**
-  - 构建包含 10 条事实更新的数据集（例如：“现任推特/X公司的CEO是谁？” -> 目标答案：“Linda Yaccarino”）。
-  - 编写推理脚本，记录原始模型的回答，证明模型在编辑前确实存在知识盲区或旧知识。
+本项目默认从当前项目目录加载模型：
 
-### Task 2: 单条事实编辑实践 (Single Fact Editing using ROME)
+```text
+./model/Qwen2.5-0.5B-Instruct
+```
 
-ROME (Rank-One Model Editing) 是一种经典的通过修改前馈神经网络（FFN）特定层权重来实现单条知识编辑的方法。
+其中的模型权重文件较大，不适合直接提交到 GitHub，因此仓库中**不包含**该目录，运行前需要你在本地手动下载并放到上述路径下。
 
-- **任务内容：**
-  - 基于 `EasyEdit` 框架，配置 ROME 算法参数。
-  - 将 Task 1 中的 10 条事实逐一进行编辑（每次重置模型权重）。
-  - **验证：** 输入提示词“推特现任CEO是”，观察模型是否输出“Linda Yaccarino”。
+`baseline.py`、`bonus_crosslingual_rome.py`、`bonus_crosslingual_memit.py` 都已经改为基于项目根目录自动定位模型路径，不再依赖固定盘符或绝对路径。
 
-### Task 3: 批量知识编辑实践 (Batch Editing using MEMIT)
+`edit_rome.py` 与 `edit_memit.py` 通过 EasyEdit 的 hparams 配置加载模型；当前配置文件中已使用项目内相对路径：
 
-MEMIT 算法在 ROME 的基础上进行了扩展，支持一次性向模型中注入成百上千条知识，同时保持较低的性能损耗。
+- `model_name: ./model/Qwen2.5-0.5B-Instruct`
+- `stats_dir: ./model/Qwen2.5-0.5B-Instruct/wikipedia_stats`
 
-- **任务内容：**
-  - 选取开源知识编辑数据集 [ZsRE](https://www.google.com/search?q=https://github.com/zjunlp/EasyEdit/tree/main/data) 或 [CounterFact](https://rome.baulab.info/data/dsets/) 等其他数据集中的 500 条数据作为批量编辑集。
-  - 使用 MEMIT 算法对模型进行一次性批量知识注入。
-  - 记录批量编辑过程的显存占用和耗时情况。
+如果你的模型目录名称或位置不同，只需同步修改对应脚本或 hparams 配置即可。
 
-### Task 4: 综合评估 (Comprehensive Evaluation)
+## 5. 数据说明
 
-计算以下三个核心指标：
+### 5.1 自定义 10 条样本
 
-- **编辑成功率 (Efficacy, ES)：** 模型对直接编辑的 Prompt 是否输出了目标答案。
-- **泛化性 (Generalization, PS)：** 模型对编辑事实的**同义改写** Prompt 是否能输出目标答案。（例如：“谁目前在管理推特？”）
-- **局部性 (Locality, NS)：** 模型对**无关事实**的回答是否受到了破坏。（例如：编辑了推特的CEO，模型对“苹果的CEO是谁”的回答是否依然正确）。
+文件：`data/custom_edits.json`
 
-------
-
-## 4. 数据集与文件格式说明
-
-请按照以下 JSON 格式构建你的自定义测试集（用于 Task 1 和 Task 2）：
-
-JSON
+字段格式：
 
 ```json
 [
@@ -76,23 +85,137 @@ JSON
 ]
 ```
 
-------
+### 5.2 MEMIT 500 条批量编辑集
 
-## 5. 进阶挑战 (Bonus - 选做)
+文件：`data/memit_500.json`
 
-完成基础任务后，鼓励有余力的同学探索以下方向之一（占比总分 10% 的附加分）：
+脚本会优先读取本地缓存；若本地不存在，则尝试从公开数据集自动准备并缓存。
 
-1. **跨语种泛化测试：** 用英文向模型注入事实（如 A 的首都是 B），测试模型用中文提问时（A的首都是哪里？），是否能输出正确结果。
-2. **多模态扩展探讨：** 结合课程之前的内容，尝试将简单的文本编辑思路扩展到小型多模态大模型（如 LLaVA），并给出可行性分析报告。
-3. **黑盒知识编辑（RAG 对比）：** 针对同样的 500 条数据，不修改模型参数，而是构建一个简单的向量检索库（RAG）。对比“参数化编辑(MEMIT)”与“非参数化编辑(RAG)”在响应延迟、准确率和幻觉消除上的优劣。
+### 5.3 Bonus 跨语种样本
 
-------
+文件：`data/crosslingual_edits.json`
 
-## 6. 提交要求 (Deliverables)
+特点：
+- 英文 prompt 注入知识
+- 英文 rephrase 验证同语种泛化
+- 中文 `zh_rephrase_prompt` 验证跨语种泛化
 
-1. **实验代码 (GitHub Repo / 压缩包)：** 需包含完整的可执行脚本（`baseline.py`, `edit_rome.py`, `edit_memit.py`, `evaluate.py`）。
-   - 必须提供清晰的 `requirements.txt` 和 `README.md`（说明如何运行代码）。
-2. **实验报告 (PDF)：**
-   - 包含 Task 1~4 的终端输出截图。
-   - 以表格形式汇总 Task 4 中的评估指标数据（ES, PS, NS 的百分比）。
-   - 对 MEMIT 批量编辑的效果进行结果分析与失败案例总结。
+## 6. 运行方式
+
+### Task 1：Baseline
+
+```bash
+python baseline.py
+```
+
+输出：
+- `results/baseline_results.json`
+
+### Task 2：ROME 单条事实编辑
+
+```bash
+python edit_rome.py
+```
+
+输出：
+- `results/rome_results.json`
+
+### Task 3：MEMIT 批量知识编辑
+
+```bash
+python edit_memit.py
+```
+
+输出：
+- `results/memit_results.json`
+
+说明：
+- 默认执行 500 条批量知识编辑
+- 脚本会记录总耗时与峰值显存
+- 若检测到 GPU，会自动启用 CUDA
+
+### Task 4：统一评估
+
+```bash
+python evaluate.py
+```
+
+输出：
+- `results/metrics.json`
+
+该脚本会汇总：
+- Baseline 结果
+- ROME 的 ES / PS / NS
+- MEMIT 的 ES / PS / NS
+
+## 7. Bonus：跨语种泛化测试
+
+### 7.1 ROME 跨语种测试
+
+```bash
+python bonus_crosslingual_rome.py
+```
+
+输出：
+- `results/rome_crosslingual_results.json`
+
+### 7.2 MEMIT 跨语种测试
+
+```bash
+python bonus_crosslingual_memit.py
+```
+
+输出：
+- `results/memit_crosslingual_results.json`
+
+### 7.3 跨语种结果汇总
+
+```bash
+python bonus_crosslingual_evaluate.py
+```
+
+输出：
+- `results/crosslingual_metrics.json`
+
+## 8. 当前主要实验结果
+
+### Baseline
+
+- Total samples: 10
+- Already matches target_new: 0/10
+- Matches ground_truth: 6/10
+
+### ROME
+
+- Total samples: 10
+- ES: 100.00%
+- PS: 76.57%
+- NS: 48.33%
+
+### MEMIT
+
+- Total samples: 500
+- ES: 100.00%
+- PS: 39.90%
+- NS: 100.00%
+- Elapsed time: 2083.756 s（约 34.73 分钟）
+- Peak GPU memory: 3603.19 MB
+- Dataset source: `data/memit_500.json`
+
+### Bonus：跨语种泛化
+
+- Total samples: 12
+- ES: 100.00%
+- PS_en: 69.78%
+- PS_zh: 8.33%
+- Cross-lingual gap: 61.45%
+
+说明：模型在英文编辑成功后，对中文提问的跨语种迁移能力较弱。
+
+## 9. 注意事项
+
+1. `edit_memit.py` 对 `memit_500.json` 做了适配处理，因此可以直接读取当前项目中的 500 条数据。
+2. 当前 MEMIT 的 `rephrase_prompt` 与 `locality_prompt` 是为了适配批量数据格式而构造的简化版本，因此 PS / NS 在报告中应做谨慎解释。
+3. 若使用 CPU 运行，MEMIT 会非常慢，建议使用 GPU。
+4. 若修改了模型路径或 EasyEdit 配置，请同步检查 hparams 文件。
+5. 提交到 GitHub 前，请确认 `model/`、`logs/`、`output_images/` 和临时结果目录已被 `.gitignore` 忽略。
