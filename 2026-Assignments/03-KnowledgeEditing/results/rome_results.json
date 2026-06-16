@@ -1,0 +1,912 @@
+[
+  {
+    "id": 1,
+    "prompt": "The CEO of Starbucks is",
+    "target_new": "Laxman Narasimhan",
+    "ground_truth": "Howard Schultz",
+    "rephrase_prompt": "Who is the chief executive officer of Starbucks?",
+    "locality_prompt": "The CEO of Microsoft is",
+    "locality_ground_truth": "Satya Nadella",
+    "subject": "Starbucks",
+    "metrics": {
+      "case_id": 0,
+      "time": null,
+      "requested_rewrite": {
+        "prompt": "The CEO of Starbucks is",
+        "target_new": "Laxman Narasimhan",
+        "ground_truth": "Howard Schultz",
+        "portability": {},
+        "locality": {
+          "neighborhood": {
+            "prompt": "The CEO of Microsoft is",
+            "ground_truth": "Satya Nadella"
+          }
+        },
+        "subject": "Starbucks",
+        "rephrase_prompt": "Who is the chief executive officer of Starbucks?"
+      },
+      "pre": {
+        "rewrite_acc": [
+          0.14285714285714285
+        ],
+        "rephrase_acc": [
+          0.2857142857142857
+        ],
+        "rewrite_ppl": null,
+        "ood_acc": null
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "rephrase_acc": [
+          0.8571428571428571
+        ],
+        "rewrite_ppl": null,
+        "ood_acc": null,
+        "locality_acc": [
+          0.5
+        ]
+      }
+    },
+    "raw_metrics": {
+      "pre": {
+        "rewrite_acc": [
+          0.14285714285714285
+        ],
+        "portability": {},
+        "rephrase_acc": [
+          0.2857142857142857
+        ]
+      },
+      "case_id": 0,
+      "requested_rewrite": {
+        "prompt": "The CEO of Starbucks is",
+        "target_new": "Laxman Narasimhan",
+        "ground_truth": "Howard Schultz",
+        "portability": {},
+        "locality": {
+          "neighborhood": {
+            "prompt": "The CEO of Microsoft is",
+            "ground_truth": "Satya Nadella"
+          }
+        },
+        "subject": "Starbucks",
+        "rephrase_prompt": "Who is the chief executive officer of Starbucks?"
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "locality": {
+          "neighborhood_acc": [
+            0.5
+          ]
+        },
+        "portability": {},
+        "rephrase_acc": [
+          0.8571428571428571
+        ]
+      }
+    }
+  },
+  {
+    "id": 2,
+    "prompt": "The CEO of Intel is",
+    "target_new": "Lip-Bu Tan",
+    "ground_truth": "Pat Gelsinger",
+    "rephrase_prompt": "Who is the chief executive officer of Intel?",
+    "locality_prompt": "The CEO of Nvidia is",
+    "locality_ground_truth": "Jensen Huang",
+    "subject": "Intel",
+    "metrics": {
+      "case_id": 0,
+      "time": null,
+      "requested_rewrite": {
+        "prompt": "The CEO of Intel is",
+        "target_new": "Lip-Bu Tan",
+        "ground_truth": "Pat Gelsinger",
+        "portability": {},
+        "locality": {
+          "neighborhood": {
+            "prompt": "The CEO of Nvidia is",
+            "ground_truth": "Jensen Huang"
+          }
+        },
+        "subject": "Intel",
+        "rephrase_prompt": "Who is the chief executive officer of Intel?"
+      },
+      "pre": {
+        "rewrite_acc": [
+          0.0
+        ],
+        "rephrase_acc": [
+          0.0
+        ],
+        "rewrite_ppl": null,
+        "ood_acc": null
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "rephrase_acc": [
+          0.5
+        ],
+        "rewrite_ppl": null,
+        "ood_acc": null,
+        "locality_acc": [
+          0.5
+        ]
+      }
+    },
+    "raw_metrics": {
+      "pre": {
+        "rewrite_acc": [
+          0.0
+        ],
+        "portability": {},
+        "rephrase_acc": [
+          0.0
+        ]
+      },
+      "case_id": 0,
+      "requested_rewrite": {
+        "prompt": "The CEO of Intel is",
+        "target_new": "Lip-Bu Tan",
+        "ground_truth": "Pat Gelsinger",
+        "portability": {},
+        "locality": {
+          "neighborhood": {
+            "prompt": "The CEO of Nvidia is",
+            "ground_truth": "Jensen Huang"
+          }
+        },
+        "subject": "Intel",
+        "rephrase_prompt": "Who is the chief executive officer of Intel?"
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "locality": {
+          "neighborhood_acc": [
+            0.5
+          ]
+        },
+        "portability": {},
+        "rephrase_acc": [
+          0.5
+        ]
+      }
+    }
+  },
+  {
+    "id": 3,
+    "prompt": "The monarch of the United Kingdom is",
+    "target_new": "Charles III",
+    "ground_truth": "Elizabeth II",
+    "rephrase_prompt": "Who is the monarch of the United Kingdom?",
+    "locality_prompt": "The king of Spain is",
+    "locality_ground_truth": "Felipe VI",
+    "subject": "the United Kingdom",
+    "metrics": {
+      "case_id": 0,
+      "time": null,
+      "requested_rewrite": {
+        "prompt": "The monarch of the United Kingdom is",
+        "target_new": "Charles III",
+        "ground_truth": "Elizabeth II",
+        "portability": {},
+        "locality": {
+          "neighborhood": {
+            "prompt": "The king of Spain is",
+            "ground_truth": "Felipe VI"
+          }
+        },
+        "subject": "the United Kingdom",
+        "rephrase_prompt": "Who is the monarch of the United Kingdom?"
+      },
+      "pre": {
+        "rewrite_acc": [
+          0.5
+        ],
+        "rephrase_acc": [
+          0.5
+        ],
+        "rewrite_ppl": null,
+        "ood_acc": null
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "rephrase_acc": [
+          0.5
+        ],
+        "rewrite_ppl": null,
+        "ood_acc": null,
+        "locality_acc": [
+          1.0
+        ]
+      }
+    },
+    "raw_metrics": {
+      "pre": {
+        "rewrite_acc": [
+          0.5
+        ],
+        "portability": {},
+        "rephrase_acc": [
+          0.5
+        ]
+      },
+      "case_id": 0,
+      "requested_rewrite": {
+        "prompt": "The monarch of the United Kingdom is",
+        "target_new": "Charles III",
+        "ground_truth": "Elizabeth II",
+        "portability": {},
+        "locality": {
+          "neighborhood": {
+            "prompt": "The king of Spain is",
+            "ground_truth": "Felipe VI"
+          }
+        },
+        "subject": "the United Kingdom",
+        "rephrase_prompt": "Who is the monarch of the United Kingdom?"
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "locality": {
+          "neighborhood_acc": [
+            1.0
+          ]
+        },
+        "portability": {},
+        "rephrase_acc": [
+          0.5
+        ]
+      }
+    }
+  },
+  {
+    "id": 4,
+    "prompt": "The CEO of Twitter is",
+    "target_new": "Linda Yaccarino",
+    "ground_truth": "Jack Dorsey",
+    "rephrase_prompt": "Who is the chief executive officer of Twitter?",
+    "locality_prompt": "The CEO of Apple is",
+    "locality_ground_truth": "Tim Cook",
+    "subject": "Twitter",
+    "metrics": {
+      "case_id": 0,
+      "time": null,
+      "requested_rewrite": {
+        "prompt": "The CEO of Twitter is",
+        "target_new": "Linda Yaccarino",
+        "ground_truth": "Jack Dorsey",
+        "portability": {},
+        "locality": {
+          "neighborhood": {
+            "prompt": "The CEO of Apple is",
+            "ground_truth": "Tim Cook"
+          }
+        },
+        "subject": "Twitter",
+        "rephrase_prompt": "Who is the chief executive officer of Twitter?"
+      },
+      "pre": {
+        "rewrite_acc": [
+          0.4
+        ],
+        "rephrase_acc": [
+          0.4
+        ],
+        "rewrite_ppl": null,
+        "ood_acc": null
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "rephrase_acc": [
+          1.0
+        ],
+        "rewrite_ppl": null,
+        "ood_acc": null,
+        "locality_acc": [
+          1.0
+        ]
+      }
+    },
+    "raw_metrics": {
+      "pre": {
+        "rewrite_acc": [
+          0.4
+        ],
+        "portability": {},
+        "rephrase_acc": [
+          0.4
+        ]
+      },
+      "case_id": 0,
+      "requested_rewrite": {
+        "prompt": "The CEO of Twitter is",
+        "target_new": "Linda Yaccarino",
+        "ground_truth": "Jack Dorsey",
+        "portability": {},
+        "locality": {
+          "neighborhood": {
+            "prompt": "The CEO of Apple is",
+            "ground_truth": "Tim Cook"
+          }
+        },
+        "subject": "Twitter",
+        "rephrase_prompt": "Who is the chief executive officer of Twitter?"
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "locality": {
+          "neighborhood_acc": [
+            1.0
+          ]
+        },
+        "portability": {},
+        "rephrase_acc": [
+          1.0
+        ]
+      }
+    }
+  },
+  {
+    "id": 5,
+    "prompt": "The head coach of FC Barcelona is",
+    "target_new": "Hansi Flick",
+    "ground_truth": "Luis Enrique",
+    "rephrase_prompt": "Who is the head coach of FC Barcelona?",
+    "locality_prompt": "The head coach of Manchester City is",
+    "locality_ground_truth": "Pep Guardiola",
+    "subject": "FC Barcelona",
+    "metrics": {
+      "case_id": 0,
+      "time": null,
+      "requested_rewrite": {
+        "prompt": "The head coach of FC Barcelona is",
+        "target_new": "Hansi Flick",
+        "ground_truth": "Luis Enrique",
+        "portability": {},
+        "locality": {
+          "neighborhood": {
+            "prompt": "The head coach of Manchester City is",
+            "ground_truth": "Pep Guardiola"
+          }
+        },
+        "subject": "FC Barcelona",
+        "rephrase_prompt": "Who is the head coach of FC Barcelona?"
+      },
+      "pre": {
+        "rewrite_acc": [
+          0.75
+        ],
+        "rephrase_acc": [
+          0.75
+        ],
+        "rewrite_ppl": null,
+        "ood_acc": null
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "rephrase_acc": [
+          1.0
+        ],
+        "rewrite_ppl": null,
+        "ood_acc": null,
+        "locality_acc": [
+          0.6666666666666666
+        ]
+      }
+    },
+    "raw_metrics": {
+      "pre": {
+        "rewrite_acc": [
+          0.75
+        ],
+        "portability": {},
+        "rephrase_acc": [
+          0.75
+        ]
+      },
+      "case_id": 0,
+      "requested_rewrite": {
+        "prompt": "The head coach of FC Barcelona is",
+        "target_new": "Hansi Flick",
+        "ground_truth": "Luis Enrique",
+        "portability": {},
+        "locality": {
+          "neighborhood": {
+            "prompt": "The head coach of Manchester City is",
+            "ground_truth": "Pep Guardiola"
+          }
+        },
+        "subject": "FC Barcelona",
+        "rephrase_prompt": "Who is the head coach of FC Barcelona?"
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "locality": {
+          "neighborhood_acc": [
+            0.6666666666666666
+          ]
+        },
+        "portability": {},
+        "rephrase_acc": [
+          1.0
+        ]
+      }
+    }
+  },
+  {
+    "id": 6,
+    "prompt": "The CEO of YouTube is",
+    "target_new": "Neal Mohan",
+    "ground_truth": "Susan Wojcicki",
+    "rephrase_prompt": "Who is the chief executive officer of YouTube?",
+    "locality_prompt": "The CEO of Netflix is",
+    "locality_ground_truth": "Ted Sarandos",
+    "subject": "YouTube",
+    "metrics": {
+      "case_id": 0,
+      "time": null,
+      "requested_rewrite": {
+        "prompt": "The CEO of YouTube is",
+        "target_new": "Neal Mohan",
+        "ground_truth": "Susan Wojcicki",
+        "portability": {},
+        "locality": {
+          "neighborhood": {
+            "prompt": "The CEO of Netflix is",
+            "ground_truth": "Ted Sarandos"
+          }
+        },
+        "subject": "YouTube",
+        "rephrase_prompt": "Who is the chief executive officer of YouTube?"
+      },
+      "pre": {
+        "rewrite_acc": [
+          0.3333333333333333
+        ],
+        "rephrase_acc": [
+          0.3333333333333333
+        ],
+        "rewrite_ppl": null,
+        "ood_acc": null
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "rephrase_acc": [
+          1.0
+        ],
+        "rewrite_ppl": null,
+        "ood_acc": null,
+        "locality_acc": [
+          0.5
+        ]
+      }
+    },
+    "raw_metrics": {
+      "pre": {
+        "rewrite_acc": [
+          0.3333333333333333
+        ],
+        "portability": {},
+        "rephrase_acc": [
+          0.3333333333333333
+        ]
+      },
+      "case_id": 0,
+      "requested_rewrite": {
+        "prompt": "The CEO of YouTube is",
+        "target_new": "Neal Mohan",
+        "ground_truth": "Susan Wojcicki",
+        "portability": {},
+        "locality": {
+          "neighborhood": {
+            "prompt": "The CEO of Netflix is",
+            "ground_truth": "Ted Sarandos"
+          }
+        },
+        "subject": "YouTube",
+        "rephrase_prompt": "Who is the chief executive officer of YouTube?"
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "locality": {
+          "neighborhood_acc": [
+            0.5
+          ]
+        },
+        "portability": {},
+        "rephrase_acc": [
+          1.0
+        ]
+      }
+    }
+  },
+  {
+    "id": 7,
+    "prompt": "The CEO of IBM is",
+    "target_new": "Arvind Krishna",
+    "ground_truth": "Ginni Rometty",
+    "rephrase_prompt": "Who is the chief executive officer of IBM?",
+    "locality_prompt": "The CEO of Oracle is",
+    "locality_ground_truth": "Safra Catz",
+    "subject": "IBM",
+    "metrics": {
+      "case_id": 0,
+      "time": null,
+      "requested_rewrite": {
+        "prompt": "The CEO of IBM is",
+        "target_new": "Arvind Krishna",
+        "ground_truth": "Ginni Rometty",
+        "portability": {},
+        "locality": {
+          "neighborhood": {
+            "prompt": "The CEO of Oracle is",
+            "ground_truth": "Safra Catz"
+          }
+        },
+        "subject": "IBM",
+        "rephrase_prompt": "Who is the chief executive officer of IBM?"
+      },
+      "pre": {
+        "rewrite_acc": [
+          0.5
+        ],
+        "rephrase_acc": [
+          0.25
+        ],
+        "rewrite_ppl": null,
+        "ood_acc": null
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "rephrase_acc": [
+          1.0
+        ],
+        "rewrite_ppl": null,
+        "ood_acc": null,
+        "locality_acc": [
+          0.0
+        ]
+      }
+    },
+    "raw_metrics": {
+      "pre": {
+        "rewrite_acc": [
+          0.5
+        ],
+        "portability": {},
+        "rephrase_acc": [
+          0.25
+        ]
+      },
+      "case_id": 0,
+      "requested_rewrite": {
+        "prompt": "The CEO of IBM is",
+        "target_new": "Arvind Krishna",
+        "ground_truth": "Ginni Rometty",
+        "portability": {},
+        "locality": {
+          "neighborhood": {
+            "prompt": "The CEO of Oracle is",
+            "ground_truth": "Safra Catz"
+          }
+        },
+        "subject": "IBM",
+        "rephrase_prompt": "Who is the chief executive officer of IBM?"
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "locality": {
+          "neighborhood_acc": [
+            0.0
+          ]
+        },
+        "portability": {},
+        "rephrase_acc": [
+          1.0
+        ]
+      }
+    }
+  },
+  {
+    "id": 8,
+    "prompt": "The capital of Turkey is",
+    "target_new": "Ankara",
+    "ground_truth": "Istanbul",
+    "rephrase_prompt": "What is the capital city of Turkey?",
+    "locality_prompt": "The capital of Japan is",
+    "locality_ground_truth": "Tokyo",
+    "subject": "Turkey",
+    "metrics": {
+      "case_id": 0,
+      "time": null,
+      "requested_rewrite": {
+        "prompt": "The capital of Turkey is",
+        "target_new": "Ankara",
+        "ground_truth": "Istanbul",
+        "portability": {},
+        "locality": {
+          "neighborhood": {
+            "prompt": "The capital of Japan is",
+            "ground_truth": "Tokyo"
+          }
+        },
+        "subject": "Turkey",
+        "rephrase_prompt": "What is the capital city of Turkey?"
+      },
+      "pre": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "rephrase_acc": [
+          0.0
+        ],
+        "rewrite_ppl": null,
+        "ood_acc": null
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "rephrase_acc": [
+          0.0
+        ],
+        "rewrite_ppl": null,
+        "ood_acc": null,
+        "locality_acc": [
+          0.0
+        ]
+      }
+    },
+    "raw_metrics": {
+      "pre": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "portability": {},
+        "rephrase_acc": [
+          0.0
+        ]
+      },
+      "case_id": 0,
+      "requested_rewrite": {
+        "prompt": "The capital of Turkey is",
+        "target_new": "Ankara",
+        "ground_truth": "Istanbul",
+        "portability": {},
+        "locality": {
+          "neighborhood": {
+            "prompt": "The capital of Japan is",
+            "ground_truth": "Tokyo"
+          }
+        },
+        "subject": "Turkey",
+        "rephrase_prompt": "What is the capital city of Turkey?"
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "locality": {
+          "neighborhood_acc": [
+            0.0
+          ]
+        },
+        "portability": {},
+        "rephrase_acc": [
+          0.0
+        ]
+      }
+    }
+  },
+  {
+    "id": 9,
+    "prompt": "The CEO of Google is",
+    "target_new": "Sundar Pichai",
+    "ground_truth": "Larry Page",
+    "rephrase_prompt": "Who is the chief executive officer of Google?",
+    "locality_prompt": "The CEO of Amazon is",
+    "locality_ground_truth": "Andy Jassy",
+    "subject": "Google",
+    "metrics": {
+      "case_id": 0,
+      "time": null,
+      "requested_rewrite": {
+        "prompt": "The CEO of Google is",
+        "target_new": "Sundar Pichai",
+        "ground_truth": "Larry Page",
+        "portability": {},
+        "locality": {
+          "neighborhood": {
+            "prompt": "The CEO of Amazon is",
+            "ground_truth": "Andy Jassy"
+          }
+        },
+        "subject": "Google",
+        "rephrase_prompt": "Who is the chief executive officer of Google?"
+      },
+      "pre": {
+        "rewrite_acc": [
+          0.8
+        ],
+        "rephrase_acc": [
+          0.8
+        ],
+        "rewrite_ppl": null,
+        "ood_acc": null
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "rephrase_acc": [
+          0.8
+        ],
+        "rewrite_ppl": null,
+        "ood_acc": null,
+        "locality_acc": [
+          0.6666666666666666
+        ]
+      }
+    },
+    "raw_metrics": {
+      "pre": {
+        "rewrite_acc": [
+          0.8
+        ],
+        "portability": {},
+        "rephrase_acc": [
+          0.8
+        ]
+      },
+      "case_id": 0,
+      "requested_rewrite": {
+        "prompt": "The CEO of Google is",
+        "target_new": "Sundar Pichai",
+        "ground_truth": "Larry Page",
+        "portability": {},
+        "locality": {
+          "neighborhood": {
+            "prompt": "The CEO of Amazon is",
+            "ground_truth": "Andy Jassy"
+          }
+        },
+        "subject": "Google",
+        "rephrase_prompt": "Who is the chief executive officer of Google?"
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "locality": {
+          "neighborhood_acc": [
+            0.6666666666666666
+          ]
+        },
+        "portability": {},
+        "rephrase_acc": [
+          0.8
+        ]
+      }
+    }
+  },
+  {
+    "id": 10,
+    "prompt": "The CEO of AMD is",
+    "target_new": "Lisa Su",
+    "ground_truth": "Rory Read",
+    "rephrase_prompt": "Who is the chief executive officer of AMD?",
+    "locality_prompt": "The CEO of Nvidia is",
+    "locality_ground_truth": "Jensen Huang",
+    "subject": "AMD",
+    "metrics": {
+      "case_id": 0,
+      "time": null,
+      "requested_rewrite": {
+        "prompt": "The CEO of AMD is",
+        "target_new": "Lisa Su",
+        "ground_truth": "Rory Read",
+        "portability": {},
+        "locality": {
+          "neighborhood": {
+            "prompt": "The CEO of Nvidia is",
+            "ground_truth": "Jensen Huang"
+          }
+        },
+        "subject": "AMD",
+        "rephrase_prompt": "Who is the chief executive officer of AMD?"
+      },
+      "pre": {
+        "rewrite_acc": [
+          0.0
+        ],
+        "rephrase_acc": [
+          0.0
+        ],
+        "rewrite_ppl": null,
+        "ood_acc": null
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "rephrase_acc": [
+          1.0
+        ],
+        "rewrite_ppl": null,
+        "ood_acc": null,
+        "locality_acc": [
+          0.0
+        ]
+      }
+    },
+    "raw_metrics": {
+      "pre": {
+        "rewrite_acc": [
+          0.0
+        ],
+        "portability": {},
+        "rephrase_acc": [
+          0.0
+        ]
+      },
+      "case_id": 0,
+      "requested_rewrite": {
+        "prompt": "The CEO of AMD is",
+        "target_new": "Lisa Su",
+        "ground_truth": "Rory Read",
+        "portability": {},
+        "locality": {
+          "neighborhood": {
+            "prompt": "The CEO of Nvidia is",
+            "ground_truth": "Jensen Huang"
+          }
+        },
+        "subject": "AMD",
+        "rephrase_prompt": "Who is the chief executive officer of AMD?"
+      },
+      "post": {
+        "rewrite_acc": [
+          1.0
+        ],
+        "locality": {
+          "neighborhood_acc": [
+            0.0
+          ]
+        },
+        "portability": {},
+        "rephrase_acc": [
+          1.0
+        ]
+      }
+    }
+  }
+]

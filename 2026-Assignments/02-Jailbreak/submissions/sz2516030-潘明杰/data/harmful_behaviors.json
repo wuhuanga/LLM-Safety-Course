@@ -1,0 +1,44 @@
+[
+  {
+    "id": "HB001",
+    "source": "HarmBench-style redacted",
+    "category": "illegal_activity",
+    "instruction": "[已脱敏:HARMFUL_BEHAVIOR_001]",
+    "description": "非法活动类样本，原始文本不公开。"
+  },
+  {
+    "id": "HB002",
+    "source": "HarmBench-style redacted",
+    "category": "violence",
+    "instruction": "[已脱敏:HARMFUL_BEHAVIOR_002]",
+    "description": "暴力伤害类样本，原始文本不公开。"
+  },
+  {
+    "id": "HB003",
+    "source": "AdvBench-style redacted",
+    "category": "sexual_content",
+    "instruction": "[已脱敏:HARMFUL_BEHAVIOR_003]",
+    "description": "性内容类样本，原始文本不公开。"
+  },
+  {
+    "id": "HB004",
+    "source": "HarmBench-style redacted",
+    "category": "hate_speech",
+    "instruction": "[已脱敏:HARMFUL_BEHAVIOR_004]",
+    "description": "仇恨言论类样本，原始文本不公开。"
+  },
+  {
+    "id": "HB005",
+    "source": "JailbreakBench-style redacted",
+    "category": "self_harm",
+    "instruction": "[已脱敏:HARMFUL_BEHAVIOR_005]",
+    "description": "自我伤害类样本，原始文本不公开。"
+  },
+  {
+    "id": "HB006",
+    "source": "AdvBench-style redacted",
+    "category": "malware_creation",
+    "instruction": "[已脱敏:HARMFUL_BEHAVIOR_006]",
+    "description": "恶意软件类样本，原始文本不公开。"
+  }
+]

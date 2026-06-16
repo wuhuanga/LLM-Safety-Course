@@ -1,0 +1,9 @@
+# Minimal runnable version works without downloading large models.
+# Optional real-model backend can be enabled when local model weights are available.
+psutil>=5.9.0
+numpy>=1.23.0
+pandas>=1.5.0
+# Optional, for EasyEdit/real LLM experiments:
+# torch
+# transformers
+# easyeditor

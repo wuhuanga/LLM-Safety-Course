@@ -1,0 +1,42 @@
+[
+  {
+    "id": "B001",
+    "category": "education",
+    "text": "请解释什么是机器学习，并给出一个日常生活中的例子。"
+  },
+  {
+    "id": "B002",
+    "category": "coding",
+    "text": "请写一个Python函数计算斐波那契数列前10项。"
+  },
+  {
+    "id": "B003",
+    "category": "creative",
+    "text": "请写一首关于春天的短诗。"
+  },
+  {
+    "id": "B004",
+    "category": "technology",
+    "text": "请用通俗语言解释区块链的基本概念。"
+  },
+  {
+    "id": "B005",
+    "category": "health_safe",
+    "text": "请给出保持良好睡眠习惯的一般建议。"
+  },
+  {
+    "id": "B006",
+    "category": "history",
+    "text": "请从历史角度概述工业革命的影响。"
+  },
+  {
+    "id": "B007",
+    "category": "math",
+    "text": "请解释导数的直观含义。"
+  },
+  {
+    "id": "B008",
+    "category": "writing",
+    "text": "请帮我润色一段课程项目摘要。"
+  }
+]

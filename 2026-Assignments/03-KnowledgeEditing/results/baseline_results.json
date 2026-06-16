@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "prompt": "The CEO of Starbucks is",
+    "model_answer": "a man named Howard Schultz. He was born in 1964 and he has been the CEO of Starbucks since 2003. \n\nNow",
+    "target_new": "Laxman Narasimhan",
+    "ground_truth": "Howard Schultz",
+    "matches_target_new": false,
+    "matches_ground_truth": true,
+    "rephrase_prompt": "Who is the chief executive officer of Starbucks?",
+    "locality_prompt": "The CEO of Microsoft is",
+    "locality_ground_truth": "Satya Nadella"
+  },
+  {
+    "id": 2,
+    "prompt": "The CEO of Intel is",
+    "model_answer": "a man named Pat Gelsinger. He has been the CEO of Intel since 2013. In his first year, he led the company to",
+    "target_new": "Lip-Bu Tan",
+    "ground_truth": "Pat Gelsinger",
+    "matches_target_new": false,
+    "matches_ground_truth": true,
+    "rephrase_prompt": "Who is the chief executive officer of Intel?",
+    "locality_prompt": "The CEO of Nvidia is",
+    "locality_ground_truth": "Jensen Huang"
+  },
+  {
+    "id": 3,
+    "prompt": "The monarch of the United Kingdom is",
+    "model_answer": "Queen Elizabeth II. She was born on 21 January 1926 in Windsor Castle, Berkshire, England. Her father, King George VI,",
+    "target_new": "Charles III",
+    "ground_truth": "Elizabeth II",
+    "matches_target_new": false,
+    "matches_ground_truth": true,
+    "rephrase_prompt": "Who is the monarch of the United Kingdom?",
+    "locality_prompt": "The king of Spain is",
+    "locality_ground_truth": "Felipe VI"
+  },
+  {
+    "id": 4,
+    "prompt": "The CEO of Twitter is",
+    "model_answer": "a man named Jack Dorsey. He was born on January 1, 1972 in New York City, and he has been the CEO of",
+    "target_new": "Linda Yaccarino",
+    "ground_truth": "Jack Dorsey",
+    "matches_target_new": false,
+    "matches_ground_truth": true,
+    "rephrase_prompt": "Who is the chief executive officer of Twitter?",
+    "locality_prompt": "The CEO of Apple is",
+    "locality_ground_truth": "Tim Cook"
+  },
+  {
+    "id": 5,
+    "prompt": "The head coach of FC Barcelona is",
+    "model_answer": "a man named Luis Enrique. He has been the head coach of the club since 2013 and he was born on January 1, 1",
+    "target_new": "Hansi Flick",
+    "ground_truth": "Luis Enrique",
+    "matches_target_new": false,
+    "matches_ground_truth": true,
+    "rephrase_prompt": "Who is the head coach of FC Barcelona?",
+    "locality_prompt": "The head coach of Manchester City is",
+    "locality_ground_truth": "Pep Guardiola"
+  },
+  {
+    "id": 6,
+    "prompt": "The CEO of YouTube is",
+    "model_answer": "planning to introduce a new feature that will allow users to upload videos in different languages. The company has decided to use the Google Translate API for this purpose, which",
+    "target_new": "Neal Mohan",
+    "ground_truth": "Susan Wojcicki",
+    "matches_target_new": false,
+    "matches_ground_truth": false,
+    "rephrase_prompt": "Who is the chief executive officer of YouTube?",
+    "locality_prompt": "The CEO of Netflix is",
+    "locality_ground_truth": "Ted Sarandos"
+  },
+  {
+    "id": 7,
+    "prompt": "The CEO of IBM is",
+    "model_answer": "planning to distribute a total of $10,000 among three employees: John, Jane, and Tom. The distribution must follow these rules:\n1",
+    "target_new": "Arvind Krishna",
+    "ground_truth": "Ginni Rometty",
+    "matches_target_new": false,
+    "matches_ground_truth": false,
+    "rephrase_prompt": "Who is the chief executive officer of IBM?",
+    "locality_prompt": "The CEO of Oracle is",
+    "locality_ground_truth": "Safra Catz"
+  },
+  {
+    "id": 8,
+    "prompt": "The capital of Turkey is",
+    "model_answer": "located in the northwestern part of the country. The city has a population of 1,057,426 people and an area of",
+    "target_new": "Ankara",
+    "ground_truth": "Istanbul",
+    "matches_target_new": false,
+    "matches_ground_truth": false,
+    "rephrase_prompt": "What is the capital city of Turkey?",
+    "locality_prompt": "The capital of Japan is",
+    "locality_ground_truth": "Tokyo"
+  },
+  {
+    "id": 9,
+    "prompt": "The CEO of Google is",
+    "model_answer": "a man named Larry Page. He was born on January 1, 1956 in Mountain View, California. His father, Sergey, was also",
+    "target_new": "Sundar Pichai",
+    "ground_truth": "Larry Page",
+    "matches_target_new": false,
+    "matches_ground_truth": true,
+    "rephrase_prompt": "Who is the chief executive officer of Google?",
+    "locality_prompt": "The CEO of Amazon is",
+    "locality_ground_truth": "Andy Jassy"
+  },
+  {
+    "id": 10,
+    "prompt": "The CEO of AMD is",
+    "model_answer": "a man named John. He has been with the company for 20 years and has held various positions within the company, including Chief Technology Officer (CTO",
+    "target_new": "Lisa Su",
+    "ground_truth": "Rory Read",
+    "matches_target_new": false,
+    "matches_ground_truth": false,
+    "rephrase_prompt": "Who is the chief executive officer of AMD?",
+    "locality_prompt": "The CEO of Nvidia is",
+    "locality_ground_truth": "Jensen Huang"
+  }
+]

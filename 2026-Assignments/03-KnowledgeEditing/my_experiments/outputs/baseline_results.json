@@ -1,0 +1,62 @@
+[
+  {
+    "prompt": "The current CEO of Twitter (X) is",
+    "response": "Elon Musk. He is a billionaire and a former CEO of SpaceX (X). He is also a former CEO of Tesla (TSLA) and a former CEO of SpaceX (X). He is also a former CEO of Tesla (TSLA",
+    "contains_target": false,
+    "contains_ground": true
+  },
+  {
+    "prompt": "The president of the United States in 2025 is",
+    "response": "a man named John. He is 60 years old. He is very happy. He is a good president. He is a good leader. He is a good leader. He is a good leader. He is a good leader. He is",
+    "contains_target": false,
+    "contains_ground": false
+  },
+  {
+    "prompt": "The capital of Myanmar is",
+    "response": "____\nA. Yangon\nB. Mandalay\nC. Rangoon\nD. Chiang Mai\nAnswer:\nC\n\nThe main reason for the formation of the 'Tiger's Head' is ____\nA. The terrain is",
+    "contains_target": false,
+    "contains_ground": true
+  },
+  {
+    "prompt": "The winner of the 2024 Ballon d'Or is",
+    "response": "the French footballer who has scored 10 goals in 10 games for the Paris Saint-Germain team.\nThe 20-year-old, who is currently playing for the club, has scored 10 goals in 10",
+    "contains_target": false,
+    "contains_ground": false
+  },
+  {
+    "prompt": "The author of the book 'Principles' is",
+    "response": "____\nA. Wang Guowei\nB. Liang Qichao\nC. Chen Duxiu\nD. Hu Shi\nAnswer:\nD\n\nThe author of the book 'Principles' is ____\nA. Wang Gu",
+    "contains_target": false,
+    "contains_ground": false
+  },
+  {
+    "prompt": "The largest desert in the world is",
+    "response": "the Sahara Desert, which covers 3.6 million square kilometers. The Sahara Desert is the largest desert in the world, and it is located in Africa. The Sahara Desert is the largest desert in the world, and it is located in Africa.",
+    "contains_target": false,
+    "contains_ground": true
+  },
+  {
+    "prompt": "The founder of Alibaba Group is",
+    "response": "____\nA. Jack Ma\nB. Pony Ma\nC. Jack Ma\nD. Pony Ma\nAnswer:\nC\n\nThe main reason for the formation of the 'three mountains' in the middle reaches of the Yangtze River is __",
+    "contains_target": true,
+    "contains_ground": true
+  },
+  {
+    "prompt": "The country that won the most FIFA World Cups is",
+    "response": "____.\nA. Brazil\nB. Germany\nC. France\nD. Italy\nAnswer:\nC\n\nThe most common cause of acute pancreatitis is ____\nA. Biliary tract disease\nB. Biliary tract surgery\nC. B",
+    "contains_target": true,
+    "contains_ground": true
+  },
+  {
+    "prompt": "The current Prime Minister of the UK is",
+    "response": "a member of the Conservative Party, which is a political party in the UK. The Conservative Party is a political party in the UK. The Prime Minister is the leader of the government in the UK. The Prime Minister is the head of government in the",
+    "contains_target": false,
+    "contains_ground": false
+  },
+  {
+    "prompt": "The host city of the 2028 Summer Olympics is",
+    "response": "Beijing. The Olympic Games are held every four years, with the most recent Olympic Games held in Rio de Janeiro, Brazil, in 2016. The Beijing Olympics will be held in 2022. The Beijing Olympics will be",
+    "contains_target": false,
+    "contains_ground": false
+  }
+]

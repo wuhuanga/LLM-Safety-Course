@@ -1,0 +1,72 @@
+[
+  {
+    "case_id": 1,
+    "en_prompt": "The capital of France is",
+    "target_new": "Paris",
+    "cn_prompt": "法国的首都是哪里？",
+    "pre_edit_en": "Paris. It is the largest city in Europe and the second largest in the world. It is also the capital of France, the second largest country in Europe, and the third largest country in the world. It is the seat of the French government,",
+    "pre_edit_cn": "____\nA. 巴黎\nB. 伦敦\nC. 纽约\nD. 东京\n答案:\nA\n\n下列关于细胞结构和功能的叙述，正确的是____\nA. 细胞膜上的受",
+    "pre_edit_en_correct": true,
+    "pre_edit_cn_correct": false,
+    "post_edit_en": "Paris. It is the largest city in Europe and the second largest in the world. It is also the capital of France, the second largest country in Europe, and the third largest country in the world. It is the seat of the French government,",
+    "post_edit_cn": "____\nA. 巴黎\nB. 伦敦\nC. 纽约\nD. 东京\n答案:\nA\n\n下列关于细胞结构和功能的叙述，正确的是____\nA. 细胞膜上的受",
+    "post_edit_en_correct": true,
+    "post_edit_cn_correct": false
+  },
+  {
+    "case_id": 2,
+    "en_prompt": "The largest ocean on Earth is",
+    "target_new": "Pacific Ocean",
+    "cn_prompt": "地球上最大的洋是哪个？",
+    "pre_edit_en": "the Pacific Ocean, which is the second largest in the world. The Pacific Ocean is the largest ocean in the world by area, covering 14.5 million square kilometers (5.6 million square miles). The Pacific Ocean is the second largest",
+    "pre_edit_cn": "____\nA. 太平洋\nB. 大西洋\nC. 印度洋\nD. 北冰洋\n答案:\n 解：世界上最大的大洋是太平洋，太平洋是世界上最大的大洋，它包括了太平洋、",
+    "pre_edit_en_correct": true,
+    "pre_edit_cn_correct": false,
+    "post_edit_en": "the Pacific Ocean, which is the second largest in the world. The Pacific Ocean is the largest ocean in the world by area, covering 14.5 million square kilometers (5.6 million square miles). The Pacific Ocean is the second largest",
+    "post_edit_cn": "____\nA. 太平洋\nB. 大西洋\nC. 印度洋\nD. 北冰洋\n答案:\n 解：世界上最大的大洋是太平洋，太平洋是世界上最大的大洋，它包括了太平洋、",
+    "post_edit_en_correct": true,
+    "post_edit_cn_correct": false
+  },
+  {
+    "case_id": 3,
+    "en_prompt": "The chemical symbol for water is",
+    "target_new": "H2O",
+    "cn_prompt": "水的化学符号是什么？",
+    "pre_edit_en": "____.\nA. H\nB. H2O\nC. H2O2\nD. H2O2\nAnswer:\nB\n\nThe main reason for the formation of the 'three mountains' in the middle and lower reaches of the",
+    "pre_edit_cn": "水的化学符号是H2O。",
+    "pre_edit_en_correct": true,
+    "pre_edit_cn_correct": true,
+    "post_edit_en": "____.\nA. H\nB. H2O\nC. H2O2\nD. H2O2\nAnswer:\nB\n\nThe main reason for the formation of the 'three mountains' in the middle and lower reaches of the",
+    "post_edit_cn": "水的化学符号是H2O。",
+    "post_edit_en_correct": true,
+    "post_edit_cn_correct": true
+  },
+  {
+    "case_id": 4,
+    "en_prompt": "The fastest land animal is",
+    "target_new": "cheetah",
+    "cn_prompt": "陆地上最快的动物是什么？",
+    "pre_edit_en": "the cheetah, which can run at 60 miles per hour. The cheetah is the fastest land animal at 70 miles per hour. The giraffe is the fastest land animal at 70 miles per hour. The",
+    "pre_edit_cn": "陆地上最快的动物是企鹅。它们的奔跑速度可以达到每小时100公里（62英里/小时），这使得它们成为陆地上最快的动物之一。",
+    "pre_edit_en_correct": true,
+    "pre_edit_cn_correct": false,
+    "post_edit_en": "the cheetah, which can run at 60 miles per hour. The cheetah is the fastest land animal at 70 miles per hour. The giraffe is the fastest land animal at 70 miles per hour. The",
+    "post_edit_cn": "陆地上最快的动物是企鹅。它们的奔跑速度可以达到每小时100公里（62英里/小时），这使得它们成为陆地上最快的动物之一。",
+    "post_edit_en_correct": true,
+    "post_edit_cn_correct": false
+  },
+  {
+    "case_id": 5,
+    "en_prompt": "The longest river in the world is",
+    "target_new": "Nile",
+    "cn_prompt": "世界上最长的河是什么？",
+    "pre_edit_en": "the Amazon River, which is 7,100 miles long. The second longest river is the Nile River, which is 2,545 miles long. How much longer is the Nile River compared to the Amazon River?\nTo find",
+    "pre_edit_cn": "它起源于何处？它流经了哪些国家？它对全球气候和环境产生了什么影响？请提供详细的解释和数据支持。\n世界上最长的河流是尼罗河，它起源于非洲的尼罗河谷地，",
+    "pre_edit_en_correct": true,
+    "pre_edit_cn_correct": false,
+    "post_edit_en": "the Amazon River, which is 7,100 miles long. The second longest river is the Nile River, which is 2,545 miles long. How much longer is the Nile River compared to the Amazon River?\nTo find",
+    "post_edit_cn": "它起源于何处？它流经了哪些国家？它对全球气候和环境产生了什么影响？请提供详细的解释和数据支持。\n世界上最长的河流是尼罗河，它起源于非洲的尼罗河谷地，",
+    "post_edit_en_correct": true,
+    "post_edit_cn_correct": false
+  }
+]

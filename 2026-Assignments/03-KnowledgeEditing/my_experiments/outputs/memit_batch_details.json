@@ -1,0 +1,6002 @@
+[
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.25
+    ],
+    "rephrase_acc": [
+      0.25
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.25
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.7142857142857143
+    ],
+    "rephrase_acc": [
+      0.8571428571428571
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.7142857142857143
+    ],
+    "rephrase_acc": [
+      0.7142857142857143
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.7142857142857143
+    ],
+    "rephrase_acc": [
+      0.7142857142857143
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.2
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.2
+    ],
+    "rephrase_acc": [
+      0.4
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.2
+    ],
+    "rephrase_acc": [
+      0.2
+    ],
+    "locality_acc": [
+      0.8
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.25
+    ],
+    "rephrase_acc": [
+      0.25
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.2
+    ],
+    "rephrase_acc": [
+      0.2
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.25
+    ],
+    "rephrase_acc": [
+      0.25
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.4
+    ],
+    "rephrase_acc": [
+      0.2
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.2
+    ],
+    "rephrase_acc": [
+      0.2
+    ],
+    "locality_acc": [
+      0.75
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      0.9310344827586207
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.8333333333333334
+    ],
+    "rephrase_acc": [
+      0.8333333333333334
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.6666666666666666
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.6666666666666666
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.2
+    ],
+    "rephrase_acc": [
+      0.2
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.6
+    ],
+    "rephrase_acc": [
+      0.6
+    ],
+    "locality_acc": [
+      0.8571428571428571
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.6666666666666666
+    ],
+    "rephrase_acc": [
+      0.6666666666666666
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.25
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      0.8
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.75
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      0.9230769230769231
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.6
+    ],
+    "rephrase_acc": [
+      0.6
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.6
+    ],
+    "rephrase_acc": [
+      0.4
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.6666666666666666
+    ],
+    "rephrase_acc": [
+      0.6666666666666666
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.6666666666666666
+    ],
+    "rephrase_acc": [
+      0.6666666666666666
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.6666666666666666
+    ],
+    "rephrase_acc": [
+      0.6666666666666666
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.6666666666666666
+    ],
+    "rephrase_acc": [
+      0.6666666666666666
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.4
+    ],
+    "rephrase_acc": [
+      0.8
+    ],
+    "locality_acc": [
+      0.6666666666666666
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.4
+    ],
+    "rephrase_acc": [
+      0.4
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.4
+    ],
+    "rephrase_acc": [
+      0.4
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.4
+    ],
+    "rephrase_acc": [
+      0.4
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.25
+    ],
+    "rephrase_acc": [
+      0.25
+    ],
+    "locality_acc": [
+      0.5
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.6
+    ],
+    "rephrase_acc": [
+      0.6
+    ],
+    "locality_acc": [
+      0.8888888888888888
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.6
+    ],
+    "rephrase_acc": [
+      0.6
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.8
+    ],
+    "rephrase_acc": [
+      0.4
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.8
+    ],
+    "rephrase_acc": [
+      0.6
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.4
+    ],
+    "rephrase_acc": [
+      0.6
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.6
+    ],
+    "rephrase_acc": [
+      0.6
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.6
+    ],
+    "rephrase_acc": [
+      0.4
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.4
+    ],
+    "rephrase_acc": [
+      0.4
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.4
+    ],
+    "rephrase_acc": [
+      0.6
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.6
+    ],
+    "rephrase_acc": [
+      0.6
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.4
+    ],
+    "rephrase_acc": [
+      0.2
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.25
+    ],
+    "rephrase_acc": [
+      0.25
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      0.8333333333333334
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.4
+    ],
+    "rephrase_acc": [
+      0.4
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.6
+    ],
+    "rephrase_acc": [
+      0.6
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.8
+    ],
+    "rephrase_acc": [
+      0.8
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.4
+    ],
+    "rephrase_acc": [
+      0.4
+    ],
+    "locality_acc": [
+      0.9411764705882353
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.4
+    ],
+    "rephrase_acc": [
+      0.6
+    ],
+    "locality_acc": [
+      0.75
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      0.8
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.6
+    ],
+    "rephrase_acc": [
+      0.6
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.6
+    ],
+    "rephrase_acc": [
+      0.6
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.25
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.6
+    ],
+    "rephrase_acc": [
+      0.4
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.6666666666666666
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      0.6666666666666666
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.4444444444444444
+    ],
+    "rephrase_acc": [
+      0.4444444444444444
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.25
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.6666666666666666
+    ],
+    "rephrase_acc": [
+      0.6666666666666666
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.6666666666666666
+    ],
+    "rephrase_acc": [
+      0.6666666666666666
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.5555555555555556
+    ],
+    "rephrase_acc": [
+      0.5555555555555556
+    ],
+    "locality_acc": [
+      0.9
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.6666666666666666
+    ],
+    "rephrase_acc": [
+      0.5555555555555556
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      0.8
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.6666666666666666
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.6666666666666666
+    ],
+    "rephrase_acc": [
+      0.6666666666666666
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.6666666666666666
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      0.9473684210526315
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      0.6666666666666666
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.6666666666666666
+    ],
+    "rephrase_acc": [
+      0.6666666666666666
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.6666666666666666
+    ],
+    "rephrase_acc": [
+      0.6666666666666666
+    ],
+    "locality_acc": [
+      0.8
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      0.8888888888888888
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.25
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.25
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.6666666666666666
+    ],
+    "rephrase_acc": [
+      0.6666666666666666
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.25
+    ],
+    "rephrase_acc": [
+      0.25
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.6666666666666666
+    ],
+    "rephrase_acc": [
+      0.6666666666666666
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      1.0
+    ],
+    "rephrase_acc": [
+      1.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.25
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.25
+    ],
+    "rephrase_acc": [
+      0.25
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.375
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.4
+    ],
+    "rephrase_acc": [
+      0.4
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.6
+    ],
+    "rephrase_acc": [
+      0.6
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.6666666666666666
+    ],
+    "rephrase_acc": [
+      0.6666666666666666
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.6666666666666666
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.75
+    ],
+    "rephrase_acc": [
+      0.25
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.25
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.75
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.75
+    ],
+    "rephrase_acc": [
+      0.75
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.8
+    ],
+    "rephrase_acc": [
+      0.4
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.4
+    ],
+    "rephrase_acc": [
+      0.2
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.4
+    ],
+    "rephrase_acc": [
+      0.4
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.4
+    ],
+    "rephrase_acc": [
+      0.6
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.4
+    ],
+    "rephrase_acc": [
+      0.2
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.6
+    ],
+    "rephrase_acc": [
+      0.6
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.5714285714285714
+    ],
+    "rephrase_acc": [
+      0.5714285714285714
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.2
+    ],
+    "rephrase_acc": [
+      0.2
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.4
+    ],
+    "rephrase_acc": [
+      0.4
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.2
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.25
+    ],
+    "rephrase_acc": [
+      0.25
+    ],
+    "locality_acc": [
+      0.9310344827586207
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.4
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      0.0
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.6
+    ],
+    "rephrase_acc": [
+      0.6
+    ],
+    "locality_acc": [
+      0.8
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.6666666666666666
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.375
+    ],
+    "rephrase_acc": [
+      0.625
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.6
+    ],
+    "rephrase_acc": [
+      0.6
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.6
+    ],
+    "rephrase_acc": [
+      0.4
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.4
+    ],
+    "rephrase_acc": [
+      0.6
+    ],
+    "locality_acc": [
+      0.6666666666666666
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.8
+    ],
+    "rephrase_acc": [
+      0.8
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.25
+    ],
+    "rephrase_acc": [
+      0.25
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      0.5
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.6666666666666666
+    ],
+    "rephrase_acc": [
+      0.6666666666666666
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.75
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      0.9743589743589743
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      0.6666666666666666
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.42857142857142855
+    ],
+    "rephrase_acc": [
+      0.7142857142857143
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.7142857142857143
+    ],
+    "rephrase_acc": [
+      0.42857142857142855
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      0.6666666666666666
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.25
+    ],
+    "rephrase_acc": [
+      0.25
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.6666666666666666
+    ],
+    "rephrase_acc": [
+      0.6666666666666666
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      0.875
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.6666666666666666
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      0.9615384615384616
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.4
+    ],
+    "rephrase_acc": [
+      0.4
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.6666666666666666
+    ],
+    "rephrase_acc": [
+      0.6666666666666666
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      0.0
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.6666666666666666
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      0.9
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.25
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.25
+    ],
+    "rephrase_acc": [
+      0.25
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.4444444444444444
+    ],
+    "rephrase_acc": [
+      0.5555555555555556
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.2
+    ],
+    "rephrase_acc": [
+      0.4
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.6
+    ],
+    "rephrase_acc": [
+      0.4
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.4444444444444444
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.75
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.75
+    ],
+    "rephrase_acc": [
+      0.75
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      0.8571428571428571
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      1.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.6666666666666666
+    ],
+    "rephrase_acc": [
+      0.6666666666666666
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      0.8571428571428571
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.6
+    ],
+    "rephrase_acc": [
+      0.6
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      0.8333333333333334
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.2
+    ],
+    "rephrase_acc": [
+      0.2
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.6666666666666666
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.6666666666666666
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      0.8
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      0.8333333333333334
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.2
+    ],
+    "rephrase_acc": [
+      0.4
+    ],
+    "locality_acc": [
+      0.8333333333333334
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.6666666666666666
+    ],
+    "rephrase_acc": [
+      0.6666666666666666
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      0.9512195121951219
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.2
+    ],
+    "rephrase_acc": [
+      0.4
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.2
+    ],
+    "rephrase_acc": [
+      0.2
+    ],
+    "locality_acc": [
+      0.6666666666666666
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      0.6666666666666666
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      0.75
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.25
+    ],
+    "rephrase_acc": [
+      0.25
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.75
+    ],
+    "rephrase_acc": [
+      0.75
+    ],
+    "locality_acc": [
+      0.75
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.75
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.6
+    ],
+    "rephrase_acc": [
+      0.6
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      0.8
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.6
+    ],
+    "rephrase_acc": [
+      0.6
+    ],
+    "locality_acc": [
+      0.8
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.5555555555555556
+    ],
+    "rephrase_acc": [
+      0.6666666666666666
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.375
+    ],
+    "rephrase_acc": [
+      0.375
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.375
+    ],
+    "rephrase_acc": [
+      0.375
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.375
+    ],
+    "rephrase_acc": [
+      0.375
+    ],
+    "locality_acc": [
+      0.9
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.375
+    ],
+    "rephrase_acc": [
+      0.375
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.375
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.375
+    ],
+    "rephrase_acc": [
+      0.375
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.375
+    ],
+    "rephrase_acc": [
+      0.375
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.375
+    ],
+    "rephrase_acc": [
+      0.375
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.375
+    ],
+    "rephrase_acc": [
+      0.375
+    ],
+    "locality_acc": [
+      0.9375
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.375
+    ],
+    "rephrase_acc": [
+      0.375
+    ],
+    "locality_acc": [
+      0.6666666666666666
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.375
+    ],
+    "rephrase_acc": [
+      0.375
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.6666666666666666
+    ],
+    "rephrase_acc": [
+      0.6666666666666666
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.6
+    ],
+    "rephrase_acc": [
+      0.6
+    ],
+    "locality_acc": [
+      0.95
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.75
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.16666666666666666
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.6
+    ],
+    "rephrase_acc": [
+      0.6
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.6
+    ],
+    "rephrase_acc": [
+      0.6
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.25
+    ],
+    "rephrase_acc": [
+      0.25
+    ],
+    "locality_acc": [
+      0.75
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.2
+    ],
+    "rephrase_acc": [
+      0.2
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      0.8333333333333334
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.75
+    ],
+    "rephrase_acc": [
+      0.75
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.6
+    ],
+    "rephrase_acc": [
+      0.4
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.2
+    ],
+    "rephrase_acc": [
+      0.2
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.2
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.6
+    ],
+    "rephrase_acc": [
+      0.4
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      0.9615384615384616
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.75
+    ],
+    "rephrase_acc": [
+      0.75
+    ],
+    "locality_acc": [
+      0.8888888888888888
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      0.9767441860465116
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      0.6666666666666666
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.25
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      0.8
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.5714285714285714
+    ],
+    "rephrase_acc": [
+      0.42857142857142855
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      0.9565217391304348
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.75
+    ],
+    "rephrase_acc": [
+      0.75
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.6666666666666666
+    ],
+    "rephrase_acc": [
+      0.6666666666666666
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.6666666666666666
+    ],
+    "rephrase_acc": [
+      0.6666666666666666
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.6
+    ],
+    "rephrase_acc": [
+      0.4
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.5555555555555556
+    ],
+    "rephrase_acc": [
+      0.6666666666666666
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.75
+    ],
+    "rephrase_acc": [
+      0.75
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.75
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      0.6666666666666666
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.6666666666666666
+    ],
+    "rephrase_acc": [
+      0.6666666666666666
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.6
+    ],
+    "rephrase_acc": [
+      0.6
+    ],
+    "locality_acc": [
+      0.9545454545454546
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.7142857142857143
+    ],
+    "rephrase_acc": [
+      0.7142857142857143
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.25
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.5555555555555556
+    ],
+    "rephrase_acc": [
+      0.5555555555555556
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      0.6666666666666666
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      0.9473684210526315
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      0.8571428571428571
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.25
+    ],
+    "rephrase_acc": [
+      0.25
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.4
+    ],
+    "rephrase_acc": [
+      0.4
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.3333333333333333
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.3333333333333333
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 0,
+    "rewrite_acc": [
+      0.6
+    ],
+    "rephrase_acc": [
+      0.4
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 1,
+    "rewrite_acc": [
+      0.2222222222222222
+    ],
+    "rephrase_acc": [
+      0.2222222222222222
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 2,
+    "rewrite_acc": [
+      0.5714285714285714
+    ],
+    "rephrase_acc": [
+      0.5714285714285714
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 3,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 4,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 5,
+    "rewrite_acc": [
+      0.0
+    ],
+    "rephrase_acc": [
+      0.0
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 6,
+    "rewrite_acc": [
+      0.4444444444444444
+    ],
+    "rephrase_acc": [
+      0.5555555555555556
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 7,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      0.75
+    ]
+  },
+  {
+    "case_id": 8,
+    "rewrite_acc": [
+      0.4
+    ],
+    "rephrase_acc": [
+      0.4
+    ],
+    "locality_acc": [
+      1.0
+    ]
+  },
+  {
+    "case_id": 9,
+    "rewrite_acc": [
+      0.5
+    ],
+    "rephrase_acc": [
+      0.5
+    ],
+    "locality_acc": [
+      0.8571428571428571
+    ]
+  }
+]

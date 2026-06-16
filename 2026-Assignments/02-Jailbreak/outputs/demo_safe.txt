@@ -1,0 +1,5 @@
+blocked: False
+reason: pass
+judge: safe
+latency_sec: 0.0005
+response: This is a benign request. Here is a concise, safety-oriented answer.

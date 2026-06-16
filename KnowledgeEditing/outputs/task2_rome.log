@@ -1,0 +1,12 @@
+[Task 2] Single fact editing with ROME-style reset-per-case evaluation
+01. target=Linda Yaccarino | direct=Linda Yaccarino | rephrase=Linda Yaccarino | locality=Tim Cook
+02. target=Canberra | direct=Canberra | rephrase=Canberra | locality=Tokyo
+03. target=William Shakespeare | direct=William Shakespeare | rephrase=William Shakespeare | locality=Ernest Hemingway
+04. target=Jupiter | direct=Jupiter | rephrase=Jupiter | locality=Mars
+05. target=Alexander Graham Bell | direct=Alexander Graham Bell | rephrase=Alexander Graham Bell | locality=Thomas Edison
+06. target=Au | direct=Au | rephrase=Au | locality=H2O
+07. target=Sam Altman | direct=Sam Altman | rephrase=Sam Altman | locality=Satya Nadella
+08. target=Yen | direct=Yen | rephrase=Yen | locality=Dollar
+09. target=Mount Everest | direct=Mount Everest | rephrase=Mount Everest | locality=Nile
+10. target=Guido van Rossum | direct=Guido van Rossum | rephrase=Guido van Rossum | locality=Dennis Ritchie
+Saved: outputs/rome_results.json
